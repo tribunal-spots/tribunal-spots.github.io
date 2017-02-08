@@ -1,7 +1,0 @@
----
-youtube_url: "8-hQ5s_NZy0"
-image_url: "image.jpg"
-title_de: "Ist das ein Laden oder eine Gedenkstätte?"
-title_en: "Is this a shop or a memorial site?"
-title_tr: "Ist das ein Laden oder eine Gedenkstätte?"
----

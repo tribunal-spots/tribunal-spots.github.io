@@ -24,10 +24,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 
+permalink: pretty
+
 collections:
   videos:
     output: true
-    permalink: /videos/:path/
+    permalink: /:path/
 
 defaults:
   - scope:
@@ -38,7 +40,22 @@ defaults:
       path: ''
       type: 'videos'
     values:
-      layout: 'default'
+      is_video: true
+  - scope:
+      path: '_videos/de'
+      type: 'videos'
+    values:
+      lang: 'de'
+  - scope:
+      path: '_videos/en'
+      type: 'videos'
+    values:
+      lang: 'en'
+  - scope:
+      path: '_videos/tr'
+      type: 'videos'
+    values:
+      lang: 'tr'
 
 # Build settings
 markdown: kramdown

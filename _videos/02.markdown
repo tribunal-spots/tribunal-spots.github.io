@@ -1,7 +1,0 @@
----
-youtube_url: "phvnXiSfrOI"
-image_url: "image.jpg"
-title_de: "Fahren Nazis Fahrrad?"
-title_en: "Do Nazis ride on bicycles?"
-title_tr: "Fahren Nazis Fahrrad?"
----

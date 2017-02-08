@@ -1,7 +1,0 @@
----
-youtube_url: "gGhBZI8w8fA"
-image_url: "image.jpg"
-title_de: "Und dann... was ist danach passiert?"
-title_en: "And then... what happened afterwards?"
-title_tr: "Und dann... was ist danach passiert?"
----

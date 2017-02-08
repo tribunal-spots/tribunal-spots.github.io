@@ -4,6 +4,22 @@
 {% include head.html %}
 {% include svg.html %}
 
+{% assign lang = 'de' %}
+
+{% assign videos = (site.videos | sort:'id') %}
+
+{% if page.is_video %}
+    {% assign current_video = page %}
+{% else %}
+    {% assign current_video = videos[0] %}
+{% endif %}
+
+<style>
+.layer__background {
+    background: url(../../../images/{{ current_video.slug }}.jpg) no-repeat center center fixed; 
+}
+</style>
+
 <body>
 
     <div class="site">
@@ -23,22 +39,13 @@
                 <section class="slider">
                     <div class="slides">
 
-                        {% if page.id %}
-                            {% assign current_video = page.id %}
-                        {% else %}
-                            {% assign current_video = "/videos/01" %}
-                        {% endif %}
-
-                        
-
-                        {% assign videos = site.videos | sort: 'id' %}
-                        {% assign last = site.videos.last.id %}
-                        {% assign first = site.videos.first.id %}
-
                         {% for video in videos %}
 
-                        <div class="slide {% if current_video == video.id %}slide__active{% endif %}" data-url="">
-                            <h2 class="slide__title">{{ video.title_de }}</h2>
+                        <div class="slide {% if current_video == video %}slide__active{% endif %}" data-url="">
+                            <h2 class="slide__title">{{ video.title }}</h2>
+                            {{ page.lang }}
+                            --
+                            {{ video.lang }}
                         </div>
 
                         {% endfor %}
@@ -46,16 +53,16 @@
 
                     {% if page.next.url %}
                         {% assign next_url = page.next.url %}
-                    {% elsif page.id %}
-                        {% assign next_url = first %}
+                    {% elsif page.is_video %}
+                        {% assign next_url = site.videos.first.url %}
                     {% else %}
-                        {% assign next_url = site.videos[1].url %}
+                        {% assign next_url = videos[1].url %}
                     {% endif %}
 
                     {% if page.previous.url %}
                         {% assign prev_url = page.previous.url %}
                     {% else %}
-                        {% assign prev_url = last %}
+                        {% assign prev_url = site.videos.last.url %}
                     {% endif %}
 
                     <div class="button arrow arrow--prev">
@@ -76,9 +83,11 @@
                 </section>
 
                 <section class="video-control">
-                    <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
-                    </svg>
+                    <a href="http://www.youtube.com/watch?v={{ current_video.youtube_url }}">
+                        <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
+                        </svg>
+                    </a>
                 </section>
 
             </main>

@@ -39,10 +39,14 @@ h1, h2 {
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-size: 2rem;
+    line-height: 20 * 1.2 + px;
+    line-height: 2 * 1.2 + rem;
 
     @include small {
         font-size: 44px;
         font-size: 4.4rem;
+        line-height: 40 * 1.2 + px;
+        line-height: 4 * 1.2 + rem;
     }
 }
 
