@@ -26,7 +26,9 @@
 
 <style>
 .layer__background {
-    background: url(../../../images/{{ current_video.slug }}.jpg) no-repeat center center fixed; 
+    {% assign image_url = '/images/' | append: current_video.slug | append: '.jpg' %}
+    /*background: url(../../../images/{{ current_video.slug }}.jpg) no-repeat center center fixed;*/
+    background: url({{ image_url | relative_url }}) no-repeat center center fixed; 
 }
 </style>
 
