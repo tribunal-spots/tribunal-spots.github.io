@@ -1,0 +1,104 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@import 'layout.scss';
+
+.content-wrap {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 70vmin;
+
+    @include small {
+        width: 85vmin;
+        height: 85vmin;
+    }
+}
+
+.header-main,
+.video-control {
+    display: flex;
+    align-items: center;
+}
+
+.header-main {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 5vmin;
+}
+
+.slides {
+    // flex: 1;
+}
+
+.slide {
+    &__title {
+        font-size: $title-size-small;
+        line-height: $base-line-height;
+        text-align: center;
+
+        @include small {
+            font-size: $title-size-large;
+        }
+    }
+}
+
+.arrow {
+    // width: 25px;
+
+    &--prev {
+        order: -1;
+    }
+}
+
+.video-control {
+    flex: 1;
+}
+
+.button:hover {
+    opacity: .5;
+}
+
+.slide {
+    display: none;
+
+    &__active {
+        display: inherit;
+    }
+}
+
+.info {
+    @include fullscreen-fixed();
+    display: none;
+
+    &--visible {
+        display: inherit;
+    }
+
+    &__panel {
+        width: 85vmin;
+        height: 100vh;
+        margin: 0 auto;
+        background: #000;
+        color: #fff;
+        overflow: auto;
+        padding: 0 50px;
+        font-weight: 400;
+
+        font-family: $second-font-family;
+    }
+}

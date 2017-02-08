@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, main, menu, nav, section, summary {
+    /* Add correct display for IE 9- and some newer browsers */
+    display: block;
+}
+
+// html {
+//     overflow: hidden;
+//     height: 100%;
+// }
+
+// body {
+//     height: 100%;
+//     overflow: auto;
+// }
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: $base-font-family;
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, figure, pre {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.background { 
+    @include fullscreen-fixed();
+    background: url(../images/bg.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.background-overlay {
+    @include fullscreen-fixed();
+    background: #000;
+    opacity: .4;
+}
+
+.content {
+    @include fullscreen-fixed();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

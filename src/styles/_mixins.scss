@@ -1,0 +1,25 @@
+@mixin fullscreen-fixed() {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@mixin small {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
