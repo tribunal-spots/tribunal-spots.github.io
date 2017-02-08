@@ -13,49 +13,43 @@ footer, header, main, menu, nav, section, summary {
     display: block;
 }
 
-// html {
-//     overflow: hidden;
-//     height: 100%;
-// }
-
-// body {
-//     height: 100%;
-//     overflow: auto;
-// }
-
-body {
-    height: 100%;
+html, body {
     width: 100%;
-    font-family: $base-font-family;
-    line-height: 1;
+    height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, figure, pre {
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
+.site {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-ol, ul {
-	list-style: none;
-}
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
-.background { 
-    @include fullscreen-fixed();
-    background: url(../images/bg.jpg) no-repeat center center fixed; 
-    background-size: cover;
-}
+    &__background {
+        background: url(../images/bg.jpg) no-repeat center center fixed; 
+        background-size: cover;
+    }
 
-.background-overlay {
-    @include fullscreen-fixed();
-    background: #000;
-    opacity: .4;
-}
+    &__background-overlay {
+        background: #000;
+        opacity: .4;
+    }
 
-.content {
-    @include fullscreen-fixed();
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        display: none;
+
+        &--visible {
+            display: inherit;
+        }
+    }
 }

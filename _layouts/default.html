@@ -6,45 +6,118 @@
 
 <body>
 
-    <div class="background">
-    </div>
+    <div class="site">
 
-    <div class="background-overlay">
-    </div>
+        <div class="layer layer__background">
+        </div>
 
-    <main class="content" aria-label="Content">
+        <div class="layer layer__background-overlay">
+        </div>
 
-        <div class="content-wrap">
+        <div class="layer layer__content">
 
-            {% include header.html %}
+            <main class="content" aria-label="Content">
 
-            {{ content }}
+                {% include header.html %}
+
+                <section class="slider">
+                    <div class="slides">
+
+                        {% if page.id %}
+                            {% assign current_video = page.id %}
+                        {% else %}
+                            {% assign current_video = "/videos/01" %}
+                        {% endif %}
+
+                        
+
+                        {% assign videos = site.videos | sort: 'id' %}
+                        {% assign last = site.videos.last.id %}
+                        {% assign first = site.videos.first.id %}
+
+                        {% for video in videos %}
+
+                        <div class="slide {% if current_video == video.id %}slide__active{% endif %}" data-url="">
+                            <h2 class="slide__title">{{ video.title_de }}</h2>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+
+                    {% if page.next.url %}
+                        {% assign next_url = page.next.url %}
+                    {% elsif page.id %}
+                        {% assign next_url = first %}
+                    {% else %}
+                        {% assign next_url = site.videos[1].url %}
+                    {% endif %}
+
+                    {% if page.previous.url %}
+                        {% assign prev_url = page.previous.url %}
+                    {% else %}
+                        {% assign prev_url = last %}
+                    {% endif %}
+
+                    <div class="button arrow arrow--prev">
+                        <a href="{{ prev_url }}">
+                            <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="button arrow arrow-next">
+                        <a href="{{ next_url }}">
+                            <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="video-control">
+                    <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
+                    </svg>
+                </section>
+
+            </main>
 
         </div>
 
-    </main>
+        <div class="layer layer__info layer__info--invisible">
 
-    <div class="info">
-        <div class="info__panel">
-            <p>Vom 17. bis 21. Mai 2017 wird in Köln Mühlheim das TRIBUNAL NSU-Komplex auflösen stattfinden.
-            Das Tribunal widmet sich zahlreichen offenen Fragen rund um den NSU-Komplex und klagt institutionellen sowie alltäglichen Rassismus in Deutschland an. Im Mittelpunkt steht dabei das migrantisch situierte Wissen der vom Nazi-Terror Betroffenen. Dieses Wissen soll sichtbar und hörbar werden.</p>
+            <div class="info__panel">
 
-            <p>Der Begriff 'NSU-Komplex' zielt auf die Verflechtung von Nazi-Terror, Rassismus und staatlicher Involviertheit: Zwischen 1999 und 2007 werden in Deutschland neun migrantische Kleinunternehmer und eine Polizistin ermordet. Bei drei Bombenanschlägen – u.a. auf eine migrantisch geprägte Geschäftsstraße in Köln – werden zahlreiche Menschen schwer verletzt. Die Taten bleiben unaufgeklärt bis sich 2011 der sogenannte Nationalsozialistische Untergrund (NSU) selbst enttarnt und zu den Taten bekennt.
-            Bis heute ist die Mord- und Anschlagsserie nicht vollständig aufgeklärt. Offene Fragen gibt es unter anderem zum rechtsradikalen Umfeld des NSU, sowie zur Rolle des Verfassungsschutzes, der zahlreiche Informanten im Umfeld der Täter hatte. 
-            Deutlich geworden ist hingegen, wie tief Rassismus in Deutschland verankert ist. Nicht zuletzt innerhalb der jahrelang konsequent in die falsche Richtung ermittelnden Polizei- und Sicherheitsorgane, für die Rassismus als Tatmotiv angeblich über all die Jahre nicht erkennbar war und selbst jetzt noch kleingeredet wird.</p>
+                <h1>SPOTS</h1>
 
-            <p>SPOTS sind kurze audiovisuelle Interventionen zu Facetten des NSU-Komplexes, die unter anderem zur Mobilisierung für das Tribunal entstehen. Sie thematisieren die blind spots in der Aufarbeitung des NSU-Komplexes. Sie werfen spotlights auf die rassistischen Verhältnisse, welche rechte Netzwerke und deren Taten erst möglich machen. SPOTS verstehen dabei Ästhetik als politisches Handeln. Sie setzen der dominanten täterfixierten Bildpolitik und den medialen Überschreibungen rund um den NSU-Komplex etwas entgegen. Sie drehen Sichtbarkeiten um, stellen Widerstandsgesten dar, formulieren Fragen und Anklagen. Und wollen so eine breitere gesellschaftliche Debatte anstoßen.</p>
+                <div class="info__panel__scrollable">
 
-            <p>SPOTS werden ab Frühjahr 2017 einzeln, in Gruppen, sowie als komplexe Reihe an verschiedenen Orten in Deutschland und darüber hinaus gezeigt. Sie werden in Werbeblöcke eingeschleust, laufen als abendfüllendes Kinoprogramm, verbreiten sich im Internet, verbinden sich als Installation im Ausstellungsraum oder sind Teil von inhaltlichen Veranstaltungsreihen.</p>
+                    <h3>Künstlerische Positionen zum NSU-Komplex</h3>
 
-            <p>Der Begriff 'NSU-Komplex' zielt auf die Verflechtung von Nazi-Terror, Rassismus und staatlicher Involviertheit: Zwischen 1999 und 2007 werden in Deutschland neun migrantische Kleinunternehmer und eine Polizistin ermordet. Bei drei Bombenanschlägen – u.a. auf eine migrantisch geprägte Geschäftsstraße in Köln – werden zahlreiche Menschen schwer verletzt. Die Taten bleiben unaufgeklärt bis sich 2011 der sogenannte Nationalsozialistische Untergrund (NSU) selbst enttarnt und zu den Taten bekennt.
-            Bis heute ist die Mord- und Anschlagsserie nicht vollständig aufgeklärt. Offene Fragen gibt es unter anderem zum rechtsradikalen Umfeld des NSU, sowie zur Rolle des Verfassungsschutzes, der zahlreiche Informanten im Umfeld der Täter hatte. 
-            Deutlich geworden ist hingegen, wie tief Rassismus in Deutschland verankert ist. Nicht zuletzt innerhalb der jahrelang konsequent in die falsche Richtung ermittelnden Polizei- und Sicherheitsorgane, für die Rassismus als Tatmotiv angeblich über all die Jahre nicht erkennbar war und selbst jetzt noch kleingeredet wird.</p>
+                    <p>Vom 17. bis 21. Mai 2017 wird in Köln Mühlheim das TRIBUNAL NSU-Komplex auflösen stattfinden.
+                    Das Tribunal widmet sich zahlreichen offenen Fragen rund um den NSU-Komplex und klagt institutionellen sowie alltäglichen Rassismus in Deutschland an. Im Mittelpunkt steht dabei das migrantisch situierte Wissen der vom Nazi-Terror Betroffenen. Dieses Wissen soll sichtbar und hörbar werden.</p>
 
-            <p>SPOTS sind kurze audiovisuelle Interventionen zu Facetten des NSU-Komplexes, die unter anderem zur Mobilisierung für das Tribunal entstehen. Sie thematisieren die blind spots in der Aufarbeitung des NSU-Komplexes. Sie werfen spotlights auf die rassistischen Verhältnisse, welche rechte Netzwerke und deren Taten erst möglich machen. SPOTS verstehen dabei Ästhetik als politisches Handeln. Sie setzen der dominanten täterfixierten Bildpolitik und den medialen Überschreibungen rund um den NSU-Komplex etwas entgegen. Sie drehen Sichtbarkeiten um, stellen Widerstandsgesten dar, formulieren Fragen und Anklagen. Und wollen so eine breitere gesellschaftliche Debatte anstoßen.</p>
+                    <p>Der Begriff 'NSU-Komplex' zielt auf die Verflechtung von Nazi-Terror, Rassismus und staatlicher Involviertheit: Zwischen 1999 und 2007 werden in Deutschland neun migrantische Kleinunternehmer und eine Polizistin ermordet. Bei drei Bombenanschlägen – u.a. auf eine migrantisch geprägte Geschäftsstraße in Köln – werden zahlreiche Menschen schwer verletzt. Die Taten bleiben unaufgeklärt bis sich 2011 der sogenannte Nationalsozialistische Untergrund (NSU) selbst enttarnt und zu den Taten bekennt.
+                    Bis heute ist die Mord- und Anschlagsserie nicht vollständig aufgeklärt. Offene Fragen gibt es unter anderem zum rechtsradikalen Umfeld des NSU, sowie zur Rolle des Verfassungsschutzes, der zahlreiche Informanten im Umfeld der Täter hatte. 
+                    Deutlich geworden ist hingegen, wie tief Rassismus in Deutschland verankert ist. Nicht zuletzt innerhalb der jahrelang konsequent in die falsche Richtung ermittelnden Polizei- und Sicherheitsorgane, für die Rassismus als Tatmotiv angeblich über all die Jahre nicht erkennbar war und selbst jetzt noch kleingeredet wird.</p>
 
-            <p>SPOTS werden ab Frühjahr 2017 einzeln, in Gruppen, sowie als komplexe Reihe an verschiedenen Orten in Deutschland und darüber hinaus gezeigt. Sie werden in Werbeblöcke eingeschleust, laufen als abendfüllendes Kinoprogramm, verbreiten sich im Internet, verbinden sich als Installation im Ausstellungsraum oder sind Teil von inhaltlichen Veranstaltungsreihen.</p>
+                    <p>SPOTS sind kurze audiovisuelle Interventionen zu Facetten des NSU-Komplexes, die unter anderem zur Mobilisierung für das Tribunal entstehen. Sie thematisieren die blind spots in der Aufarbeitung des NSU-Komplexes. Sie werfen spotlights auf die rassistischen Verhältnisse, welche rechte Netzwerke und deren Taten erst möglich machen. SPOTS verstehen dabei Ästhetik als politisches Handeln. Sie setzen der dominanten täterfixierten Bildpolitik und den medialen Überschreibungen rund um den NSU-Komplex etwas entgegen. Sie drehen Sichtbarkeiten um, stellen Widerstandsgesten dar, formulieren Fragen und Anklagen. Und wollen so eine breitere gesellschaftliche Debatte anstoßen.</p>
+
+                    <p>SPOTS werden ab Frühjahr 2017 einzeln, in Gruppen, sowie als komplexe Reihe an verschiedenen Orten in Deutschland und darüber hinaus gezeigt. Sie werden in Werbeblöcke eingeschleust, laufen als abendfüllendes Kinoprogramm, verbreiten sich im Internet, verbinden sich als Installation im Ausstellungsraum oder sind Teil von inhaltlichen Veranstaltungsreihen.</p>
+
+                    <p>Der Begriff 'NSU-Komplex' zielt auf die Verflechtung von Nazi-Terror, Rassismus und staatlicher Involviertheit: Zwischen 1999 und 2007 werden in Deutschland neun migrantische Kleinunternehmer und eine Polizistin ermordet. Bei drei Bombenanschlägen – u.a. auf eine migrantisch geprägte Geschäftsstraße in Köln – werden zahlreiche Menschen schwer verletzt. Die Taten bleiben unaufgeklärt bis sich 2011 der sogenannte Nationalsozialistische Untergrund (NSU) selbst enttarnt und zu den Taten bekennt.
+                    Bis heute ist die Mord- und Anschlagsserie nicht vollständig aufgeklärt. Offene Fragen gibt es unter anderem zum rechtsradikalen Umfeld des NSU, sowie zur Rolle des Verfassungsschutzes, der zahlreiche Informanten im Umfeld der Täter hatte. 
+                    Deutlich geworden ist hingegen, wie tief Rassismus in Deutschland verankert ist. Nicht zuletzt innerhalb der jahrelang konsequent in die falsche Richtung ermittelnden Polizei- und Sicherheitsorgane, für die Rassismus als Tatmotiv angeblich über all die Jahre nicht erkennbar war und selbst jetzt noch kleingeredet wird.</p>
+
+                    <p>SPOTS sind kurze audiovisuelle Interventionen zu Facetten des NSU-Komplexes, die unter anderem zur Mobilisierung für das Tribunal entstehen. Sie thematisieren die blind spots in der Aufarbeitung des NSU-Komplexes. Sie werfen spotlights auf die rassistischen Verhältnisse, welche rechte Netzwerke und deren Taten erst möglich machen. SPOTS verstehen dabei Ästhetik als politisches Handeln. Sie setzen der dominanten täterfixierten Bildpolitik und den medialen Überschreibungen rund um den NSU-Komplex etwas entgegen. Sie drehen Sichtbarkeiten um, stellen Widerstandsgesten dar, formulieren Fragen und Anklagen. Und wollen so eine breitere gesellschaftliche Debatte anstoßen.</p>
+
+                    <p>SPOTS werden ab Frühjahr 2017 einzeln, in Gruppen, sowie als komplexe Reihe an verschiedenen Orten in Deutschland und darüber hinaus gezeigt. Sie werden in Werbeblöcke eingeschleust, laufen als abendfüllendes Kinoprogramm, verbreiten sich im Internet, verbinden sich als Installation im Ausstellungsraum oder sind Teil von inhaltlichen Veranstaltungsreihen.</p>
+
+                </div>
+            </div>
         </div>
+
     </div>
 
 <script src="assets/scripts/main.js"

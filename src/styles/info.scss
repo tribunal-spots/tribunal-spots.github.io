@@ -1,0 +1,25 @@
+.info__panel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    background: #000;
+    // font-family: $second-font-family;
+    color: #fff;
+    font-weight: 400;
+
+    &__scrollable {
+        // height: 100%;
+        height: 80vh;
+        overflow: scroll;
+    }
+
+    @include small {
+        width: 85vmin;
+        padding: 50px;
+    }
+}
