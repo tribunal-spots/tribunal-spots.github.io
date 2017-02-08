@@ -1,0 +1,40 @@
+{
+  "name": "nsu-spots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavpursche/nsu-spots.git"
+  },
+  "author": "Nikolai Sivertsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavpursche/nsu-spots/issues"
+  },
+  "homepage": "https://github.com/gustavpursche/nsu-spots#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^1.0.1",
+    "webpack": "^2.2.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.22.0"
+  }
+}
