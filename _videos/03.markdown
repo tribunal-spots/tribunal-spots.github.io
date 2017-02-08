@@ -1,0 +1,7 @@
+---
+youtube_url: "vwLq8Dzhj7s"
+image_url: "image.jpg"
+title_de: "Weil ich nunmal hier lebe."
+title_en: "Because I live here."
+title_tr: "Weil ich nunmal hier lebe."
+---
