@@ -4,9 +4,19 @@
 {% include head.html %}
 {% include svg.html %}
 
-{% assign lang = 'de' %}
+{% if page.lang %}
+    {% assign lang = page.lang %}
+{% else %}
+    {% assign lang = 'de' %}
+{% endif %}
 
-{% assign videos = (site.videos | sort:'id') %}
+{% if lang == 'de' %}
+    {% assign videos = site.videos_de %}
+{% elsif lang == 'en' %}
+    {% assign videos = site.videos_en %}
+{% else %}
+    {% assign videos = site.videos_tr %}
+{% endif %}
 
 {% if page.is_video %}
     {% assign current_video = page %}
@@ -43,9 +53,6 @@
 
                         <div class="slide {% if current_video == video %}slide__active{% endif %}" data-url="">
                             <h2 class="slide__title">{{ video.title }}</h2>
-                            {{ page.lang }}
-                            --
-                            {{ video.lang }}
                         </div>
 
                         {% endfor %}
@@ -54,7 +61,7 @@
                     {% if page.next.url %}
                         {% assign next_url = page.next.url %}
                     {% elsif page.is_video %}
-                        {% assign next_url = site.videos.first.url %}
+                        {% assign next_url = videos.first.url %}
                     {% else %}
                         {% assign next_url = videos[1].url %}
                     {% endif %}
@@ -62,7 +69,7 @@
                     {% if page.previous.url %}
                         {% assign prev_url = page.previous.url %}
                     {% else %}
-                        {% assign prev_url = site.videos.last.url %}
+                        {% assign prev_url = videos.last.url %}
                     {% endif %}
 
                     <div class="button arrow arrow--prev">

@@ -27,9 +27,15 @@ twitter_username: jekyllrb
 permalink: pretty
 
 collections:
-  videos:
+  videos_de:
     output: true
-    permalink: /:path/
+    permalink: /de/spots/:name/
+  videos_en:
+    output: true
+    permalink: /en/spots/:name/
+  videos_tr:
+    output: true
+    permalink: /tr/spots/:name/
 
 defaults:
   - scope:
@@ -38,23 +44,21 @@ defaults:
       layout: 'default'
   - scope:
       path: ''
-      type: 'videos'
+      type: 'videos_de'
     values:
       is_video: true
-  - scope:
-      path: '_videos/de'
-      type: 'videos'
-    values:
       lang: 'de'
   - scope:
-      path: '_videos/en'
-      type: 'videos'
+      path: ''
+      type: 'videos_en'
     values:
+      is_video: true
       lang: 'en'
   - scope:
-      path: '_videos/tr'
-      type: 'videos'
+      path: ''
+      type: 'videos_tr'
     values:
+      is_video: true
       lang: 'tr'
 
 # Build settings
