@@ -73,7 +73,7 @@
                     {% endif %}
 
                     <div class="button arrow arrow--prev">
-                        <a href="{{ prev_url }}">
+                        <a href="{{ prev_url  | relative_url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
                             </svg>
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="button arrow arrow-next">
-                        <a href="{{ next_url }}">
+                        <a href="{{ next_url  | relative_url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
                             </svg>
