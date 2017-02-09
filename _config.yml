@@ -43,6 +43,21 @@ defaults:
     values:
       layout: 'default'
   - scope:
+      path: 'de'
+      type: 'pages'
+    values:
+      is_page: true
+  - scope:
+      path: 'en'
+      type: 'pages'
+    values:
+      is_page: true
+  - scope:
+      path: 'tr'
+      type: 'pages'
+    values:
+      is_page: true
+  - scope:
       path: ''
       type: 'videos_de'
     values:

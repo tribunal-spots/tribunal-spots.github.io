@@ -1,0 +1,75 @@
+{% if lang == 'de' %}
+    {% assign videos = site.videos_de %}
+{% elsif lang == 'en' %}
+    {% assign videos = site.videos_en %}
+{% else %}
+    {% assign videos = site.videos_tr %}
+{% endif %}
+
+{% if page.is_video %}
+    {% assign current_video = page %}
+{% else %}
+    {% assign current_video = videos[0] %}
+{% endif %}
+
+{% if page.next.url %}
+    {% assign next_url = page.next.url %}
+{% elsif page.is_video %}
+    {% assign next_url = videos.first.url %}
+{% else %}
+    {% assign next_url = videos[1].url %}
+{% endif %}
+
+{% if page.previous.url %}
+    {% assign prev_url = page.previous.url %}
+{% else %}
+    {% assign prev_url = videos.last.url %}
+{% endif %}
+
+<div class="layer layer__content">
+
+    <main class="content" aria-label="Content">
+
+        {% include header.html %}
+
+        <section class="slider">
+            <div class="slides">
+
+                {% for video in videos %}
+
+                <div class="slide {% if current_video == video %}slide__active{% endif %}" data-url="">
+                    <h2 class="slide__title">{{ video.title }}</h2>
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="button arrow arrow--prev">
+                <a href="{{ prev_url  | relative_url }}">
+                    <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="button arrow arrow-next">
+                <a href="{{ next_url  | relative_url }}">
+                    <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="video-control">
+            <a href="http://www.youtube.com/watch?v={{ current_video.youtube_url }}">
+                <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
+                </svg>
+            </a>
+        </section>
+
+    </main>
+
+</div>
