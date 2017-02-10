@@ -58,6 +58,7 @@ defaults:
 markdown: kramdown
 
 prose:
+  media: 'images'
   metadata:
     _spots:
       - name: 'youtube_id'
