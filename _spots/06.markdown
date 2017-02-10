@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title_de: Was weiß Andreas T?
 title_tr: What does Andreas T know?
 title_en: Andreas T. ne biliyor?
