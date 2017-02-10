@@ -36,7 +36,7 @@ $.getJSON('data.json', function(data) {
 
         $(`#slide--${current}`).addClass('slide__active');
 
-        $('.layer__background').css('background-image', `url(/images/${data.spots[current].id}.jpg)`);
+        $('.layer__background').css('background-image', `url(images/${data.spots[current].id}.jpg)`);
         $('.video-control a').attr('href', `https://www.youtube.com/watch?v=${data.spots[current].youtube_id}`);
     });
 
