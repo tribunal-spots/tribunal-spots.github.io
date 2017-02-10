@@ -1,0 +1,8 @@
+---
+number: "02"
+youtube_id: "phvnXiSfrOI"
+image_url: "image.jpg"
+title_de: "Fahren Nazis Fahrrad?"
+title_tr: "Do Nazis ride on bicycles?"
+title_en: "Fahren Nazis Fahrrad?"
+---
