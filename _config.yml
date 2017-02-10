@@ -47,16 +47,19 @@ defaults:
       type: 'pages'
     values:
       is_page: true
+      lang: 'de'
   - scope:
       path: 'en'
       type: 'pages'
     values:
       is_page: true
+      lang: 'en'
   - scope:
       path: 'tr'
       type: 'pages'
     values:
       is_page: true
+      lang: 'tr'
   - scope:
       path: ''
       type: 'videos_de'
@@ -78,8 +81,14 @@ defaults:
 
 # Build settings
 markdown: kramdown
-# gems:
-#   - jekyll-feed
+
+prose:
+  ignore:
+    - '_includes'
+    - '_layouts'
+    - 'assets'
+    - 'src'
+
 exclude:
   - Gemfile
   - Gemfile.lock
