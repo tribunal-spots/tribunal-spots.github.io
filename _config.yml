@@ -87,6 +87,9 @@ prose:
     - 'gulpfile.js'
     - 'package.json'
     - 'webpack.config.js'
+    - 'LICENSE'
+    - '_config.yml'
+    - 'data.json'
 
 exclude:
   - Gemfile
