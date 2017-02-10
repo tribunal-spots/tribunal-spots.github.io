@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Intro
+published: true
 ---
 
 ### Audiovisuelle Mikro-Interventionen zum _TRIBUNAL NSU-Komplex auflösen_ und darüber hinaus
 
 > Wie können wir das Feld des Sichtbaren so verändern, dass rassistische Strukturen anklagbar und (post-)migrantische Realitäten und Perspektiven unübersehbar und unüberhörbar werden?
+
+...
 
 Vom 17. bis 21. Mai 2017 wird in Köln Mühlheim das _TRIBUNAL NSU-Komplex auflösen_ stattfinden.
 Das Tribunal widmet sich zahlreichen offenen Fragen rund um den NSU-Komplex und klagt institutionellen sowie alltäglichen Rassismus in Deutschland an. Im Mittelpunkt steht dabei das migrantisch situierte Wissen der vom Nazi-Terror Betroffenen. Dieses Wissen soll sichtbar und hörbar werden.
