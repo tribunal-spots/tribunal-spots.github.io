@@ -77,6 +77,10 @@ prose:
         field:
           element: 'text'
           label: 'Titel (EN)'
+      - name: 'content'
+        field:
+          element: 'hidden'
+          value: ''
   ignore:
     - '_includes'
     - '_layouts'
