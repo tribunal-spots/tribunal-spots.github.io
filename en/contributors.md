@@ -1,8 +1,5 @@
 ---
-layout: default
-title: Mitwirkende
+title: Contributors
 ---
-
-### Contributors
 
 (alphabetic List of Names coming soon)

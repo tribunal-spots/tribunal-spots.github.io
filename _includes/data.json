@@ -1,0 +1,31 @@
+{
+    "spots": [
+        {% for spot in site.spots %}{
+            "id": "{{ spot.id | split: '/' | last }}",
+            "youtube_id": "{{ spot.youtube_id | escape }}",
+            "title": {
+                "de": "{{ spot.title_de | escape }}",
+                "tr": "{{ spot.title_tr | escape }}",
+                "en": "{{ spot.title_en | escape }}"
+            }
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
+    "pages": {
+        {% assign pages_de = site.pages | where: 'lang', 'de' %}
+        {% assign langs = 'de,tr,en' | split: ',' %}
+        {% for page in pages_de %}"{{ page.name | remove: '.md' }}": {
+            "de": {
+                "title": "{{ page.title }}",
+                "content": "{{ page.content | markdownify | strip_newlines | escape }}"
+            },
+            "tr": {
+                "title": "{{ page.title }}",
+                "content": "{{ page.content | markdownify | strip_newlines | escape }}"
+            },
+            "en": {
+                "title": "{{ page.title }}",
+                "content": "{{ page.content | markdownify | strip_newlines | escape }}"
+            }    
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    }
+}

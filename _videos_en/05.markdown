@@ -1,5 +1,0 @@
----
-youtube_url: "gGhBZI8w8fA"
-image_url: "image.jpg"
-title: "And then... what happened afterwards?"
----

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Intro
 ---
 
 ### Audiovisual Micro-Interventions for _TRIBUNAL Unraveling the NSU Complex_ and beyond 

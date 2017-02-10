@@ -1,5 +1,0 @@
----
-youtube_url: "8-hQ5s_NZy0"
-image_url: "image.jpg"
-title: "Ist das ein Laden oder eine Gedenkstätte?"
----

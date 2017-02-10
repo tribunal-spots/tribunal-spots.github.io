@@ -1,5 +1,0 @@
----
-youtube_url: "vwLq8Dzhj7s"
-image_url: "image.jpg"
-title: "Weil ich nunmal hier lebe."
----

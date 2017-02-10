@@ -1,5 +1,0 @@
----
-youtube_url: "phvnXiSfrOI"
-image_url: "image.jpg"
-title: "Do Nazis ride on bicycles?"
----

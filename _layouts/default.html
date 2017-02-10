@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% assign path = page.url | remove_first: "/" | split: "/" %}
+{% assign first_spot = "de/spots/01" | split: "/" %}
+
+{% unless path[0] %}
+    {% assign path = first_spot %}
+{% endunless %}
+<html lang="{{ path[0] }}">
 
 {% include head.html %}
 {% include svg.html %}
 
-{% if page.lang %}
-    {% assign lang = page.lang %}
+{% assign langs = "de,en,tr" | split: "," %}
+
+{% if path[1] == "spots" %}
+    {% assign current_spot = path %}
 {% else %}
-    {% assign lang = 'de' %}
+    {% assign current_spot = first_spot %}
 {% endif %}
 
+{% assign image_url = '/images/' | append: current_spot[2] | append: '.jpg' %}
 
-{% if page.is_video %}
-    {% assign is_video = true %}
-{% elsif page.url == "/" %}
-    {% assign is_video = true %}
+{% if path[0] == "de" %}
+    {% assign spots = site.videos_de %}
+{% elsif path[0] == "en" %}
+    {% assign spots = site.videos_en %}
+{% else %}
+    {% assign spots = site.videos_tr %}
 {% endif %}
 
-{% unless is_video %}
-    {% assign show_info = true %}
-{% endunless %}
+{% if page.next.url %}
+    {% assign next_url = page.next.url %}
+{% elsif page.is_video %}
+    {% assign next_url = spots.first.url %}
+{% else %}
+    {% assign next_url = spots[1].url %}
+{% endif %}
 
-{% assign image_url = '/images/' | append: current_video.slug | append: '.jpg' %}
-{% assign image_url = '/images/01.jpg' %}
+{% if page.previous.url %}
+    {% assign prev_url = page.previous.url %}
+{% else %}
+    {% assign prev_url = spots.last.url %}
+{% endif %}
 
 <style>
 .layer__background {
     background: url({{ image_url | relative_url }}) no-repeat center center fixed; 
 }
+
+.layer__info:target {
+    display: block;
+}
+
 </style>
 
-<body>
+<body class="lang--{{ path[0] }} page--{{ path[1] }}">
 
     <div class="site">
 
@@ -40,15 +63,87 @@
         <div class="layer layer__background-overlay">
         </div>
 
-        {% if is_video %}
-            {% include content.html %}
-        {% endif %}
+        <div class="layer layer__content">
 
-        {% include info.html visible=show_info %}
+            <main class="content" aria-label="Content">
+
+                {% include header.html %}
+
+                <section class="slider">
+                    <div class="slides content--{{ path[0] }}">
+                        {% for video in spots %}
+                        {% assign video_id = (video.id | remove_first: "/" | split: "/") %}
+                        {% assign video_id = video_id[2] %}
+                        <!--<div class="slide {% if current_spot[2] == video_id %}slide__active{% endif %}" data-url="">
+                            <h2 class="slide__title">{{ video.title }}</h2>
+                        </div>-->
+
+                        {% endfor %}
+                    </div>
+
+                    <div class="button arrow arrow--prev">
+                        <a href="{{ prev_url  | relative_url }}">
+                            <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="button arrow arrow--next">
+                        <a href="{{ next_url  | relative_url }}">
+                            <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="video-control">
+                    <a href="http://www.youtube.com/watch?v={{ page.youtube_url }}">
+                        <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
+                        </svg>
+                    </a>
+                </section>
+
+            </main>
+
+        </div>
+
+        <div id="menu" class="layer layer__info {% unless path[1] == 'spots' %}layer__info--visible{% endunless %}">
+
+            <div class="info__panel">
+
+                    <a href="/{{ path[0] }}/menu/">
+                        <svg class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2 L50 2" fill="none" stroke="white" stroke-width="4"/>
+                            <path d="M0 10 L50 10" fill="none" stroke="white" stroke-width="4"/>
+                            <path d="M0 18 L50 18" fill="none" stroke="white" stroke-width="4"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" style="position:absolute; top:0; right: 0;">x</a>
+
+                <h1>SPOTS</h1>
+
+                <div class="info__panel__scrollable">
+
+                        {% unless path[1] == "spots" %}
+
+                        <div class="page page--{{ page.name | split: "." | first }} content--{{ path[0] }}">
+                            <h2>{{ page.title }}</h2>
+                            {{ page.content | markdownify }}
+                        </div>
+
+                        {% endunless %}
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
-<script src="assets/scripts/main.js"
+<script src="{{ '/assets/scripts/main.js' | relative_url }}"
         async
         defer></script>
 

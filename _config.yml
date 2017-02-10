@@ -27,21 +27,14 @@ twitter_username: jekyllrb
 permalink: pretty
 
 collections:
-  videos_de:
-    output: true
-    permalink: /de/spots/:name/
-  videos_en:
-    output: true
-    permalink: /en/spots/:name/
-  videos_tr:
-    output: true
-    permalink: /tr/spots/:name/
+  spots:
+    output: false
 
 defaults:
-  - scope:
-      path: ''
-    values:
-      layout: 'default'
+  # - scope:
+  #     path: ''
+  #   values:
+  #     layout: 'default'
   - scope:
       path: 'de'
       type: 'pages'
@@ -59,24 +52,6 @@ defaults:
       type: 'pages'
     values:
       is_page: true
-      lang: 'tr'
-  - scope:
-      path: ''
-      type: 'videos_de'
-    values:
-      is_video: true
-      lang: 'de'
-  - scope:
-      path: ''
-      type: 'videos_en'
-    values:
-      is_video: true
-      lang: 'en'
-  - scope:
-      path: ''
-      type: 'videos_tr'
-    values:
-      is_video: true
       lang: 'tr'
 
 # Build settings
@@ -105,7 +80,6 @@ prose:
         field:
           element: 'text'
           label: 'Youtube-ID'
-
   ignore:
     - '_includes'
     - '_layouts'

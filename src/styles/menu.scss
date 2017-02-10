@@ -1,0 +1,17 @@
+a,
+a:visited {
+    color: #fff;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+nav {
+    text-align: center;
+    
+    a {
+        font-family: 'Montserrat';
+        text-decoration: none;
+    }
+}

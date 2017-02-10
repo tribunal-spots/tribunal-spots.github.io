@@ -1,5 +1,0 @@
----
-youtube_url: "TMKh7_GR8jA"
-image_url: "image.jpg"
-title: "Where have you been on June 9, 2004?"
----

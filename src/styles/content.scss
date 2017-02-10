@@ -9,8 +9,8 @@
     background: #fff;
 
     @include small {
-        width: 70vmin;
-        height: 70vmin;
+        width: 80vmin;
+        height: 80vmin;
         border-radius: 70vmin;
     }
 }
@@ -35,6 +35,7 @@
     align-items: center;
     justify-content: space-between;
     flex: 1;
+    width: 100%;
     padding: 0 5vmin;
 }
 
@@ -50,6 +51,10 @@
 
 .button:hover {
     opacity: .5;
+}
+
+.slides {
+    padding: 20px;
 }
 
 .slide {

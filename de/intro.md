@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Intro
 ---
 
 ### Audiovisuelle Mikro-Interventionen zum _TRIBUNAL NSU-Komplex auflösen_ und darüber hinaus

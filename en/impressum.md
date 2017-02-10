@@ -1,14 +1,11 @@
 ---
-layout: default
 title: Impressum
 ---
 
-### Impressum
-
-__Tribunal Unraveling the NSU Complex__
-℅ Allerweltshaus
-Körnerstr. 77-79
-50823 Köln
+__Tribunal Unraveling the NSU Complex__<br>
+℅ Allerweltshaus<br>
+Körnerstr. 77-79<br>
+50823 Köln<br>
 Germany
 
 Those responsible: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Alex Gerbaulet, Betti Hohorst

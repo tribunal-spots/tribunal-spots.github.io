@@ -43,6 +43,17 @@
 
                 {% endfor %}
 
+                <!--{% for pager in (site.pages | group_by: 'lang') %}
+                    {{ pager }}
+                {% endfor %}-->
+
+                {% assign pp = site.pages | group_by: 'name' %}
+                {{ pp | inspect }}
+
+                <!--{% for spot in site.data.spots %}
+                    {{ spot }}
+                {% endfor %}-->
+
             </div>
 
             <div class="button arrow arrow--prev">
