@@ -88,6 +88,12 @@ prose:
     - '_layouts'
     - 'assets'
     - 'src'
+    - '.gitignore'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'gulpfile.js'
+    - 'package.json'
+    - 'webpack.config.js'
 
 exclude:
   - Gemfile
