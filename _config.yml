@@ -60,10 +60,10 @@ markdown: kramdown
 prose:
   metadata:
     _spots:
-      - name: 'number'
+      - name: 'youtube_id'
         field:
           element: 'text'
-          label: 'Nummer'
+          label: 'Youtube-ID'
       - name: 'title_de'
         field:
           element: 'text'
@@ -76,10 +76,6 @@ prose:
         field:
           element: 'text'
           label: 'Titel (EN)'
-      - name: 'youtube_id'
-        field:
-          element: 'text'
-          label: 'Youtube-ID'
   ignore:
     - '_includes'
     - '_layouts'
