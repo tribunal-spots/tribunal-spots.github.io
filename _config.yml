@@ -90,6 +90,7 @@ prose:
     - 'LICENSE'
     - '_config.yml'
     - 'data.json'
+    - 'index.md'
 
 exclude:
   - Gemfile
