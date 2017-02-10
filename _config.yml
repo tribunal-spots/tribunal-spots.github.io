@@ -83,6 +83,29 @@ defaults:
 markdown: kramdown
 
 prose:
+  metadata:
+    _spots:
+      - name: 'number'
+        field:
+          element: 'text'
+          label: 'Nummer'
+      - name: 'title_de'
+        field:
+          element: 'text'
+          label: 'Titel (DE)'
+      - name: 'title_tr'
+        field:
+          element: 'text'
+          label: 'Titel (TR)'
+      - name: 'title_en'
+        field:
+          element: 'text'
+          label: 'Titel (EN)'
+      - name: 'youtube_id'
+        field:
+          element: 'text'
+          label: 'Youtube-ID'
+
   ignore:
     - '_includes'
     - '_layouts'
