@@ -47,3 +47,17 @@ $.getJSON('data.json', function(data) {
     .fail(function () {
         console.log('fail...');
     });
+
+$('.header-main a').on('click', (e) => {
+    e.preventDefault();
+
+    $('.layer__info').addClass('layer__info--visible');
+
+    $('.info__panel_scrollable').html(`${data.content.menu.de.title}`);
+});
+
+$('a.close').on('click', (e) => {
+    e.preventDefault();
+
+    $('.layer__info').removeClass('layer__info--visible');
+});

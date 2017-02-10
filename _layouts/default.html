@@ -114,17 +114,22 @@
 
             <div class="info__panel">
 
-                    <a href="/{{ path[0] }}/menu/">
-                        <svg class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
+                    <a class="menubutton" style="text-align: center;" href="/{{ path[0] }}/menu/">
+                        <svg style="display:  block; margin: 0 auto;" class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 2 L50 2" fill="none" stroke="white" stroke-width="4"/>
                             <path d="M0 10 L50 10" fill="none" stroke="white" stroke-width="4"/>
                             <path d="M0 18 L50 18" fill="none" stroke="white" stroke-width="4"/>
                         </svg>
                     </a>
 
-                    <a href="#" style="position:absolute; top:0; right: 0;">x</a>
+                    <a class="close" href="#" style="position:absolute; top:10px; right: 10px;">
+                        <svg class="close" width="30" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0 L50 50" fill="none" stroke="white" stroke-width="4"/>
+                            <path d="M50 0 L0 50" fill="none" stroke="white" stroke-width="4"/>
+                        </svg>
+                    </a>
 
-                <h1>SPOTS</h1>
+                <h1 style="display: none; font-size: 100px;">SPOTS</h1>
 
                 <div class="info__panel__scrollable">
 

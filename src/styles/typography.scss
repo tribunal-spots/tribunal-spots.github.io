@@ -41,12 +41,18 @@ h1, h2 {
     font-size: 2rem;
     line-height: 20 * 1.2 + px;
     line-height: 2 * 1.2 + rem;
+    
+    // TODO: fix
+    margin-top: -11px;
 
     @include small {
         font-size: 44px;
         font-size: 4.4rem;
         line-height: 40 * 1.2 + px;
         line-height: 4 * 1.2 + rem;
+
+        // TODO: fix
+        margin-top: -21px;
     }
 }
 
