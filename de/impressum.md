@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Impressum
+published: true
 ---
 
 __Tribunal NSU-Komplex auflösen__<br>
