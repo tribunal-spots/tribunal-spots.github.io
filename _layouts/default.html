@@ -67,7 +67,7 @@
                         {% else %}
                             {% assign previous_spot = spots.last %}
                         {% endif %}
-                        <a href="{{ previous_spot.url }}">
+                        <a href="{{ previous_spot.url | relative_url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
                             </svg>
@@ -80,7 +80,7 @@
                         {% else %}
                             {% assign next_spot = spots.last %}
                         {% endif %}
-                        <a href="{{ next_spot.url }}">
+                        <a href="{{ next_spot.url | relative_url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
                             </svg>
