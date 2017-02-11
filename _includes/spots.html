@@ -1,5 +1,0 @@
-{% for spot in include.spots %}
-<div class="slide {% if spot.slug == include.active.slug %}slide__active{% endif %}" data-id="{{ spot.slug }}">
-    <h2 class="slide__title">{{ spot.title }}</h2>
-</div>
-{% endfor %}
