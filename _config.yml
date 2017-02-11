@@ -27,7 +27,11 @@ twitter_username: jekyllrb
 permalink: pretty
 
 collections:
-  spots:
+  spots_de:
+    output: false
+  spots_en:
+    output: false
+  spots_tr:
     output: false
 
 defaults:
@@ -52,6 +56,21 @@ defaults:
       type: 'pages'
     values:
       is_page: true
+      lang: 'tr'
+  - scope:
+      path: '_spots_de'
+      type: 'spots_de'
+    values:
+      lang: 'de'
+  - scope:
+      path: '_spots_en'
+      type: 'spots_en'
+    values:
+      lang: 'en'
+  - scope:
+      path: '_spots_tr'
+      type: 'spots_tr'
+    values:
       lang: 'tr'
 
 # Build settings

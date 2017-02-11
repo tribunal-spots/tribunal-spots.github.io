@@ -7,7 +7,7 @@ $.getJSON('data.json', function(data) {
     var current = 0;
 
     for (var i = 0; i < total; ++i) {
-        $('.slides').append(`<div class="slide" id="slide--${i}"><h2>${data.spots[i].title.de}</h2></div>`)
+        $('.slides').append(`<div class="slide" id="slide--${i}"><h2>${data.spots[i].de.title}</h2></div>`)
     }
 
     // $('.slide')[current].classList += 'slide__active';
@@ -24,7 +24,7 @@ $.getJSON('data.json', function(data) {
         $(`#slide--${current}`).addClass('slide__active');
 
         $('.layer__background').css('background-image', `url(images/${data.spots[current].id}.jpg)`);
-        $('.video-control a').attr('href', `https://www.youtube.com/watch?v=${data.spots[current].youtube_id}`);
+        $('.video-control a').attr('href', `https://www.youtube.com/watch?v=${data.spots[current].de.youtube_id}`);
     });
 
     $('.arrow--prev a').on('click', (e) => {
@@ -37,7 +37,7 @@ $.getJSON('data.json', function(data) {
         $(`#slide--${current}`).addClass('slide__active');
 
         $('.layer__background').css('background-image', `url(images/${data.spots[current].id}.jpg)`);
-        $('.video-control a').attr('href', `https://www.youtube.com/watch?v=${data.spots[current].youtube_id}`);
+        $('.video-control a').attr('href', `https://www.youtube.com/watch?v=${data.spots[current].de.youtube_id}`);
     });
 
 })

@@ -5,18 +5,16 @@ html {
 }
 
 body {
+    // TODO: better fallback for Bitter
     font-family: 'Bitter', Georgia, serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     font-size: 1.6rem;
-    line-height: 20px;
-    line-height: 2rem;
+    line-height: 1.4;
 
     @include small{
         font-size: 20px;
         font-size: 2rem;
-        line-height: 28px;
-        line-height: 2.8rem;
     }
 }
 
@@ -37,24 +35,20 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
     font-size: 20px;
     font-size: 2rem;
-    line-height: 20 * 1.2 + px;
-    line-height: 2 * 1.2 + rem;
-    
-    // TODO: fix
-    margin-top: -11px;
+    line-height: 1.2;
+    margin-top: -12px;
+    margin-top: -1.2rem;
 
     @include small {
         font-size: 44px;
         font-size: 4.4rem;
-        line-height: 40 * 1.2 + px;
-        line-height: 4 * 1.2 + rem;
-
-        // TODO: fix
-        margin-top: -21px;
     }
 }
+
+// TODO: all headings
 
 h2 {
 
