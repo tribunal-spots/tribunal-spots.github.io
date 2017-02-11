@@ -17,19 +17,13 @@
 
 <style>
 .layer__background {
-    background: url({{ image_url | relative_url }}) no-repeat center center fixed; 
-    background-size: cover;
+    background: url({{ image_url | relative_url }}) center center/cover no-repeat fixed;
 }
-
-.layer__info:target {
-    display: block;
-}
-
 </style>
 
-<body class="page--{{ page.slug }}">
+<body>
 
-    <div class="site">
+    <div class="root">
 
         <div class="layer layer__background">
         </div>
@@ -37,11 +31,11 @@
         <div class="layer layer__background-overlay">
         </div>
 
-        <div class="layer layer__content">
+        <div class="layer layer__spots">
 
-            <main class="content" aria-label="Content">
+            <main class="spots" aria-label="Content">
 
-                <header class="header-main">
+                <header class="spots__header">
                     <svg viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
                         <text x="0" y="15" font-family="Montserrat" font-size="15">
                             SPOTS
@@ -56,12 +50,12 @@
                     </a>
                 </header>
 
-                <section class="slider">
-                    <div class="slides">
-                        {% include slides.html spots=spots active=current_spot %}
+                <section class="spots__slider">
+                    <div class="spots_slides">
+                        {% include spots.html spots=spots active=current_spot %}
                     </div>
 
-                    <div class="button arrow arrow--prev">
+                    <div class="spots__nav spots__nav--prev">
                         {% if page.previous %}
                             {% assign previous_spot = page.previous %}
                         {% else %}
@@ -74,11 +68,11 @@
                         </a>
                     </div>
 
-                    <div class="button arrow arrow--next">
+                    <div class="spots__nav spots__nav--next">
                         {% if page.next %}
                             {% assign next_spot = page.next %}
                         {% else %}
-                            {% assign next_spot = spots.last %}
+                            {% assign next_spot = spots.first %}
                         {% endif %}
                         <a href="{{ next_spot.url | relative_url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +82,7 @@
                     </div>
                 </section>
 
-                <section class="video-control">
+                <section class="spots__play">
                     <a href="http://www.youtube.com/watch?v={{ current_spot.youtube_id }}">
                         <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>

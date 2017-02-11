@@ -1,0 +1,60 @@
+.spots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vmin;
+    height: 85vmin;
+    border-radius: 85vmin;
+    background: #fff;
+
+    @include small {
+        width: 80vmin;
+        height: 80vmin;
+        border-radius: 80vmin;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+
+    &__slider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        width: 100%;
+        padding: 0 5vmin;
+    }
+
+    &__slides {
+        padding: 20px;
+    }
+
+    &__play {
+        display: flex;
+        align-items: center;
+        flex: 1; // TODO: needed?
+    }
+
+    &__nav {
+        &--prev {
+            order: -1;
+        }
+    }
+}
+
+.slide {
+    display: none;
+
+    &__active {
+        display: block;
+    }
+}

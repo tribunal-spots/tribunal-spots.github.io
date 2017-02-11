@@ -1,31 +1,33 @@
-<div id="{{ include.page.slug }}" class="layer layer__info">
+<div id="{{ include.page.slug }}" class="layer layer__popup">
 
-    <div class="info__panel">
+    <div class="popup">
 
-            <a class="menubutton" style="text-align: center;" href="#menu">
-                <svg style="display:  block; margin: 0 auto;" class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 2 L50 2" fill="none" stroke="white" stroke-width="4"/>
-                    <path d="M0 10 L50 10" fill="none" stroke="white" stroke-width="4"/>
-                    <path d="M0 18 L50 18" fill="none" stroke="white" stroke-width="4"/>
-                </svg>
-            </a>
-
-            <a class="close" href="#" style="position:absolute; top:10px; right: 10px;">
+            <a class="popup__close" href="#">
                 <svg class="close" width="30" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0 L50 50" fill="none" stroke="white" stroke-width="4"/>
                     <path d="M50 0 L0 50" fill="none" stroke="white" stroke-width="4"/>
                 </svg>
             </a>
 
-        <h1 style="display: none; font-size: 100px;">SPOTS</h1>
+            <section class="page">
 
-        <div class="info__panel__scrollable">
+                <a class="page__hamburger" href="#menu">
+                    <svg class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2 L50 2" fill="none" stroke="white" stroke-width="4"/>
+                        <path d="M0 10 L50 10" fill="none" stroke="white" stroke-width="4"/>
+                        <path d="M0 18 L50 18" fill="none" stroke="white" stroke-width="4"/>
+                    </svg>
+                </a>
 
-                <div class="page page--{{ include.page.slug }} content--{{ include.page.lang }}">
+                <div class="page__title">
                     <h2>{{ include.page.title }}</h2>
+                </div>
+
+                <div class="page__content">
                     {{ include.page.content | markdownify }}
                 </div>
 
-        </div>
+            </section>
+
     </div>
 </div>

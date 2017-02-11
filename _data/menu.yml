@@ -1,13 +1,13 @@
-top:
+primary:
   - slug: intro
     title:
         de: Intro
         en: Intro
         tr: Intro
-  - slug: collaborators
+  - slug: contributors
     title:
         de: Mitwirkende
-        en: Collaborators
+        en: Contributors
         tr: Mitwirkende
   - slug: contact
     title:
@@ -19,7 +19,7 @@ top:
         de: Impressum
         en: Impressum
         tr: Impressum
-bottom:
+secondary:
   - slug: tribunal
     title:
       de: Tribunal
