@@ -36,9 +36,10 @@
                     <p>
                         <nav class="lang-menu">
                             <ul>
-                                <li><a href="/de/spots/{{ include.current_spot.slug }}/">Deutsch</a></li>
-                                <li><a href="/tr/spots/{{ include.current_spot.slug }}/">Türkisch</a></li>
-                                <li><a href="/en/spots/{{ include.current_spot.slug }}/">English</a></li>
+                                {% assign current_spot_slug = include.current_spot.slug %}
+                                <li><a href="{{ '/de/spots/' | append: current_spot_slug | append: '/' | relative_url }}">Deutsch</a></li>
+                                <li><a href="{{ '/tr/spots/' | append: current_spot_slug | append: '/' | relative_url }}">Türkisch</a></li>
+                                <li><a href="{{ '/en/spots/' | append: current_spot_slug | append: '/' | relative_url }}">English</a></li>
                             </ul>
                         </nav>
                     </p>
