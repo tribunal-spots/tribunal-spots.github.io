@@ -1,46 +1,19 @@
 <!DOCTYPE html>
-{% assign path = page.url | remove_first: "/" | split: "/" %}
-{% assign first_spot = "de/spots/01" | split: "/" %}
-
-{% unless path[0] %}
-    {% assign path = first_spot %}
-{% endunless %}
-<html lang="{{ path[0] }}">
+<html lang="{{ page.lang }}">
 
 {% include head.html %}
-{% include svg.html %}
 
-{% assign langs = "de,en,tr" | split: "," %}
+{% assign spots_collection = 'spots_' | append: page.lang %}
+{% assign spots = site[spots_collection] %}
 
-{% if path[1] == "spots" %}
-    {% assign current_spot = path %}
+{% assign spots_collections = 'spots_de,spots_en,spots_tr' | split: ',' %}
+{% if spots_collections contains page.collection %}
+    {% assign current_spot = page %}
 {% else %}
-    {% assign current_spot = first_spot %}
+    {% assign current_spot = spots.first %}
 {% endif %}
 
-{% assign image_url = '/images/' | append: current_spot[2] | append: '.jpg' %}
-
-{% if path[0] == "de" %}
-    {% assign spots = site.videos_de %}
-{% elsif path[0] == "en" %}
-    {% assign spots = site.videos_en %}
-{% else %}
-    {% assign spots = site.videos_tr %}
-{% endif %}
-
-{% if page.next.url %}
-    {% assign next_url = page.next.url %}
-{% elsif page.is_video %}
-    {% assign next_url = spots.first.url %}
-{% else %}
-    {% assign next_url = spots[1].url %}
-{% endif %}
-
-{% if page.previous.url %}
-    {% assign prev_url = page.previous.url %}
-{% else %}
-    {% assign prev_url = spots.last.url %}
-{% endif %}
+{% assign image_url = '/images/' | append: current_spot.slug | append: '.jpg' %}
 
 <style>
 .layer__background {
@@ -54,7 +27,7 @@
 
 </style>
 
-<body class="lang--{{ path[0] }} page--{{ path[1] }}">
+<body class="page--{{ page.slug }}">
 
     <div class="site">
 
@@ -68,22 +41,33 @@
 
             <main class="content" aria-label="Content">
 
-                {% include header.html %}
+                <header class="header-main">
+                    <svg viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="15" font-family="Montserrat" font-size="15">
+                            SPOTS
+                        </text>
+                    </svg>
+                    <a href="#menu">
+                        <svg class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2 L50 2" fill="none" stroke="black" stroke-width="4"/>
+                            <path d="M0 10 L50 10" fill="none" stroke="black" stroke-width="4"/>
+                            <path d="M0 18 L50 18" fill="none" stroke="black" stroke-width="4"/>
+                        </svg>
+                    </a>
+                </header>
 
                 <section class="slider">
-                    <div class="slides content--{{ path[0] }}">
-                        {% for video in spots %}
-                        {% assign video_id = (video.id | remove_first: "/" | split: "/") %}
-                        {% assign video_id = video_id[2] %}
-                        <!--<div class="slide {% if current_spot[2] == video_id %}slide__active{% endif %}" data-url="">
-                            <h2 class="slide__title">{{ video.title }}</h2>
-                        </div>-->
-
-                        {% endfor %}
+                    <div class="slides">
+                        {% include slides.html spots=spots active=current_spot %}
                     </div>
 
                     <div class="button arrow arrow--prev">
-                        <a href="{{ prev_url  | relative_url }}">
+                        {% if page.previous %}
+                            {% assign previous_spot = page.previous %}
+                        {% else %}
+                            {% assign previous_spot = spots.last %}
+                        {% endif %}
+                        <a href="{{ previous_spot.url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
                             </svg>
@@ -91,7 +75,12 @@
                     </div>
 
                     <div class="button arrow arrow--next">
-                        <a href="{{ next_url  | relative_url }}">
+                        {% if page.next %}
+                            {% assign next_spot = page.next %}
+                        {% else %}
+                            {% assign next_spot = spots.last %}
+                        {% endif %}
+                        <a href="{{ next_spot.url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
                             </svg>
@@ -100,7 +89,7 @@
                 </section>
 
                 <section class="video-control">
-                    <a href="http://www.youtube.com/watch?v={{ page.youtube_url }}">
+                    <a href="http://www.youtube.com/watch?v={{ current_spot.youtube_id }}">
                         <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
                         </svg>
@@ -111,41 +100,12 @@
 
         </div>
 
-        <div id="menu" class="layer layer__info {% unless path[1] == 'spots' %}layer__info--visible{% endunless %}">
+        {% include menu.html lang=page.lang current_spot=current_spot %}
 
-            <div class="info__panel">
-
-                    <a class="menubutton" style="text-align: center;" href="/{{ path[0] }}/menu/">
-                        <svg style="display:  block; margin: 0 auto;" class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 2 L50 2" fill="none" stroke="white" stroke-width="4"/>
-                            <path d="M0 10 L50 10" fill="none" stroke="white" stroke-width="4"/>
-                            <path d="M0 18 L50 18" fill="none" stroke="white" stroke-width="4"/>
-                        </svg>
-                    </a>
-
-                    <a class="close" href="#" style="position:absolute; top:10px; right: 10px;">
-                        <svg class="close" width="30" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0 L50 50" fill="none" stroke="white" stroke-width="4"/>
-                            <path d="M50 0 L0 50" fill="none" stroke="white" stroke-width="4"/>
-                        </svg>
-                    </a>
-
-                <h1 style="display: none; font-size: 100px;">SPOTS</h1>
-
-                <div class="info__panel__scrollable">
-
-                        {% unless path[1] == "spots" %}
-
-                        <div class="page page--{{ page.name | split: "." | first }} content--{{ path[0] }}">
-                            <h2>{{ page.title }}</h2>
-                            {{ page.content | markdownify }}
-                        </div>
-
-                        {% endunless %}
-
-                </div>
-            </div>
-        </div>
+        {% assign pages_collection = 'pages_' | append: page.lang %}
+        {% for ppage in site[pages_collection] %}
+            {% include page.html page=ppage %}
+        {% endfor %}
 
     </div>
 

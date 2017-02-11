@@ -20,7 +20,7 @@ description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/nsu-spots" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 
@@ -28,35 +28,26 @@ permalink: pretty
 
 collections:
   spots_de:
-    output: false
+    output: true
+    permalink: /de/spots/:name/
   spots_en:
-    output: false
+    output: true
+    permalink: /en/spots/:name/
   spots_tr:
+    output: true
+    permalink: /tr/spots/:name/
+  pages_de:
+    output: false
+  pages_en:
+    output: false
+  pages_tr:
     output: false
 
 defaults:
-  # - scope:
-  #     path: ''
-  #   values:
-  #     layout: 'default'
   - scope:
-      path: 'de'
-      type: 'pages'
+      path: ''
     values:
-      is_page: true
-      lang: 'de'
-  - scope:
-      path: 'en'
-      type: 'pages'
-    values:
-      is_page: true
-      lang: 'en'
-  - scope:
-      path: 'tr'
-      type: 'pages'
-    values:
-      is_page: true
-      lang: 'tr'
+      layout: 'default'
   - scope:
       path: '_spots_de'
       type: 'spots_de'
@@ -72,6 +63,21 @@ defaults:
       type: 'spots_tr'
     values:
       lang: 'tr'
+  - scope:
+      path: '_pages_de'
+      type: 'pages_de'
+    values:
+      lang: 'de'
+  - scope:
+      path: '_pages_en'
+      type: 'pages_en'
+    values:
+      lang: 'en'
+  - scope:
+      path: '_pages_tr'
+      type: 'pages_tr'
+    values:
+      lang: 'tr'
 
 # Build settings
 markdown: kramdown
@@ -79,27 +85,21 @@ markdown: kramdown
 prose:
   media: 'images'
   metadata:
-    _spots:
+    _spots_de:
       - name: 'youtube_id'
         field:
           element: 'text'
           label: 'Youtube-ID'
-      - name: 'title_de'
+    _spots_en:
+      - name: 'youtube_id'
         field:
           element: 'text'
-          label: 'Titel (DE)'
-      - name: 'title_tr'
+          label: 'Youtube-ID'
+    _spots_tr:
+      - name: 'youtube_id'
         field:
           element: 'text'
-          label: 'Titel (TR)'
-      - name: 'title_en'
-        field:
-          element: 'text'
-          label: 'Titel (EN)'
-      - name: 'content'
-        field:
-          element: 'hidden'
-          value: ''
+          label: 'Youtube-ID'
   ignore:
     - '_includes'
     - '_layouts'

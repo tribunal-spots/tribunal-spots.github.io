@@ -1,0 +1,27 @@
+top:
+  - slug: intro
+    title:
+        de: Intro
+        en: Intro
+        tr: Intro
+  - slug: collaborators
+    title:
+        de: Mitwirkende
+        en: Collaborators
+        tr: Mitwirkende
+  - slug: contact
+    title:
+        de: Kontakt
+        en: Contact
+        tr: Kontakt
+  - slug: impressum
+    title:
+        de: Impressum
+        en: Impressum
+        tr: Impressum
+bottom:
+  - slug: tribunal
+    title:
+      de: Tribunal
+      en: Tribunal
+      tr: Tribunal
