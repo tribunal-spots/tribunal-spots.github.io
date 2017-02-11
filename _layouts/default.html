@@ -76,7 +76,7 @@
                         {% if page.next %}
                             {% assign next_spot = page.next %}
                         {% else %}
-                            {% assign next_spot = spots.first %}
+                            {% assign next_spot = spots.first.next %}
                         {% endif %}
                         <a href="{{ next_spot.url | relative_url }}">
                             <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
