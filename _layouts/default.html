@@ -105,6 +105,16 @@
             {% include page.html page=ppage %}
         {% endfor %}
 
+        <div class="layer layer__video">
+            <a class="popup__close" href="#">
+                <svg class="close" width="30" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L50 50" fill="none" stroke="white" stroke-width="4"/>
+                    <path d="M50 0 L0 50" fill="none" stroke="white" stroke-width="4"/>
+                </svg>
+            </a>
+            <div id="player"></div>
+        </div>        
+
     </div>
 
 <script src="{{ '/assets/scripts/main.js' | relative_url }}"

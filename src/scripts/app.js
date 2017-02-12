@@ -3,21 +3,22 @@ import $ from 'jquery';
 import 'core-js/fn/array/find'
 import Spot from './spot';
 import Page from './page';
+import Player from './player';
 
 export default class Application {
     constructor($spots, $pages, data) {
         this.$spots = $spots;
         this.$pages = $pages;
         this.data = data;
+        this.player = undefined;
         this.initSpots();
         this.initPages();
         this.initBindings();
         this.enableHistorySupport();
+        this.loadYouTubeIframeAPI();
     }
 
     initSpots() {
-        // 1. Add data to each slide with $.data
-
         $.each(this.$spots, (index, spot) => {
             let $spot = $(spot);
             let spot_data = this.data.spots.find((spot) => spot.id === $spot.data('id'));
@@ -26,8 +27,6 @@ export default class Application {
     }
 
     initPages() {
-        // 1. Add data to each slide with $.data
-
         $.each(this.$pages, (index, page) => {
             let $page = $(page);
             let page_data = this.data.pages.find((page) => page.id === $page.data('id'));
@@ -78,7 +77,19 @@ export default class Application {
         // 4. Arrow buttons
         // 5. Play button
 
-        // Use this.nextSpot(), this.prevSpot()
+        // TODO: ESC key on video
+
+        $(window)
+            .on('keydown.main', (e) => {
+                switch(e.which) {
+                    case 39:
+                        this.nextSpot();
+                        break;
+                    case 37:
+                        this.prevSpot();
+                        break;
+                }
+            });        
 
         $('.spots__nav--prev')
             .on('click', (e) => {
@@ -91,6 +102,35 @@ export default class Application {
                 e.preventDefault();
                 this.nextSpot();
         });
+
+        $('.spots__play a')
+            .on('click', (e) => {
+                e.preventDefault();
+
+                $('.layer__video')
+                    .addClass('layer__video--playing')
+                    .append('<div id="player></div>');
+
+
+                let $currentSpot = this.$spots.filter('.spot--active');
+                // TODO: get current language
+                let videoId = $currentSpot.data('spot').data.translations[0].attributes.youtube_id;
+                this.player = new Player(videoId, 'player');
+
+                console.log(this.player);
+            });
+        
+        $('.layer__video .popup__close')
+            .on('click', (e) => {
+                console.log(this.player);
+                if (this.player) {
+                    this.player.destroy();
+                    this.player = undefined;
+                    console.log(this.player);
+                }
+
+                $('.layer__video').removeClass('layer__video--playing');
+            });
 
     }
 
@@ -113,7 +153,10 @@ export default class Application {
         });
     }
 
-    talk() {
-        console.log(this.$spots);
+    loadYouTubeIframeAPI() {
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
 }

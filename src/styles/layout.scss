@@ -36,6 +36,12 @@ html, body {
     &__background-overlay {
         background: #000;
         opacity: .4;
+        transition: 1s;
+
+        &--dark {
+            opacity: 1;
+            transition: .4s;
+        }
     }
 
     &__spots {
@@ -49,6 +55,17 @@ html, body {
 
         &:target {
             display: block;
+        }
+    }
+
+    &__video {
+        display: none;
+        background: rgba(0,0,0,.8);
+
+        &--playing {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

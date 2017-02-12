@@ -14,8 +14,23 @@ export default class Spot {
     show() {
         this.$el.addClass('spot--active');
         
-        $('.layer__background').css({
-            background: `url(/images/${this.data.id}.jpg) center center/cover no-repeat fixed`,
+        // TODO: maybe cache background layers somewhere?
+        // Or maybe pre-load background layer for next/prev spot below current?
+
+        let $overlay = $('.layer__background-overlay');
+        
+        $overlay.addClass('layer__background-overlay--dark');
+
+        // FIXME: this is a hack -- do this better
+        // could load all images and do z-index stuff...
+        window.setTimeout(() => {
+            $('.layer__background').css({
+                background: `url(/images/${this.data.id}.jpg) center center/cover no-repeat fixed`,
+            });
+        }, 200);
+            
+        $overlay.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', (e) => {
+            $('.layer__background-overlay').removeClass('layer__background-overlay--dark');
         });
 
         // TODO: update video player link
