@@ -21,7 +21,7 @@ Katinka Maché
 Mayan Printz  
 Daniel Roth  
 Joel Vogel     
-   <br>
+
 ### EKIP <br>
    <br>
 bildargumente  
