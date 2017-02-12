@@ -53,8 +53,8 @@
                 <section class="spots__slider">
                     <div class="spots__slides">
                         {% for spot in spots %}
-                        <div class="slide{% if spot.slug == current_spot.slug %} slide__active{% endif %}" data-id="{{ spot.slug }}">
-                            <h2 class="slide__title">{{ spot.title }}</h2>
+                        <div class="spot{% if spot.slug == current_spot.slug %} spot--active{% endif %}" data-id="{{ spot.slug }}">
+                            <h2 class="spot__title">{{ spot.title }}</h2>
                         </div>
                         {% endfor %}
                     </div>

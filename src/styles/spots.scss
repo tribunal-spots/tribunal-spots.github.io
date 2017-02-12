@@ -51,10 +51,10 @@
     }
 }
 
-.slide {
+.spot {
     display: none;
 
-    &__active {
+    &--active {
         display: block;
     }
 }
