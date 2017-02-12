@@ -4,7 +4,8 @@ title: Mitwirkende
 published: true
 ---
 
-### SPOTTER*INNEN   <br>
+### SPOTTER*INNEN   
+<br>
    <br>
 Khaled Abdulwahed  
 Hatice Ayten  
@@ -21,8 +22,10 @@ Katinka Maché
 Mayan Printz  
 Daniel Roth  
 Joel Vogel     
-   <br>
-### MITWIRKENDE<br>
+
+### MITWIRKENDE
+
+<br>
    <br>
 bildargumente  
 Roumen Dimitrov  
