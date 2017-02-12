@@ -5,7 +5,7 @@ published: true
 ---
 
 ### SPOTTER*INNEN   
-
+   
 Khaled Abdulwahed  
 Hatice Ayten  
 Mareike Bernien  
