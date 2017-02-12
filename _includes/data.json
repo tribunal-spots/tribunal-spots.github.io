@@ -1,44 +1,23 @@
 {
-    "spots": [
-        {% assign all_spots = '' | split: '' %}
-        {% for spot in site.spots_de %}
-            {% assign all_spots = all_spots | push: spot %}
-        {% endfor %}
-        {% for spot in site.spots_en %}
-            {% assign all_spots = all_spots | push: spot %}
-        {% endfor %}
-        {% for spot in site.spots_tr %}
-            {% assign all_spots = all_spots | push: spot %}
-        {% endfor %}
-        {% for spot in all_spots %}
-            {% assign spot.id = 'hello' %}
-        {% endfor %}
-        {% assign all_spots = all_spots | group_by: 'slug' %}
-        {% for spot in all_spots %}{
-            "id": "{{ spot.name }}",
-            {% for translation in spot.items %}
-            "{{ translation.lang }}": {
+    "spots": [{% for spot in include.spots %}{
+        "id": "{{ spot.name }}",
+        "translations": [{% for translation in spot.items %}{
+            "lang": "{{ translation.lang }}",
+            "attributes": {
                 "title": "{{ translation.title }}",
                 "youtube_id": "{{ translation.youtube_id }}"
-            }{% unless forloop.last %},{% endunless %}{% endfor %}
-        }{% unless forloop.last %},{% endunless %}{% endfor %}
+            }
+        }{% unless forloop.last %},{% endunless %}{% endfor %}]
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
     ],
-    "pages": {
-        {% assign pages_de = site.pages | where: 'lang', 'de' %}
-        {% assign langs = 'de,tr,en' | split: ',' %}
-        {% for page in pages_de %}"{{ page.name | remove: '.md' }}": {
-            "de": {
-                "title": "{{ page.title }}",
-                "content": "{{ page.content | markdownify | strip_newlines | escape }}"
-            },
-            "tr": {
-                "title": "{{ page.title }}",
-                "content": "{{ page.content | markdownify | strip_newlines | escape }}"
-            },
-            "en": {
-                "title": "{{ page.title }}",
-                "content": "{{ page.content | markdownify | strip_newlines | escape }}"
-            }    
-        }{% unless forloop.last %},{% endunless %}{% endfor %}
-    }
+    "pages": [{% for page in include.pages %}{
+        "id": "{{ page.name }}",
+        "translations": [{% for translation in page.items %}{
+            "lang": "{{ translation.lang }}",
+            "attributes": {
+                "title": "{{ translation.title }}",
+                "content": "{{ translation.content | markdownify | strip_newlines | escape }}"
+            }
+        }{% unless forloop.last %},{% endunless %}{% endfor %}]
+    }{% unless forloop.last %},{% endunless %}{% endfor %}]
 }

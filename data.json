@@ -1,3 +1,26 @@
 ---
 ---
-{% include data.json %}
+{% capture cache %}
+{% assign all_spots = '' | split: '' %}
+{% for spot in site.spots_de %}
+    {% assign all_spots = all_spots | push: spot %}
+{% endfor %}
+{% for spot in site.spots_en %}
+    {% assign all_spots = all_spots | push: spot %}
+{% endfor %}
+{% for spot in site.spots_tr %}
+    {% assign all_spots = all_spots | push: spot %}
+{% endfor %}
+{% assign all_spots = all_spots | group_by: 'slug' %}
+{% assign all_pages = '' | split: '' %}
+{% for page in site.pages_de %}
+    {% assign all_pages = all_pages | push: page %}
+{% endfor %}
+{% for page in site.pages_en %}
+    {% assign all_pages = all_pages | push: page %}
+{% endfor %}
+{% for page in site.pages_tr %}
+    {% assign all_pages = all_pages | push: page %}
+{% endfor %}
+{% assign all_pages = all_pages | group_by: 'slug' %}
+{% endcapture %}{% assign cache = nil %}{% include data.json spots=all_spots pages=all_pages %}

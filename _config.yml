@@ -20,7 +20,7 @@ description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/nsu-spots" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 
@@ -44,40 +44,46 @@ collections:
     output: false
 
 defaults:
-  - scope:
-      path: ''
-    values:
-      layout: 'default'
+  # - scope:
+  #     path: ''
+  #   values:
+  #     layout: 'default'
   - scope:
       path: '_spots_de'
       type: 'spots_de'
     values:
       lang: 'de'
+      layout: 'default'
   - scope:
       path: '_spots_en'
       type: 'spots_en'
     values:
       lang: 'en'
+      layout: 'default'
   - scope:
       path: '_spots_tr'
       type: 'spots_tr'
     values:
       lang: 'tr'
+      layout: 'default'
   - scope:
       path: '_pages_de'
       type: 'pages_de'
     values:
       lang: 'de'
+      layout: 'default'
   - scope:
       path: '_pages_en'
       type: 'pages_en'
     values:
       lang: 'en'
+      layout: 'default'
   - scope:
       path: '_pages_tr'
       type: 'pages_tr'
     values:
       lang: 'tr'
+      layout: 'default'
 
 # Build settings
 markdown: kramdown
