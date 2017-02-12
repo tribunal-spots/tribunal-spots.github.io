@@ -5,8 +5,8 @@ published: true
 ---
 
 ## SPOTCULAR   
-<br>
-<br>
+  
+  
 Khaled Abdulwahed  
 Hatice Ayten  
 Mareike Bernien  
@@ -24,8 +24,8 @@ Daniel Roth
 Joel Vogel     
 
 ## EKIP   
-<br>
-   <br>
+  
+  
 bildargumente  
 Roumen Dimitrov  
 g-2-e tribunal translation group  
