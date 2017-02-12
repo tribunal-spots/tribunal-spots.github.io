@@ -4,7 +4,7 @@ title: Mitwirkende
 published: true
 ---
 
-### SPOTTER*INNEN  
+### SPOTTER*INNEN   
 
 Khaled Abdulwahed  
 Hatice Ayten  
@@ -45,4 +45,4 @@ Natascha Sadr Haghighian
 Nikolai Sivertsen  
 Markus Schlappig  
 Mirko Winkel  
-Jenny Lou Ziegel  
+Jenny Lou Ziegel
