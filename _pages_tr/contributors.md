@@ -4,7 +4,7 @@ title: Mitwirkende
 published: true
 ---
 
-### SPOTCULAR   <br>
+### SPOTCULAR <br>
    <br>
 Khaled Abdulwahed  
 Hatice Ayten  
