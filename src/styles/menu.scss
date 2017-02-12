@@ -7,6 +7,17 @@ a:visited {
     }
 }
 
+.menu {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    &__secondary {
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
 nav {
     text-align: center;
     
