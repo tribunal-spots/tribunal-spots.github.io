@@ -4,8 +4,9 @@ title: Mitwirkende
 published: true
 ---
 
-### SPOTCULAR <br>
-   <br>
+## SPOTCULAR   
+<br>
+<br>
 Khaled Abdulwahed  
 Hatice Ayten  
 Mareike Bernien  
@@ -22,7 +23,8 @@ Mayan Printz
 Daniel Roth  
 Joel Vogel     
 
-### EKIP <br>
+## EKIP   
+<br>
    <br>
 bildargumente  
 Roumen Dimitrov  
