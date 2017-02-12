@@ -1,25 +1,20 @@
 ---
 layout: default
 title: About
+published: true
 ---
 
-### Künstlerische Positionen zum NSU-Komplex
+### ’TRİBÜNAL NSU Kompleksi Çözülsün’ için görsel mikro-intervensiyonlar 
 
-Vom 17. bis 21. Mai 2017 wird in Köln Mühlheim das TRIBUNAL NSU-Komplex auflösen stattfinden.
-Das Tribunal widmet sich zahlreichen offenen Fragen rund um den NSU-Komplex und klagt institutionellen sowie alltäglichen Rassismus in Deutschland an. Im Mittelpunkt steht dabei das migrantisch situierte Wissen der vom Nazi-Terror Betroffenen. Dieses Wissen soll sichtbar und hörbar werden.
-
-Der Begriff 'NSU-Komplex' zielt auf die Verflechtung von Nazi-Terror, Rassismus und staatlicher Involviertheit: Zwischen 1999 und 2007 werden in Deutschland neun migrantische Kleinunternehmer und eine Polizistin ermordet. Bei drei Bombenanschlägen – u.a. auf eine migrantisch geprägte Geschäftsstraße in Köln – werden zahlreiche Menschen schwer verletzt. Die Taten bleiben unaufgeklärt bis sich 2011 der sogenannte Nationalsozialistische Untergrund (NSU) selbst enttarnt und zu den Taten bekennt.
-Bis heute ist die Mord- und Anschlagsserie nicht vollständig aufgeklärt. Offene Fragen gibt es unter anderem zum rechtsradikalen Umfeld des NSU, sowie zur Rolle des Verfassungsschutzes, der zahlreiche Informanten im Umfeld der Täter hatte. 
-Deutlich geworden ist hingegen, wie tief Rassismus in Deutschland verankert ist. Nicht zuletzt innerhalb der jahrelang konsequent in die falsche Richtung ermittelnden Polizei- und Sicherheitsorgane, für die Rassismus als Tatmotiv angeblich über all die Jahre nicht erkennbar war und selbst jetzt noch kleingeredet wird.
-
-SPOTS sind kurze audiovisuelle Interventionen zu Facetten des NSU-Komplexes, die unter anderem zur Mobilisierung für das Tribunal entstehen. Sie thematisieren die blind spots in der Aufarbeitung des NSU-Komplexes. Sie werfen spotlights auf die rassistischen Verhältnisse, welche rechte Netzwerke und deren Taten erst möglich machen. SPOTS verstehen dabei Ästhetik als politisches Handeln. Sie setzen der dominanten täterfixierten Bildpolitik und den medialen Überschreibungen rund um den NSU-Komplex etwas entgegen. Sie drehen Sichtbarkeiten um, stellen Widerstandsgesten dar, formulieren Fragen und Anklagen. Und wollen so eine breitere gesellschaftliche Debatte anstoßen.
-
-SPOTS werden ab Frühjahr 2017 einzeln, in Gruppen, sowie als komplexe Reihe an verschiedenen Orten in Deutschland und darüber hinaus gezeigt. Sie werden in Werbeblöcke eingeschleust, laufen als abendfüllendes Kinoprogramm, verbreiten sich im Internet, verbinden sich als Installation im Ausstellungsraum oder sind Teil von inhaltlichen Veranstaltungsreihen.
-
-Der Begriff 'NSU-Komplex' zielt auf die Verflechtung von Nazi-Terror, Rassismus und staatlicher Involviertheit: Zwischen 1999 und 2007 werden in Deutschland neun migrantische Kleinunternehmer und eine Polizistin ermordet. Bei drei Bombenanschlägen – u.a. auf eine migrantisch geprägte Geschäftsstraße in Köln – werden zahlreiche Menschen schwer verletzt. Die Taten bleiben unaufgeklärt bis sich 2011 der sogenannte Nationalsozialistische Untergrund (NSU) selbst enttarnt und zu den Taten bekennt.
-Bis heute ist die Mord- und Anschlagsserie nicht vollständig aufgeklärt. Offene Fragen gibt es unter anderem zum rechtsradikalen Umfeld des NSU, sowie zur Rolle des Verfassungsschutzes, der zahlreiche Informanten im Umfeld der Täter hatte. 
-Deutlich geworden ist hingegen, wie tief Rassismus in Deutschland verankert ist. Nicht zuletzt innerhalb der jahrelang konsequent in die falsche Richtung ermittelnden Polizei- und Sicherheitsorgane, für die Rassismus als Tatmotiv angeblich über all die Jahre nicht erkennbar war und selbst jetzt noch kleingeredet wird.
-
-SPOTS sind kurze audiovisuelle Interventionen zu Facetten des NSU-Komplexes, die unter anderem zur Mobilisierung für das Tribunal entstehen. Sie thematisieren die blind spots in der Aufarbeitung des NSU-Komplexes. Sie werfen spotlights auf die rassistischen Verhältnisse, welche rechte Netzwerke und deren Taten erst möglich machen. SPOTS verstehen dabei Ästhetik als politisches Handeln. Sie setzen der dominanten täterfixierten Bildpolitik und den medialen Überschreibungen rund um den NSU-Komplex etwas entgegen. Sie drehen Sichtbarkeiten um, stellen Widerstandsgesten dar, formulieren Fragen und Anklagen. Und wollen so eine breitere gesellschaftliche Debatte anstoßen.
-
-SPOTS werden ab Frühjahr 2017 einzeln, in Gruppen, sowie als komplexe Reihe an verschiedenen Orten in Deutschland und darüber hinaus gezeigt. Sie werden in Werbeblöcke eingeschleust, laufen als abendfüllendes Kinoprogramm, verbreiten sich im Internet, verbinden sich als Installation im Ausstellungsraum oder sind Teil von inhaltlichen Veranstaltungsreihen.
+> Görünürdeki bir alanı nasıl değiştirebiliriz ki, ırkçı yapılar yargılanabilsin ve (post-)göçmen realitesi ve perspektiflerinin fark edilmemesi ve duyulmaması imkânsız hale gelsin?  
+    
+‘TRİBÜNAL NSU Kompleksi Çözülsün’ 17-21 Mayıs 2017 tarihlerinde Köln Mühlheim’da düzenlenecek. Tribünal, NSU kompleksine yönelik çok sayıda cevaplanmamış soruya yanıtlar aramaya çalışırken, Almanya’daki kurumsal ve aynı zamanda günlük yaşamdaki ırkçılığı da yargılayacak. Tribünalin odağında Nazi terörü mağdurlarının göçmen olmaktan kaynaklı edindikleri bilgiler yer alacak. Yani, göçmen deneyimlerinin bilgi kaynağı olarak değerlendirilmesi ve bu bilginin görünür ve duyulur hale gelmesi gerekiyor.   
+  
+’NSU kompleksi’ kavramı Nazi terörü, ırkçılık ve devleti de kapsamına alan girift bir bütünü işaret etmektedir: 1999 - 2007 yılları arasında Almanya’da küçük işletme sahibi ve/ya çalışanı olan dokuz göçmen ile bir polis öldürüldü. Aralarında Köln’de çoğunlukla göçmenlerin yaşadığı ve dükkânlarının olduğu bir sokağa düzenlenen saldırının da yer aldığı üç bombalı saldırıda ise kimisi ağır pek çok insan yaralandı. Ancak bu olaylar, 2011 yılına yani Nasyonalsosyalist Yeraltı (NSU) örgütünün ifşa olmasına ve eylemleri üstlenmesine kadar aydınlatılmamıştı.  
+Bugün hâlâ cinayet ve saldırı serisi tamamıyla aydınlatılmış değil. NSU örgütünün çevresindeki sağ radikallere ve faillerin/suçluların çevresinde çok sayıda muhbiri olmuş olan istihbaratın rolüne dair sorular da yanıtlanmayı bekliyor.  
+  
+Diğer taraftan ortada belirgin olan bir şey var ki, o da Almanya’da ırkçılığın ne kadar derinlere kök salmış olduğudur. Yıllarca yanlış yönde yürütülen polis ve güvenlik organları soruşturmaları bilhassa gösteriyor ki, bu organlar için ırkçılık suç motifi olarak güya yıllar boyunca farkına varılmıyor ve şimdi bile hâlâ hafife alınıyor.   
+  
+SPOTLAR, Tribünalin mobilizasyonu için, NSU kompleksine dair kısa görsel intervensiyonlardır. NSU kompleksi ile yüzleşilmesinde kör noktaları konu edinen spotlar, sağ örgüt/grup ağlarını ve onların eylemlerini her şeyden önce mümkün kılan ırkçılık ve koşulları üzerine ışık tutacaktır. SPOTLAR estetiği de politik bir uğraş olarak anlamaktadır. NSU kompleksine yönelik medyada yer alan başlıklara ve fail odaklı baskın bir medya politikasına karşı koymaktadır. Görünürlüğü tersine çevirecek, direniş örnekleri sunacak, sorular ve şikâyetler/iddialar formüle edecektir. Ve böylesi geniş toplumsal bir tartışmayı harekete geçirmeyi istemektedir.  
+  
+SPOTLAR 2017 yılı ilkbahar döneminden itibaren tek başına, gruplar halinde ve kompleks/toplu seri halde Almanya ve dışındaki farklı yerlerde gösterilecektir. Reklam bloklarına yerleştirilecek, akşam sinema programı olarak gösterilecek, internette dolaşıma girecek, sergi salonunda yüklenip bağlanabilecek veya etkinlikler dizisinin bir parçası olacak. 
