@@ -38,13 +38,13 @@ export default class Spot {
 
         // set tabindex?
         // TODO: build proper urls
-        const url = `{{BASE_URL}}/de/spots/${this.data.id}/`
+        const url = `{{BASE_URL}}/${document.documentElement.lang}/spots/${this.data.id}/`
 
         if(history) {
             history.pushState({
                 lang: 'de',
                 spot: this.data.id,
-                page: undefined, // TODO: sure?
+                page: '',
             }, undefined, url);
         }
     }

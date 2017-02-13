@@ -16,7 +16,11 @@ export default class Application {
         this.initPages();
         this.initBindings();
         this.enableHistorySupport();
-        this.goToRandomSpot();
+        
+        if (document.location.pathname === '{{BASE_URL}}/') {
+            this.goToRandomSpot();
+        }
+        
         this.loadYouTubeIframeAPI();
     }
 
@@ -80,17 +84,15 @@ export default class Application {
     }
 
     initBindings() {
-        // 1. Keyboard left/right
-        // 2. Swipe left/right
-        // 3. Scrollwheel?
-        // 4. Arrow buttons
-        // 5. Play button
-
-        // TODO: ESC key on video
+        // Swipe left/right?
+        // Scrollwheel?
 
         $(window)
             .on('keydown.main', (e) => {
                 switch(e.which) {
+                    case 27:
+                        this.destroyVideo();
+                        break;
                     case 39:
                         this.nextSpot();
                         break;
@@ -115,27 +117,12 @@ export default class Application {
         $('.spots__play a')
             .on('click', (e) => {
                 e.preventDefault();
-
-                $('.layer__video')
-                    .addClass('layer__video--playing')
-                    .append('<div id="player"></div>');
-
-
-                let $currentSpot = this.$spots.filter('.spot--active');
-
-                let spotData = $currentSpot.data('spot').data.translations.find((translation) => translation.lang === document.documentElement.lang);
-                let videoId = spotData.attributes.youtube_id;
-                this.player = new Player(videoId, 'player');
+                this.playVideo();
             });
         
         $('.layer__video .popup__close')
             .on('click', (e) => {
-                if (this.player) {
-                    this.player.destroy();
-                    this.player = undefined;
-                }
-
-                $('.layer__video').removeClass('layer__video--playing');
+                this.destroyVideo();
             });
         
         // TODO: decide whether to rewrite in jQuery or vanilla JS
@@ -175,6 +162,17 @@ export default class Application {
             const translation = currentPage.translations.find((translation) => translation.lang === lang);
             el.innerHTML = translation.attributes.title;
         });
+
+        if (history) {
+            let currentState = history.state;
+
+            history.pushState({
+                lang: lang,
+                spot: currentState.spot,
+                page: currentState.page,
+            }, undefined, `{{BASE_URL}}/${lang}/${spot}/#${page}`);
+
+        }        
     }
 
     loadYouTubeIframeAPI() {
@@ -182,5 +180,27 @@ export default class Application {
         tag.src = "https://www.youtube.com/iframe_api";
         let firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    playVideo() {
+        $('.layer__video')
+            .addClass('layer__video--playing')
+            .append('<div id="player"></div>');
+
+
+        let $currentSpot = this.$spots.filter('.spot--active');
+
+        let spotData = $currentSpot.data('spot').data.translations.find((translation) => translation.lang === document.documentElement.lang);
+        let videoId = spotData.attributes.youtube_id;
+        this.player = new Player(videoId, 'player');
+    }
+
+    destroyVideo() {
+        if (this.player) {
+            this.player.destroy();
+            this.player = undefined;
+        }
+
+        $('.layer__video').removeClass('layer__video--playing');
     }
 }

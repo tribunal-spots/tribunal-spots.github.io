@@ -1,19 +1,11 @@
 export default class Player {
     constructor(videoId, playerElId){
-        // TODO: accept el to attach player to
         // TODO: accept parameters (size, ...)
         // TODO: currently not checking if YT API is loaded
         this.videoId = videoId;
         this.playerElId = playerElId;
-        
         this.YTPlayer = undefined;
-
-        // this.loadYouTubeIframeAPI();
-
         this.initYTPlayer();
-
-        // Attach to DOM so that YT API can call this.onYouTubeIframeAPIReady().
-        // window.onYouTubeIframeAPIReady = () => this.onYouTubeIframeAPIReady();
     }
 
     initYTPlayer() {
