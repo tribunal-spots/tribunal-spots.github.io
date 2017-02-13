@@ -4,9 +4,8 @@ title: Mitwirkende
 published: true
 ---
 
-### SPOTTER*INNEN   
-<br>
-   <br>
+## SPOTTER*INNEN   
+
 Khaled Abdulwahed  
 Hatice Ayten  
 Mareike Bernien  
@@ -23,10 +22,8 @@ Mayan Printz
 Daniel Roth  
 Joel Vogel     
 
-### MITWIRKENDE
+## MITWIRKENDE
 
-<br>
-   <br>
 bildargumente  
 Roumen Dimitrov  
 g-2-e tribunal translation group  

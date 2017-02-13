@@ -4,7 +4,7 @@ published: true
 ---
 
 
-### SPOTTERS   
+## SPOTTERS   
    
 Khaled Abdulwahed  
 Hatice Ayten  
@@ -22,7 +22,7 @@ Mayan Printz
 Daniel Roth  
 Joel Vogel     
    
-### CONTRIBUTORS
+## CONTRIBUTORS
    
 bildargumente  
 Roumen Dimitrov  

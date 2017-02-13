@@ -163,16 +163,16 @@ export default class Application {
             el.innerHTML = translation.attributes.title;
         });
 
-        if (history) {
-            let currentState = history.state;
+        // if (history) {
+        //     let currentState = history.state;
 
-            history.pushState({
-                lang: lang,
-                spot: currentState.spot,
-                page: currentState.page,
-            }, undefined, `{{BASE_URL}}/${lang}/${spot}/#${page}`);
+        //     history.pushState({
+        //         lang: lang,
+        //         spot: currentState.spot,
+        //         page: currentState.page,
+        //     }, undefined, `{{BASE_URL}}/${lang}/${spot}/#${page}`);
 
-        }        
+        // }        
     }
 
     loadYouTubeIframeAPI() {

@@ -3,6 +3,8 @@ title: Impressum
 published: true
 ---
 
+## Impressum
+
 __Tribunal Unraveling the NSU Complex__<br>
 ℅ Allerweltshaus<br>
 Körnerstr. 77-79<br>

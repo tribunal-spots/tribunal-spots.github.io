@@ -3,6 +3,8 @@ layout: default
 title: Intro
 ---
 
+# SPOTS
+
 ### Audiovisual Micro-Interventions for _TRIBUNAL Unraveling the NSU Complex_ and beyond 
 
 > How can we change the field of the visible so that racist structures can be called out? How can (post)migrant realities and perspectives become visible and audible loudly and clearly?

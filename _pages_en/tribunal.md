@@ -4,8 +4,8 @@ title: Tribunal
 published: true
 ---
 
-### The Tribunal<br>
-<br>
+## The Tribunal
+
 The Tribunal Unraveling the NSU Complex is scheduled for May 17.-21.2017 in Cologne in the former Carlswerke plant. The factory itself is a site of multiple histories of migration and labour. It is located around the corner from Keupstrasse, a flourishing shopping street, and center of Turkish-Kurdish social life, targeted by the NSU in 2004 in a nail bomb attack. 
   
 The Tribunal embarks from the society of the many, demanding the unraveling of structural and institutional racisms. It joins the families and friends of the victims of NSU terror in their accusation of State organs and institutions complicit in the NSU Complex, and speaks out against the silencing of those who have been targeted and affected by it. The Tribunal will build on their knowledge and hear their claims. Together, it puts forward the demand to unravel the conditions and structures that made the NSU possible.  
@@ -15,8 +15,8 @@ During the four days of the Tribunal there will be hearings, testimonies, and pr
   
 The Tribunal is initiated and organised by a large coalition of anti-racist and migrant rights networks, groups and individuals in Germany and globally. It is an unprecedented effort in the recent struggle against racism and the rising Nazi activities in Germany.  
   
-### The NSU-Complex  <br>
-  <br>
+## The NSU-Complex
+
 From 1998 to 2011 the neo-Nazi terrorist organisation ‘National Socialist Underground’ (NSU) committed ten murders, three bomb attacks and 15 robberies. The murdered victims are Enver Şimşek, Abdurrahim Özüdoğru, Süleyman Taşköprü, Habil Kılıç, Mehmet Turgut, İsmail Yaşar, Theodoros Boulgarides, Mehmet Kubaşık, Halit Yozgat and Michèle Kiesewetter. Except for Kiesewetter they were all small-scale entrepreneurs of Turkish, Kurdish and Greek ancestry living in different smaller and bigger cities in Germany.  
   
 Prior to the NSU claiming responsibility in 2011, police, politicians and media all categorically dismissed a racist motive behind the murders. In their fabricated allegations, repeated interrogations and secret investigations prosecutors and police officers focused almost solely on the victims’ families. The crimes were referred to as 'The Doner Kebab Murders' or the 'Bosphorus Murders', perpetuating racist stereotypes, and serving to situate the crimes semantically as Middle Eastern, and therefore distinctly foreign.  
