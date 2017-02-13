@@ -127,5 +127,4 @@ gulp.task('default', [
     'fonts',
     'scripts',
     'styles',
-    'jekyll',
 ]);
