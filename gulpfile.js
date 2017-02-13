@@ -106,14 +106,6 @@ gulp.task('watch', () => {
     gulp.watch('./src/styles/**/*', ['styles']);
 });
 
-gulp.task('watch', [
-    'fonts',
-    'scripts',
-    'styles',
-    'jekyll',
-    'watch',
-]);
-
 gulp.task('serve', [
     'fonts',
     'scripts',

@@ -4,6 +4,7 @@ import 'core-js/fn/array/find'
 import Spot from './spot';
 import Page from './page';
 import Player from './player';
+import {getRandomInt} from './util';
 
 export default class Application {
     constructor($spots, $pages, data) {
@@ -15,6 +16,7 @@ export default class Application {
         this.initPages();
         this.initBindings();
         this.enableHistorySupport();
+        this.goToRandomSpot();
         this.loadYouTubeIframeAPI();
     }
 
@@ -36,8 +38,6 @@ export default class Application {
 
     goToSpot(slug) {
         let $currentSpot = this.$spots.filter('.spot--active');
-        console.log(this.$spots);
-        console.log($currentSpot);
         let $targetSpot;
 
         if (!slug) {
@@ -50,6 +50,15 @@ export default class Application {
             $targetSpot.data('spot').show();
             // TODO: update arrow href's
         });
+    }
+
+    goToRandomSpot() {
+        let $currentSpot = this.$spots.filter('.spot--active');
+
+        const randomIndex = getRandomInt(0, this.$spots.length);
+        let $targetSpot = this.$spots.eq(randomIndex);
+
+        this.goToSpot($targetSpot.data('id'));
     }
 
     prevSpot() {
@@ -109,38 +118,47 @@ export default class Application {
 
                 $('.layer__video')
                     .addClass('layer__video--playing')
-                    .append('<div id="player></div>');
+                    .append('<div id="player"></div>');
 
 
                 let $currentSpot = this.$spots.filter('.spot--active');
-                // TODO: get current language
-                let videoId = $currentSpot.data('spot').data.translations[0].attributes.youtube_id;
-                this.player = new Player(videoId, 'player');
 
-                console.log(this.player);
+                let spotData = $currentSpot.data('spot').data.translations.find((translation) => translation.lang === document.documentElement.lang);
+                let videoId = spotData.attributes.youtube_id;
+                this.player = new Player(videoId, 'player');
             });
         
         $('.layer__video .popup__close')
             .on('click', (e) => {
-                console.log(this.player);
                 if (this.player) {
                     this.player.destroy();
                     this.player = undefined;
-                    console.log(this.player);
                 }
 
                 $('.layer__video').removeClass('layer__video--playing');
             });
+        
+        // TODO: decide whether to rewrite in jQuery or vanilla JS
+        // (also data() vs dataset)
+        document.querySelectorAll('.lang__button').forEach((el) => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.translate(el.dataset.lang);
+            })
+        });
 
     }
 
     enableHistorySupport() {
-        // router would go here, but not needed?
-        // better name would be route()
+        if(!window.history) return;
+
+        window.addEventListener('popstate', (e) => {
+            console.log(e);
+        });
     }
 
     translate(lang) {
-        // TODO: set html lang attr
+        document.documentElement.lang = lang;
 
         this.$spots.each((index, el) => {
             let $el = $(el);
@@ -150,6 +168,12 @@ export default class Application {
         this.$pages.each((index, el) => {
             let $el = $(el);
             $el.data('page').translate(lang);
+        });
+
+        document.querySelectorAll('.menu__primary a, .menu__secondary a').forEach((el) => {
+            const currentPage = this.data.pages.find((page) => page.id === el.dataset.slug);
+            const translation = currentPage.translations.find((translation) => translation.lang === lang);
+            el.innerHTML = translation.attributes.title;
         });
     }
 

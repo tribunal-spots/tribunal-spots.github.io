@@ -31,7 +31,7 @@
                     <nav class="menu menu__primary">
                         <ul>
                             {% for menu_item in site.data.menu.primary %}
-                            <li><a href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
+                            <li><a data-slug="{{ menu_item.slug }}" href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
                             {% endfor %}
                         </ul>
                     </nav>
@@ -39,7 +39,7 @@
                     <nav class="menu menu__lang">
                         <ul>
                             {% for lang in site.data.langs %}
-                            <li><a href="{{ '/' | append: lang.slug | append: '/spots/' | append: include.current_spot.slug | append: '/' | relative_url }}">{{ lang.title }}</a></li>
+                            <li><a class="lang__button" data-lang="{{ lang.slug }}" href="{{ '/' | append: lang.slug | append: '/spots/' | append: include.current_spot.slug | append: '/#menu' | relative_url }}">{{ lang.title }}</a></li>
                             {% endfor %}
                         </ul>
                     </nav>
@@ -47,7 +47,7 @@
                     <nav class="menu menu__secondary">
                         <ul>
                             {% for menu_item in site.data.menu.secondary %}
-                            <li><a href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
+                            <li><a data-slug="{{ menu_item.slug }}" href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
                             {% endfor %}
                         </ul>
                     </nav>

@@ -34,16 +34,18 @@ export default class Spot {
         });
 
         // TODO: update video player link
-        // or just remove completely?     
-
-        console.log($('.layer__background').css('background'));
+        // or just remove completely?
 
         // set tabindex?
         // TODO: build proper urls
         const url = `{{BASE_URL}}/de/spots/${this.data.id}/`
 
         if(history) {
-            history.pushState(undefined, undefined, url);
+            history.pushState({
+                lang: 'de',
+                spot: this.data.id,
+                page: undefined, // TODO: sure?
+            }, undefined, url);
         }
     }
 
