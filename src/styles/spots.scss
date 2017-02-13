@@ -38,17 +38,19 @@
         padding: 20px;
     }
 
-    &__play {
-        display: flex;
-        align-items: center;
-        flex: 1; // TODO: needed?
-    }
-
     &__nav {
-        &--prev {
-            order: -1;
-        }
+
     }
+}
+
+#spots__nav--prev {
+    order: -1;
+}
+
+#spots__play {
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
 
 .spot {

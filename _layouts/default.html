@@ -53,13 +53,13 @@
                 <section class="spots__slider">
                     <div class="spots__slides">
                         {% for spot in spots %}
-                        <div class="spot{% if spot.slug == current_spot.slug %} spot--active{% endif %}" data-id="{{ spot.slug }}">
+                        <div class="spot{% if spot.slug == current_spot.slug %} spot--active{% endif %}" data-slug="{{ spot.slug }}">
                             <h2 class="spot__title">{{ spot.title }}</h2>
                         </div>
                         {% endfor %}
                     </div>
 
-                    <div class="spots__nav spots__nav--prev">
+                    <div id="spots__nav--prev" class="spots__nav">
                         {% if page.previous %}
                             {% assign previous_spot = page.previous %}
                         {% else %}
@@ -72,7 +72,7 @@
                         </a>
                     </div>
 
-                    <div class="spots__nav spots__nav--next">
+                    <div id="spots__nav--next" class="spots__nav">
                         {% if page.next %}
                             {% assign next_spot = page.next %}
                         {% else %}
@@ -86,13 +86,11 @@
                     </div>
                 </section>
 
-                <section class="spots__play">
-                    <a href="http://www.youtube.com/watch?v={{ current_spot.youtube_id }}">
-                        <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
-                        </svg>
-                    </a>
-                </section>
+                <a id="spots__play" href="http://www.youtube.com/watch?v={{ current_spot.youtube_id }}">
+                    <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
+                    </svg>
+                </a>
 
             </main>
 
@@ -106,7 +104,7 @@
         {% endfor %}
 
         <div class="layer layer__video">
-            <a class="popup__close" href="#">
+            <a id="video__close" class="popup__close" href="#">
                 <svg class="close" width="30" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0 L50 50" fill="none" stroke="white" stroke-width="4"/>
                     <path d="M50 0 L0 50" fill="none" stroke="white" stroke-width="4"/>

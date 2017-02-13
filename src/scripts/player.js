@@ -17,7 +17,14 @@ export default class Player {
             events: {
                 'onReady': this.onPlayerReady,
                 'onStateChange': this.onPlayerStateChange
-            }
+            },
+            playerVars: {
+                showinfo: 0,
+                rel: 0,
+                modestbranding: 1,
+                hl: document.documentElement.lang,
+                playsinline: 0,
+            },
         });
     }
 

@@ -1,15 +1,18 @@
 import {decode} from 'he';
 
 export default class Page {
-    constructor($el, data) {
-        this.$el = $el;
-        this.data = data;
+    constructor(el, data) {
+        this.el = el;
+        this.slug = data.id; // TODO: change API to say 'slug' ; TODO: do i need this?
+        this.translations = data.translations;
     }
 
     translate(lang) {
-        const translated = this.data.translations.find((translation) => translation.lang === lang);
-        this.$el.find('.page__title h2').text(translated.attributes.title);
-        this.$el.find('.page__content').html(decode(translated.attributes.content));
+        const translation = this.translations.find((translation) => translation.lang === lang);
+        // TODO: maybe use h2.page__title
+        // TODO: put back in here and in page.html
+        // this.el.querySelector('.page__title h2').textContent = translation.attributes.title;
+        this.el.querySelector('.page__content').innerHTML = decode(translation.attributes.content);
     }
 
     show() {
@@ -21,5 +24,5 @@ export default class Page {
         // this.$el.removeAttr('tabindex');
         
         if(typeof(cb) === 'function') cb();
-    }
+    }    
 }
