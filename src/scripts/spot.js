@@ -40,7 +40,7 @@ export default class Spot {
 
         // set tabindex?
         // TODO: build proper urls
-        const url = `/de/spots/${this.data.id}/`
+        const url = `{{BASE_URL}}/de/spots/${this.data.id}/`
 
         if(history) {
             history.pushState(undefined, undefined, url);
