@@ -44,8 +44,7 @@ export default class Player {
     }
 
     destroy() {
-        console.log(this);
-        if (typeof(this.YTPlayer) === 'function') {
+        if (typeof(this.YTPlayer.destroy) === 'function') {
             this.YTPlayer.destroy();
         }
     }
