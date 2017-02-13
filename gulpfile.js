@@ -17,9 +17,11 @@ const webpackConfig = require('./webpack.config.js');
 const siteRoot = '_site';
 
 let ENV = 'development';
+let BASE_URL = '';
 
 if (process.env.ENV === 'production') {
     ENV = 'production';
+    BASE_URL = '/nsu-spots'
 }
 
 gulp.task('fonts', () => {
@@ -32,6 +34,7 @@ gulp.task('fonts', () => {
 gulp.task('scripts', () => {
     return gulp.src('src/scripts/main.js')
         .pipe(webpackStream(webpackConfig, webpack))
+        .pipe(replace('{{BASE_URL}}', BASE_URL))
         .pipe(gulp.dest('assets/scripts/'));
 });
 
@@ -88,7 +91,7 @@ gulp.task('jekyll', () => {
     jekyll.stderr.on('data', jekyllLogger);
 });
 
-gulp.task('serve', () => {
+gulp.task('browserSyncServe', () => {
     browserSync.init({
         files: [siteRoot + '/**'],
         port: 4000,
@@ -103,11 +106,26 @@ gulp.task('watch', () => {
     gulp.watch('./src/styles/**/*', ['styles']);
 });
 
-gulp.task('default', [
+gulp.task('watch', [
     'fonts',
     'scripts',
     'styles',
     'jekyll',
     'watch',
-    'serve'
+]);
+
+gulp.task('serve', [
+    'fonts',
+    'scripts',
+    'styles',
+    'jekyll',
+    'watch',
+    'browserSyncServe',
+]);
+
+gulp.task('default', [
+    'fonts',
+    'scripts',
+    'styles',
+    'jekyll',
 ]);

@@ -3,7 +3,7 @@ import Application from './app';
 import Player from './player';
 
 $(() => {
-    $.getJSON('/data.json', (data) => {
+    $.getJSON('{{BASE_URL}}/data.json', (data) => {
         let application = new Application($('.spot'), $('.content-page'), data);
     });
 
