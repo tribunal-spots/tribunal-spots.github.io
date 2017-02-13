@@ -25,7 +25,7 @@ export default class Spot {
         // could load all images and do z-index stuff...
         window.setTimeout(() => {
             $('.layer__background').css({
-                background: `url(/images/${this.data.id}.jpg) center center/cover no-repeat fixed`,
+                background: `url({{BASE_URL}}/images/${this.data.id}.jpg) center center/cover no-repeat fixed`,
             });
         }, 200);
             
