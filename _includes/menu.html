@@ -12,25 +12,25 @@
             <section class="page">
 
                 <a class="page__logo" href="#">
-                    <svg width="50" viewbox="0 0 50 15" xmlns="http://www.w3.org/2000/svg">
-                        <text x="0" y="15" font-family="Montserrat" font-size="15" fill="#ffffff">
+                    <svg width="60" viewbox="0 0 50 20" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="15" font-family="Montserrat" font-weight="600" font-size="12.6" letter-spacing="2" fill="white">
                             SPOTS
                         </text>
                     </svg>
                 </a>
 
                 <a class="page__hamburger" href="#menu">
-                    <svg class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 2 L50 2" fill="none" stroke="white" stroke-width="4"/>
-                        <path d="M0 10 L50 10" fill="none" stroke="white" stroke-width="4"/>
-                        <path d="M0 18 L50 18" fill="none" stroke="white" stroke-width="4"/>
+                    <svg class="button" width="60" viewbox="0 0 40 14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1 L40 1" fill="none" stroke="white" stroke-width="2"/>
+                        <path d="M0 7 L40 7" fill="none" stroke="white" stroke-width="2"/>
+                        <path d="M0 13 L40 13" fill="none" stroke="white" stroke-width="2"/>
                     </svg>
                 </a>
 
                 <div class="page__content">
                     <nav class="menu menu__primary">
                         <ul>
-                            {% for menu_item in site.data.menu.primary %}
+                            {% for menu_item in site.data.menu %}
                             <li><a data-slug="{{ menu_item.slug }}" href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
                             {% endfor %}
                         </ul>
@@ -40,14 +40,6 @@
                         <ul>
                             {% for lang in site.data.langs %}
                             <li><a class="lang__button" data-lang="{{ lang.slug }}" href="{{ '/' | append: lang.slug | append: '/spots/' | append: include.current_spot.slug | append: '/#menu' | relative_url }}">{{ lang.title }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </nav>
-
-                    <nav class="menu menu__secondary">
-                        <ul>
-                            {% for menu_item in site.data.menu.secondary %}
-                            <li><a data-slug="{{ menu_item.slug }}" href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
                             {% endfor %}
                         </ul>
                     </nav>

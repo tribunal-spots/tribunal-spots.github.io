@@ -2,6 +2,7 @@
 <html lang="{{ page.lang }}">
 
 {% include head.html %}
+{% include svg.html %}
 
 {% assign spots_collection = 'spots_' | append: page.lang %}
 {% assign spots = site[spots_collection] %}
@@ -13,22 +14,17 @@
     {% assign current_spot = spots.first %}
 {% endif %}
 
-{% assign image_url = '/images/' | append: current_spot.slug | append: '.jpg' %}
-
-<style>
-.layer__background {
-    background: url({{ image_url | relative_url }}) center center/cover no-repeat fixed;
-}
-</style>
-
 <body>
 
     <div class="root">
 
-        <div class="layer layer__background">
+        <div id="layer__background" class="layer layer__background">
+            {% for spot in spots %}
+            <div id="background__{{ spot.slug }}" class="background{% if spot.slug == current_spot.slug %} background--active{% endif %}" style="background: url({{ '/images/' | append: spot.slug | append: '.jpg' | relative_url }}) no-repeat center center / cover fixed;" data-slug="{{ spot.slug }}"></div>
+            {% endfor %}
         </div>
 
-        <div class="layer layer__background-overlay">
+        <div id="layer__background-overlay" class="layer layer__background-overlay">
         </div>
 
         <div class="layer layer__spots">
@@ -36,22 +32,18 @@
             <main class="spots" aria-label="Content">
 
                 <header class="spots__header">
-                    <svg viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
-                        <text x="0" y="15" font-family="Montserrat" font-size="15">
-                            SPOTS
-                        </text>
-                    </svg>
-                    <a href="#menu">
-                        <svg class="button" width="50" viewbox="0 0 50 25" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 2 L50 2" fill="none" stroke="black" stroke-width="4"/>
-                            <path d="M0 10 L50 10" fill="none" stroke="black" stroke-width="4"/>
-                            <path d="M0 18 L50 18" fill="none" stroke="black" stroke-width="4"/>
+                    <a class="button" href="#menu">
+                        <svg class="spots-logo" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#spots-logo"></use>
+                        </svg>
+                        <svg class="icon__menu" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#menu-icon"></use>
                         </svg>
                     </a>
                 </header>
 
                 <section class="spots__slider">
-                    <div class="spots__slides">
+                    <div id="spots" class="spots__slides">
                         {% for spot in spots %}
                         <div class="spot{% if spot.slug == current_spot.slug %} spot--active{% endif %}" data-slug="{{ spot.slug }}">
                             <h2 class="spot__title">{{ spot.title }}</h2>
@@ -66,8 +58,8 @@
                             {% assign previous_spot = spots.last %}
                         {% endif %}
                         <a href="{{ previous_spot.url | relative_url }}">
-                            <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23 2 L2 25 L23 48" fill="none" stroke="black" stroke-width="3"/>
+                            <svg class="icon__prev" height="40" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#button-prev"></use>
                             </svg>
                         </a>
                     </div>
@@ -79,16 +71,16 @@
                             {% assign next_spot = spots.first.next %}
                         {% endif %}
                         <a href="{{ next_spot.url | relative_url }}">
-                            <svg height="40" viewbox="0 0 25 50" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 2 L23 25 L2 48" fill="none" stroke="black" stroke-width="3"/>
+                            <svg class="icon__next" height="40" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#button-next"></use>
                             </svg>
                         </a>
                     </div>
                 </section>
 
                 <a id="spots__play" href="http://www.youtube.com/watch?v={{ current_spot.youtube_id }}">
-                    <svg width="40"viewbox="0 0 43 50" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0 L43 25 L0 50" fill="black" stroke="none"/>
+                    <svg class="icon__play" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#button-play"></use>
                     </svg>
                 </a>
 

@@ -15,3 +15,59 @@
     @content;
   }
 }
+
+@mixin x-large {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin scale-icons($width, $height) {
+    width: $width * 0.6;
+    height: $height * 0.6;
+
+    @include small {
+        width: $width * 0.85;
+        height: $height * 0.85;
+    }
+
+    @include medium {
+        width: $width;
+        height: $height;
+    }
+
+    @include large {
+        width: $width * 1.3;
+        height: $height * 1.3;
+    }
+
+    @include x-large {
+        width: $width * 1.6;
+        height: $height * 1.6;
+    }
+}
+
+@mixin scale-fonts($base-size-rem) {
+    font-size: $base-size-rem * 0.6 * 10 + px;
+    font-size: $base-size-rem * 0.6 + rem;
+
+    @include small {
+      font-size: $base-size-rem * 0.85 * 10 + px;
+      font-size: $base-size-rem * 0.85 + rem;
+    }
+
+    @include medium {
+      font-size: $base-size-rem * 10 + px;
+      font-size: $base-size-rem + rem;
+    }
+
+    // @include large {
+    //   font-size: $base-size-rem * 1.3 * 10 + px;
+    //   font-size: $base-size-rem * 1.3 + rem;
+    // }
+
+    // @include x-large {
+    //   font-size: $base-size-rem * 1.6 * 10 + px;
+    //   font-size: $base-size-rem * 1.6 + rem;
+    // }
+}

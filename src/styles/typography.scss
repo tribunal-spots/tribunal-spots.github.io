@@ -8,14 +8,16 @@ body {
     // TODO: better fallback for Bitter
     font-family: 'Bitter', Georgia, serif;
     font-weight: 400;
-    font-size: 16px;
-    font-size: 1.6rem;
     line-height: 1.4;
+    // font-size: 16px;
+    // font-size: 1.6rem;
 
-    @include small{
-        font-size: 20px;
-        font-size: 2rem;
-    }
+    // @include small{
+    //     font-size: 20px;
+    //     font-size: 2rem;
+    // }
+
+    @include scale-fonts(2);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -36,16 +38,19 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    font-size: 2rem;
     line-height: 1.2;
     margin-top: -12px;
     margin-top: -1.2rem;
+    
+    // font-size: 20px;
+    // font-size: 2rem;
 
-    @include small {
-        font-size: 44px;
-        font-size: 4.4rem;
-    }
+    // @include small {
+    //     font-size: 44px;
+    //     font-size: 4.4rem;
+    // }
+
+    @include scale-fonts(4);
 }
 
 // TODO: all headings
@@ -62,4 +67,12 @@ h3 {
 p {
     margin-bottom: 28px;
     margin-bottom: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
 }

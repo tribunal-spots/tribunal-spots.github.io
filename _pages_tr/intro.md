@@ -6,7 +6,7 @@ published: true
 
 # SPOTS
 
-### ’TRİBÜNAL NSU Kompleksi Çözülsün’ için görsel mikro-intervensiyonlar 
+**’TRİBÜNAL NSU Kompleksi Çözülsün’ için görsel mikro-intervensiyonlar**
 
 > Görünürdeki bir alanı nasıl değiştirebiliriz ki, ırkçı yapılar yargılanabilsin ve (post-)göçmen realitesi ve perspektiflerinin fark edilmemesi ve duyulmaması imkânsız hale gelsin?  
     

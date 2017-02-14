@@ -11,8 +11,8 @@ export default class Player {
     initYTPlayer() {
         // Creates an <iframe> (and YouTube player) after the API code downloads.        
         this.YTPlayer = new YT.Player(this.playerElId, {
-            height: '390',
-            width: '640',
+            height: '100%',
+            width: '100%',
             videoId: this.videoId,
             events: {
                 'onReady': this.onPlayerReady,
@@ -35,7 +35,13 @@ export default class Player {
 
     // The API calls this function when the player's state changes.
     onPlayerStateChange(event) {
-
+        console.log(event);
+        switch(event.data) {
+            case YT.PlayerState.ENDED:
+                event.target.destroy();
+                document.querySelector('.layer__video').classList.remove('layer__video--playing');
+                break;
+        }
     }
 
     stopVideo() {

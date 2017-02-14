@@ -1,27 +1,25 @@
-primary:
-  - slug: intro
-    title:
-        de: Intro
-        en: Intro
-        tr: Intro
-  - slug: contributors
-    title:
-        de: Mitwirkende
-        en: Contributors
-        tr: Mitwirkende
-  - slug: contact
-    title:
-        de: Kontakt
-        en: Contact
-        tr: Kontakt
-  - slug: impressum
-    title:
-        de: Impressum
-        en: Impressum
-        tr: Impressum
-secondary:
-  - slug: tribunal
-    title:
-      de: Tribunal
-      en: Tribunal
-      tr: Tribunal
+- slug: intro
+  title:
+      de: Intro
+      en: Intro
+      tr: Intro
+- slug: contributors
+  title:
+      de: Mitwirkende
+      en: Contributors
+      tr: Mitwirkende
+- slug: tribunal
+  title:
+    de: Tribunal
+    en: Tribunal
+    tr: Tribunal
+- slug: contact
+  title:
+      de: Kontakt
+      en: Contact
+      tr: Kontakt
+- slug: impressum
+  title:
+      de: Impressum
+      en: Impressum
+      tr: Impressum

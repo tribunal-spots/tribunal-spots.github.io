@@ -4,21 +4,13 @@ import 'core-js/fn/array/find'
 import Spot from './spot';
 import Page from './page';
 import Player from './player';
-import {getRandomInt} from './util';
+import {getRandomInt, each} from './util';
 
 export default class Application {
     constructor(spots, pages, data) {
-        
-        // TODO: implement a PageCollection class? And a Collection superclass?
         this.spots = this._buildCollection(Spot, spots, data.spots);
         this.pages = this._buildCollection(Page, pages, data.pages);
-        
-        // TODO: not necessary
-        this.data = data;
-        
-        
         this.player = undefined;
-        // this.initSpots();
 
         this.initBindings();
         this.enableHistorySupport();
@@ -31,7 +23,6 @@ export default class Application {
     }
 
     _buildCollection(Component, elements, data) {
-        // TODO: document...
         let collection = [];        
 
         for (let i = 0; i < elements.length; i++) {
@@ -43,45 +34,64 @@ export default class Application {
         return collection;
     }
 
+    get currentLang() {
+        return document.documentElement.lang;
+    }
+
+    set currentLang(lang) {
+        document.documentElement.lang = lang;
+    }
+
+    get currentSpot() {
+        return this.spots.find((spot) => spot.el.classList.contains('spot--active'));
+    }
+
+    get currentSpotIndex() {
+        return this.spots.findIndex((spot) => spot.el.classList.contains('spot--active'));
+    }
+
+    get currentVideoId() {
+        return this.currentSpot.translations.find((translation) => translation.lang === this.currentLang).attributes.youtube_id;
+    }
+
+    findSpot(slug) {
+        return this.spots.find((spot) => spot.el.dataset.slug === slug);
+    }
+
     goToSpot(slug) {
-        let currentSpot = this.spots.find((spot) => spot.el.classList.contains('spot--active'));
         let targetSpot;
 
         if (!slug) {
             targetSpot = this.spots[0];
         } else {
-            targetSpot = this.spots.find((spot) => spot.el.dataset.slug === slug);
+            targetSpot = this.findSpot(slug);
         }
 
-        currentSpot.hide(() => {
+        this.currentSpot.hide(() => {
             targetSpot.show();
             // TODO: update arrow href's
         });
     }
 
     goToRandomSpot() {
-        let currentSpot = this.spots.find((spot) => spot.el.classList.contains('spot--active'));
-
         const randomIndex = getRandomInt(0, this.spots.length);
-        let targetSpot = this.spots[randomIndex];
+        const targetSpot = this.spots[randomIndex];
 
-        this.goToSpot(targetSpot.el.dataset.slug);
+        this.goToSpot(targetSpot.el.dataset.slug || undefined);
     }
 
     prevSpot() {
-        let currentSpotIndex = this.spots.findIndex((spot) => spot.el.classList.contains('spot--active'));
         const total = this.spots.length;
-        const prevSpotIndex = (((currentSpotIndex - 1) % total) + total) % total;
-        let prevSpot = this.spots[prevSpotIndex];
+        const prevSpotIndex = (((this.currentSpotIndex - 1) % total) + total) % total;
+        const prevSpot = this.spots[prevSpotIndex];
 
         this.goToSpot(prevSpot.el.dataset.slug || undefined);
     }
 
     nextSpot() {
-        let currentSpotIndex = this.spots.findIndex((spot) => spot.el.classList.contains('spot--active'));
         const total = this.spots.length;
-        const nextSpotIndex = (currentSpotIndex + 1) % total;
-        let nextSpot = this.spots[nextSpotIndex];
+        const nextSpotIndex = (this.currentSpotIndex + 1) % total;
+        const nextSpot = this.spots[nextSpotIndex];
 
         this.goToSpot(nextSpot.el.dataset.slug || undefined);
     }
@@ -90,7 +100,7 @@ export default class Application {
         // Swipe left/right?
         // Scrollwheel?
 
-        window.addEventListener('keydown', (e) => {
+        window.addEventListener('keyup', (e) => {
             switch(e.which) {
                 case 27:
                     this.destroyVideo();
@@ -102,7 +112,15 @@ export default class Application {
                     this.nextSpot();
                     break;
             }
-        });       
+        });
+
+        window.addEventListener('swiperight', (e) => {
+            this.prevSpot();
+        });
+
+        window.addEventListener('swipeleft', (e) => {
+            this.nextSpot();
+        });
 
         document.getElementById('spots__nav--prev').addEventListener('click', (e) => {
             e.preventDefault();
@@ -126,14 +144,6 @@ export default class Application {
             e.preventDefault();
             this.destroyVideo();
         });
-        
-
-        // TODO: refactor into util
-        function each(HTMLCollection, cb) {
-            for(let i = 0; i < HTMLCollection.length; i++) {
-                cb(HTMLCollection[i], i, HTMLCollection);
-            }
-        }
 
         // TODO: check support for node.dataset
         each(document.getElementsByClassName('lang__button'), (node, i) => {
@@ -154,22 +164,11 @@ export default class Application {
     }
 
     translate(lang) {
-        // TODO: maybe do this last?
-        document.documentElement.lang = lang;
-
-        // this.$spots.each((index, el) => {
-        //     let $el = $(el);
-        //     $el.data('spot').translate(lang);
-        // });
+        this.currentLang = lang;
 
         this.spots.forEach((spot) => {
             spot.translate(lang);
         });
-
-        // this.$pages.each((index, el) => {
-        //     let $el = $(el);
-        //     $el.data('page').translate(lang);
-        // });
 
         this.pages.forEach((page) => {
             page.translate(lang);
@@ -178,11 +177,18 @@ export default class Application {
         // TODO: querySelectorAll is bad
         // TODO: patch forEach
         // TODO: let Application hold refs to all elements, just tell them to translate
-        document.querySelectorAll('.menu__primary a, .menu__secondary a').forEach((el) => {
-            const currentPage = this.data.pages.find((page) => page.id === el.dataset.slug);
+        document.querySelectorAll('.menu__primary a').forEach((el) => {
+            const currentPage = this.pages.find((page) => page.el.dataset.slug === el.dataset.slug);
             const translation = currentPage.translations.find((translation) => translation.lang === lang);
-            el.innerHTML = translation.attributes.title;
+            el.textContent = translation.attributes.title;
         });
+
+        // TODO: go to correct route
+
+        let currentPath = window.location.path;
+        console.log(currentPath);
+        const newPath = currentPath.replace(/de/, 'en');
+        history.pushState(undefined, undefined, newPath);
 
         // if (history) {
         //     let currentState = history.state;
@@ -204,17 +210,13 @@ export default class Application {
     }
 
     playVideo() {
+        // TODO: use ID and document.getElementById
         let videoLayer = document.querySelector('.layer__video');
         videoLayer.classList.add('layer__video--playing');
         let playerDiv = document.createElement('div');
         playerDiv.id = 'player';
         videoLayer.appendChild(playerDiv);
-
-
-        let currentSpot = this.spots.find((spot) => spot.el.classList.contains('spot--active'));
-        let spotData = currentSpot.translations.find((translation) => translation.lang === document.documentElement.lang);
-        let videoId = spotData.attributes.youtube_id;
-        this.player = new Player(videoId, 'player');
+        this.player = new Player(this.currentVideoId, 'player');
     }
 
     destroyVideo() {
