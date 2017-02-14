@@ -4,7 +4,7 @@ title: About
 published: true
 ---
 
-# SPOTS
+## Intro
 
 **’TRİBÜNAL NSU Kompleksi Çözülsün’ için görsel mikro-intervensiyonlar**
 

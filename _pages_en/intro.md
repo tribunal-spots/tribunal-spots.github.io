@@ -3,7 +3,7 @@ layout: default
 title: Intro
 ---
 
-# SPOTS
+## Intro
 
 **Audiovisual Micro-Interventions for _TRIBUNAL Unraveling the NSU Complex_ and beyond**
 

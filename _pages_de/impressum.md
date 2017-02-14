@@ -19,4 +19,5 @@ Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber veran
 Design: bildargumente
 
 Gefördert durch: Berliner Senat
-![SKzl_KA_flach_rgb.jpg]({{site.baseurl}}/images/SKzl_KA_flach_rgb.jpg)
+
+![](/images/SKzl_KA_flach_en.gif)

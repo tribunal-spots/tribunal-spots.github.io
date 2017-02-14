@@ -4,7 +4,7 @@ title: Intro
 published: true
 ---
 
-# SPOTS
+## Intro
 
 **Audiovisuelle Mikro-Interventionen zum TRIBUNAL _NSU-Komplex auflösen_ und darüber hinaus**
 

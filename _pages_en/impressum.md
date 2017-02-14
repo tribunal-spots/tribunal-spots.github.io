@@ -17,4 +17,5 @@ Despite careful monitoring, we cannot take any responsibility for the context on
 
 Design: bildargumente
 Funded by: Berliner Senat
-![SKzl_KA_flach_rgb.jpg]({{site.baseurl}}/images/SKzl_KA_flach_rgb.jpg)
+
+![](/images/SKzl_KA_flach_en.gif)

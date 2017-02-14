@@ -37,6 +37,10 @@
         }
     }
 
+    img {
+        max-width: 70vmin;
+    }
+
     &__title, h2 {
         font-weight: 400;
         font-size: 24px;
