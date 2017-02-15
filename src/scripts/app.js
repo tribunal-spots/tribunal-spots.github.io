@@ -1,6 +1,7 @@
-// Polyfill Array.find
+// Polyfills:
 import 'core-js/fn/array/find'
-// TODO: polyfill Array.findIndex
+import 'core-js/fn/array/find-index'
+
 import Spot from './spot';
 import Page from './page';
 import Player from './player';
