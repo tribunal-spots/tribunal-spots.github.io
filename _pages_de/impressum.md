@@ -16,8 +16,8 @@ Verantwortliche: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Alex
 Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für Inhalte externer Links.
 Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 
-Design: bildargumente
-
+Design: bildargumente  
+  
 Gefördert durch: Berliner Senat
 
 ![](/images/SKzl_KA_flach_en.gif)
