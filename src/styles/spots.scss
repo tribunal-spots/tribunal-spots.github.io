@@ -58,7 +58,7 @@
 
             &__title {
                 opacity: 0;
-                filter: blur(50px);
+                // filter: blur(50px);
                 transition: 1s cubic-bezier(.215,.61,.355, 1);
 
             }
@@ -82,7 +82,7 @@
 
                 .spot__title {
                     opacity: 0;
-                    filter: blur(50px);
+                    // filter: blur(50px);
                     transition: .4s cubic-bezier(.215,.61,.355, 1);
                 }
             }
@@ -91,7 +91,7 @@
 
                 .spot__title {
                     opacity: 1;
-                    filter: blur(0);
+                    // filter: blur(0);
                     transition: 1s cubic-bezier(.215,.61,.355, 1);
                 }
             }
