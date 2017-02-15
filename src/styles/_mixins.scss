@@ -37,8 +37,8 @@
     }
 
     @include large {
-        width: $width * 1.1;
-        height: $height * 1.1;
+        width: $width * 1.3;
+        height: $height * 1.3;
     }
 
     @include x-large {
@@ -48,8 +48,8 @@
 }
 
 @mixin scale-fonts($base-size-rem) {
-    font-size: $base-size-rem * 0.6 * 10 + px;
-    font-size: $base-size-rem * 0.6 + rem;
+    font-size: $base-size-rem * 0.7 * 10 + px;
+    font-size: $base-size-rem * 0.7 + rem;
 
     @include small {
       font-size: $base-size-rem * 0.85 * 10 + px;
@@ -61,13 +61,13 @@
       font-size: $base-size-rem + rem;
     }
 
-    // @include large {
-    //   font-size: $base-size-rem * 1.3 * 10 + px;
-    //   font-size: $base-size-rem * 1.3 + rem;
-    // }
+    @include large {
+      font-size: $base-size-rem * 1.3 * 10 + px;
+      font-size: $base-size-rem * 1.3 + rem;
+    }
 
-    // @include x-large {
-    //   font-size: $base-size-rem * 1.6 * 10 + px;
-    //   font-size: $base-size-rem * 1.6 + rem;
-    // }
+    @include x-large {
+      font-size: $base-size-rem * 1.6 * 10 + px;
+      font-size: $base-size-rem * 1.6 + rem;
+    }
 }

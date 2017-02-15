@@ -53,13 +53,13 @@
             left: 0;
             height: 100%;
             width: 100%;
-            padding: 20px;
             background: #fff;
 
             &__title {
+                padding: 20px;
                 opacity: 0;
                 // filter: blur(50px);
-                transition: 1s cubic-bezier(.215,.61,.355, 1);
+                transition: opacity .4s cubic-bezier(.215,.61,.355, 1);
 
             }
             // &:not(:last-child) {
@@ -83,7 +83,7 @@
                 .spot__title {
                     opacity: 0;
                     // filter: blur(50px);
-                    transition: .4s cubic-bezier(.215,.61,.355, 1);
+                    transition: opacity .4s cubic-bezier(.215,.61,.355, 1);
                 }
             }
             &--active {
@@ -92,7 +92,7 @@
                 .spot__title {
                     opacity: 1;
                     // filter: blur(0);
-                    transition: 1s cubic-bezier(.215,.61,.355, 1);
+                    transition: opacity 1s cubic-bezier(.215,.61,.355, 1);
                 }
             }
         }

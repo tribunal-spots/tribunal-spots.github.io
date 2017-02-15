@@ -19,6 +19,11 @@
         fill: #000;
         @include scale-icons(43px, 50px);
     }
+
+    &__close {
+        stroke: #fff;
+        @include scale-icons(25px, 25px);
+    }
 }
 
 .popup {
@@ -30,7 +35,8 @@
 
         &__menu,
         &__prev,
-        &__next {
+        &__next,
+        &__close {
             stroke: #fff;
         }
     }

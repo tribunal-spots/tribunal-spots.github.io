@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Tribunal
 published: true
 ---
