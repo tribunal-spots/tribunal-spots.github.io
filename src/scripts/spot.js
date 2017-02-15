@@ -24,6 +24,10 @@ export default class Spot {
         overlay.classList.remove('layer__background-overlay--dark');
         this.el.classList.add('spot--active');
 
+        // TODO: abstract out this.currentTranslation function
+        const translation = this.translations.find((translation) => translation.lang === document.documentElement.lang);
+        document.title = `${translation.attributes.title} | NSU Spots`;
+
         // TODO: update video player link
         // or just remove completely?
 
