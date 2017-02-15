@@ -174,25 +174,15 @@ export default class Application {
             page.translate(lang);
         });
 
-        // TODO: go to correct route
+        // TODO: do this with state object everywhere
+        let currentPath = window.location.pathname;
+        let pathParts = currentPath.split('/');
+        pathParts[1] = lang;
+        let newPath = pathParts.join('/');
 
-        // TODO: put back in
-
-        // let currentPath = window.location.path;
-        // console.log(currentPath);
-        // const newPath = currentPath.replace(/de/, 'en');
-        // history.pushState(undefined, undefined, newPath);
-
-        // if (history) {
-        //     let currentState = history.state;
-
-        //     history.pushState({
-        //         lang: lang,
-        //         spot: currentState.spot,
-        //         page: currentState.page,
-        //     }, undefined, `{{BASE_URL}}/${lang}/${spot}/#${page}`);
-
-        // }        
+        if (history) {
+            history.pushState(undefined, undefined, newPath);
+        }      
     }
 
     loadYouTubeIframeAPI() {
