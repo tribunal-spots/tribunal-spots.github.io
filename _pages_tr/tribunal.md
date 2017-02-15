@@ -1,9 +1,9 @@
 ---
-title: Tribunal
+title: Tribünal
 published: true
 ---
 
-### Tribünal
+## Tribünal
 
 Tribünal ‘NSU Kompleksi Çözülsün’ 17- 21 Mayıs 2017 tarihleri arasında Köln’de eskiden üretim sahası olarak kullanılan (Carlswerk) bir mekanda düzenlenecek. Bu fabrikanın kendisi başlı başına göç ve çalışma yaşamının çok yönlü, zengin tarihini anlatan bir mekandır. Türkler ve Kürtlerin sosyal yaşamlarının bir merkezi haline gelmiş olan, alışveriş yerleriyle son derece işlek ve canlı Keupstrasse’nin hemen yakınındadır. Bu sokak, Keupstrasse, 2004 yılında NSU’nun çivili bomba saldırısının hedefi olmuştur.   
   
@@ -13,7 +13,7 @@ Tribünalde dört gün boyunca konuşmalar ve sunumlar yapılacak; çeşitli wor
   
 Tribünal, Almanya ve dışındaki ırkçılık karşıtı ağ (network), kişi ve gruplardan oluşan büyük bir birlikle varlık kazanmıştır ve yine bu birlik tarafından organize edilmektedir. Bu yönüyle de Tribünal, Almanya’da yükselen Nazi eylemleri ve günümüzdeki ırkçılıkla mücadelede başka bir eşi olmayan bir inisiyatiftir.   
   
-### NSU Kompleksi  
+## NSU Kompleksi  
   
 1998-2011 yılları arasında Neonazi terör örgütü ‘Nasyonalsosyalist Yeraltı’, yani kısa adıyla NSU, on insanı öldürdü, üç kez bombalı saldırı düzenledi ve en az 15 soygun gerçekleştirdi. Enver Şimşek, Abdurrahim Özüdoğru, Süleyman Taşköprü, Habil Kılıç, Mehmet Turgut, İsmail Yaşar, Theodoros Boulgarides, Mehmet Kubaşık, Halit Yozgat ve Michèle Kiesewetter katledildi.  
   

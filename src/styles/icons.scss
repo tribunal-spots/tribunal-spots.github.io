@@ -24,6 +24,12 @@
         stroke: #fff;
         @include scale-icons(25px, 25px);
     }
+
+    &__facebook,
+    &__twitter {
+        fill: #fff;
+        @include scale-icons(30px, 30px);
+    }
 }
 
 .popup {

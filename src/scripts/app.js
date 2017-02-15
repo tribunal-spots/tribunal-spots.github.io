@@ -185,10 +185,12 @@ export default class Application {
 
         // TODO: go to correct route
 
-        let currentPath = window.location.path;
-        console.log(currentPath);
-        const newPath = currentPath.replace(/de/, 'en');
-        history.pushState(undefined, undefined, newPath);
+        // TODO: put back in
+
+        // let currentPath = window.location.path;
+        // console.log(currentPath);
+        // const newPath = currentPath.replace(/de/, 'en');
+        // history.pushState(undefined, undefined, newPath);
 
         // if (history) {
         //     let currentState = history.state;

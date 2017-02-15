@@ -21,7 +21,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // width: 50px;
 
         svg {
             display: block;
@@ -42,7 +41,6 @@
         position: relative;
         width: 100%;
         height: 100%;
-        // padding: 20px;
 
         .spot {
             position: absolute;
@@ -56,33 +54,18 @@
             background: #fff;
 
             &__title {
+                // TODO: change to rem everywhere
                 padding: 20px;
                 opacity: 0;
-                // filter: blur(50px);
                 transition: opacity .4s cubic-bezier(.215,.61,.355, 1);
 
             }
-            // &:not(:last-child) {
-            //     .spot__title{
-            //         opacity: 0;
-            //         filter: blur(50px);
-            //         transition: 1s cubic-bezier(.215,.61,.355, 1); 
-            //     }
-            // }
-            // &:last-child {
-            //     .spot__title {
-            //         opacity: 1;
-            //         filter: blur(0);
-            //         transition: 1s cubic-bezier(.215,.61,.355, 1); 
-            //     }
-            // }
 
             &--fadeout {
                 z-index: 100;
 
                 .spot__title {
                     opacity: 0;
-                    // filter: blur(50px);
                     transition: opacity .4s cubic-bezier(.215,.61,.355, 1);
                 }
             }
@@ -91,7 +74,6 @@
 
                 .spot__title {
                     opacity: 1;
-                    // filter: blur(0);
                     transition: opacity 1s cubic-bezier(.215,.61,.355, 1);
                 }
             }
@@ -111,20 +93,4 @@
     display: flex;
     align-items: center;
     flex: 1;
-}
-
-.spot {
-    // display: none;
-
-    // &--active {
-    //     // display: block;
-    //     // opacity: .9;
-    //     transition: 1s;
-    // }
-
-    // &--hide {
-    //     // display: block;
-    //     // opacity: .1;
-    //     transition: .4s;
-    // }
 }

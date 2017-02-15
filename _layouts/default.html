@@ -88,11 +88,13 @@
 
         </div>
 
+        {% comment %}
         {% include menu.html lang=page.lang current_spot=current_spot %}
+        {% endcomment %}
 
         {% assign pages_collection = 'pages_' | append: page.lang %}
         {% for ppage in site[pages_collection] %}
-            {% include page.html page=ppage %}
+            {% include page.html page=ppage current_spot=current_spot %}
         {% endfor %}
 
         <div class="layer layer__video">

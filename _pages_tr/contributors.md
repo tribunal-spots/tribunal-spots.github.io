@@ -1,5 +1,5 @@
 ---
-title: Mitwirkende
+title: EKIP
 published: true
 ---
 

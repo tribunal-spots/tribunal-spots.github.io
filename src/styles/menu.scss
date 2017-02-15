@@ -15,6 +15,13 @@ a:visited {
 
     letter-spacing: 0.5px;
 
+    text-align: center;
+    
+    a {
+        font-family: $sans-serif;
+        text-decoration: none;
+    }
+
     &__secondary {
         a {
             text-decoration: underline;
@@ -22,11 +29,11 @@ a:visited {
     }
 }
 
-nav {
-    text-align: center;
+// nav {
+//     text-align: center;
     
-    a {
-        font-family: 'Montserrat';
-        text-decoration: none;
-    }
-}
+//     a {
+//         font-family: 'Montserrat';
+//         text-decoration: none;
+//     }
+// }

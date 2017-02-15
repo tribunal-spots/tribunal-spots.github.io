@@ -26,7 +26,34 @@
                 </div>-->
 
                 <div class="page__content">
-                    {{ include.page.content | markdownify }}
+                    <div class="page__content--inner">
+                        {{ include.page.content | markdownify }}
+                    </div>
+
+                    {% if include.page.slug == 'menu' %}
+                    <nav class="menu menu__lang">
+                        <ul>
+                            {% for lang in site.data.langs %}
+                            <li><a class="lang__button" data-lang="{{ lang.slug }}" href="{{ '/' | append: lang.slug | append: '/spots/' | append: include.current_spot.slug | append: '/#menu' | relative_url }}">{{ lang.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+
+                        <p style="text-align: center;">
+                            <a class="button" style="padding: 5px;" href="https://www.facebook.com/nsutribunal">
+                                <svg class="icon icon__facebook" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a class="button" style="padding: 5px;" href="https://twitter.com/nsu_tribunal">
+                                <svg class="icon icon__twitter" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </p>
+
+                    {% endif %}
                 </div>
 
             </section>
