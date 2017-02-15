@@ -1,16 +1,37 @@
-.spots-logo {
-    @include scale-icons(60px, 30px);
+.icon {
+    &__logo {
+        fill: #000;
+        @include scale-icons(60px, 30px);
+    }
+
+    &__menu {
+        stroke: #000;
+        @include scale-icons(60px, 21px);
+    }
+
+    &__prev,
+    &__next {
+        stroke: #000;
+        @include scale-icons(25px, 50px);
+    }
+
+    &__play {
+        fill: #000;
+        @include scale-icons(43px, 50px);
+    }
 }
 
-.icon__menu {
-    @include scale-icons(60px, 21px);
-}
+.popup {
+    .icon {
+        &__logo,
+        &__play {
+            fill: #fff;
+        }
 
-.icon__prev,
-.icon__next {
-    @include scale-icons(25px, 50px);
-}
-
-.icon__play {
-    @include scale-icons(43px, 50px);
+        &__menu,
+        &__prev,
+        &__next {
+            stroke: #fff;
+        }
+    }
 }

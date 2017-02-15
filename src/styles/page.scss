@@ -16,6 +16,17 @@
         width: 85vmin;
     }
 
+    // TODO: put this in the right place
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        svg {
+            display: block;
+        }
+    }
+
     &__close {
         position: absolute;
         top: 20px;
