@@ -35,7 +35,6 @@ export default class Player {
 
     // The API calls this function when the player's state changes.
     onPlayerStateChange(event) {
-        console.log(event);
         switch(event.data) {
             case YT.PlayerState.ENDED:
                 event.target.destroy();

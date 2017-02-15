@@ -32,20 +32,6 @@ html, body {
 
     &__background {
         z-index: 0;
-
-        // &--active {
-        //     z-index: 10;
-        //     transform: scale(1.1);
-        //     transition: 1s;
-        // }
-
-        // .background__image {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 100%;
-        // }
     }
 
     &__background-overlay {
