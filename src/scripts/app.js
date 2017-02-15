@@ -174,15 +174,6 @@ export default class Application {
             page.translate(lang);
         });
 
-        // TODO: querySelectorAll is bad
-        // TODO: patch forEach
-        // TODO: let Application hold refs to all elements, just tell them to translate
-        document.querySelectorAll('.menu__primary a').forEach((el) => {
-            const currentPage = this.pages.find((page) => page.el.dataset.slug === el.dataset.slug);
-            const translation = currentPage.translations.find((translation) => translation.lang === lang);
-            el.textContent = translation.attributes.title;
-        });
-
         // TODO: go to correct route
 
         // TODO: put back in
