@@ -21,7 +21,7 @@ let BASE_URL = '';
 
 if (process.env.ENV === 'production') {
     ENV = 'production';
-    BASE_URL = '/nsu-spots'
+    BASE_URL = ''
 }
 
 gulp.task('fonts', () => {
