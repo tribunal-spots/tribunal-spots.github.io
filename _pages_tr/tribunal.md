@@ -34,6 +34,3 @@ Köln 17 – 21 Mayıs 2017
   
 [http://nsu-tribunal.de](http://nsu-tribunal.de)
 
-Bizi takip edin<br>
-[https://www.facebook.com/nsutribunal](https://www.facebook.com/nsutribunal)
-
