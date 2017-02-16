@@ -5,9 +5,9 @@ published: true
 
 ## KÜNYE
 
-'Tribunal NSU-Komplex auflösen' 
-℅ Allerweltshaus
-Körnerstr. 77-79
+'Tribunal NSU-Komplex auflösen'<br>
+℅ Allerweltshaus<br>
+Körnerstr. 77-79<br>
 50823 Köln
   
 Sorumlu kişiler: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Alex Gerbaulet, Betti Hohorst
