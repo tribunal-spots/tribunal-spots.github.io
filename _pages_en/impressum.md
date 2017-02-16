@@ -16,6 +16,6 @@ Those responsible: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Al
 Despite careful monitoring, we cannot take any responsibility for the context on external links. Responsibility for the contexts of the sites linked lies exclusively with those sites.
 
 Design: bildargumente
-Funded by: Berliner Senat
+Funded by:
 
 ![](/images/SKzl_KA_flach_en.gif)
