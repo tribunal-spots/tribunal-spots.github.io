@@ -58,7 +58,7 @@
                             {% assign previous_spot = spots.last %}
                         {% endif %}
                         <a href="{{ previous_spot.url | relative_url }}">
-                            <svg class="icon__prev" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon icon__prev" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#button-prev"></use>
                             </svg>
                         </a>
@@ -71,7 +71,7 @@
                             {% assign next_spot = spots.first.next %}
                         {% endif %}
                         <a href="{{ next_spot.url | relative_url }}">
-                            <svg class="icon__next" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon icon__next" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#button-next"></use>
                             </svg>
                         </a>
@@ -79,7 +79,7 @@
                 </section>
 
                 <a id="spots__play" href="http://www.youtube.com/watch?v={{ current_spot.youtube_id }}">
-                    <svg class="icon__play" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="icon icon__play" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="#button-play"></use>
                     </svg>
                 </a>
