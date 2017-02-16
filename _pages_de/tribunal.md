@@ -28,7 +28,7 @@ Der Begriff 'NSU-Komplex’ wird benutzt, um dieses Zusammenwirken von Neo-Nazi-
 
 Die Verbrechen des NSU waren nur möglich wegen eines tief in der deutschen Gesellschaft verwurzelten Rassismus. Eine Tatsache, mit der sich bis heute heute ungern beschäftigt wird und die weitgehend von der Hand gewiesen wird. Und doch ist es genau das, was eine große Zahl der Opferfamilien und Überlebenden der mörderischen und terroristischen Angriffe des NSU seit Jahren lautstark kundtun.  
 
-Tribunal NSU-Komplex auflösen
+**TRIBUNAL _NSU-Komplex auflösen_**<br>
 Köln 17.-21.5.2017
 
 [http://nsu-tribunal.de](http://nsu-tribunal.de)

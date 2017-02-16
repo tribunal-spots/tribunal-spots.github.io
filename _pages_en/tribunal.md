@@ -27,7 +27,7 @@ In 2013, court proceedings against known NSU members and accomplices were launch
 The fact that the crimes perpetrated by the NSU were only possible because of a racism deeply rooted in German society is largely dismissed. And yet, this is exactly what a large number of survivors of the NSU’s murderous and terrorizing attacks have been loudly proclaiming for years.  
   
   
-Tribunal Unraveling the NSU-Complex 
+**TRIBUNAL _Unraveling the NSU-Complex_**<br>
 Cologne May 17.- 21.2017
 
 [http://nsu-tribunal.de](http://nsu-tribunal.de)

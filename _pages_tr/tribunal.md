@@ -29,7 +29,7 @@ Meclis bünyesinde kurulan on bir araştırma komisyonu, bazıları halen çalı
   
 NSU’nun suçları ancak bir şekilde mümkün olmuştur: Alman toplumunun derinliklerinde kök salan ırkçılık. Irkçılık gerçeği bugüne kadar uğraşılmak istenmeyen ve geniş ölçüde reddedilen bir olgudur. NSU’nun ölümcül terör saldırılarına maruz kalmış kurban ailelerinin ve bu saldırılardan kurtulanların büyük çoğunluğunun yüksek sesle duyurmak istediği işte tam da budur.    
   
-Tribünal ‘NSU Kompleksi Çözülsün’
+**TRIBÜNAL _NSU Kompleksi Çözülsün_**<br>
 Köln 17 – 21 Mayıs 2017
   
 [http://nsu-tribunal.de](http://nsu-tribunal.de)
