@@ -5,7 +5,7 @@ published: true
 
 ## KÜNYE
 
-'Tribunal NSU-Komplex auflösen'<br>
+**Tribunal NSU-Komplex auflösen**<br>
 ℅ Allerweltshaus<br>
 Körnerstr. 77-79<br>
 50823 Köln
