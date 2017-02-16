@@ -1,0 +1,45 @@
+<div id="menu" class="layer layer__popup">
+
+    <div class="popup">
+
+            <a class="popup__close" href="#">
+                <svg class="icon icon__close" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#button-close"></use>
+                </svg>
+            </a>
+
+            <section class="page">
+
+                <div class="page__header">
+                    <a class="button" href="#menu">
+                        <svg class="icon icon__logo" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#spots-logo"></use>
+                        </svg>
+                        <svg class="icon icon__menu" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#menu-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="page__content">
+                    <nav class="menu menu__primary">
+                        <ul>
+                            {% for menu_item in site.data.menu %}
+                            <li><a data-slug="{{ menu_item.slug }}" href="#{{ menu_item.slug }}">{{ menu_item.title[include.lang] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+
+                    <nav class="menu menu__lang">
+                        <ul>
+                            {% for lang in site.data.langs %}
+                            <li><a class="lang__button" data-lang="{{ lang.slug }}" href="{{ '/' | append: lang.slug | append: '/spots/' | append: include.current_spot.slug | append: '/#menu' | relative_url }}">{{ lang.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+
+            </section>
+
+    </div>
+</div>

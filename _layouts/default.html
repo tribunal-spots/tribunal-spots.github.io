@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 
-{% include head.html %}
-{% include svg.html %}
-
 {% assign spots_collection = 'spots_' | append: page.lang %}
 {% assign spots = site[spots_collection] %}
 
@@ -14,13 +11,16 @@
     {% assign current_spot = spots.first %}
 {% endif %}
 
+{% include head.html spots=spots %}
+{% include svg.html %}
+
 <body>
 
     <div class="root">
 
         <div id="layer__background" class="layer layer__background">
             {% for spot in spots %}
-            <div id="background__{{ spot.slug }}" class="background{% if spot.slug == current_spot.slug %} background--active{% endif %}" style="background: url({{ '/images/' | append: spot.slug | append: '.jpg' | relative_url }}) no-repeat center center / cover fixed;" data-slug="{{ spot.slug }}"></div>
+            <div id="background__{{ spot.slug }}" class="background{% if spot.slug == current_spot.slug %} background--active{% endif %}" data-slug="{{ spot.slug }}"></div>
             {% endfor %}
         </div>
 

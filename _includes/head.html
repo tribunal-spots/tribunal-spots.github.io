@@ -25,6 +25,14 @@
         type="application/rss+xml"
         title="{{ site.title | escape }}"
         href="{{ "/feed.xml" | relative_url }}">
+
+  <style>
+  {% for spot in include.spots %}
+  #background__{{ spot.slug }} {
+        background: url({{ '/images/' | append: spot.slug | append: '.jpg' | relative_url }}) no-repeat center center / cover fixed;
+  }
+  {% endfor %}
+  </style>
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
