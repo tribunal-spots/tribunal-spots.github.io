@@ -10,7 +10,7 @@
   <title>{% if page.title %}{{ page.title | escape }}{% endif %} | {{ site.title | escape }}</title>
   
   <meta name="description"
-        content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+        content="{{ site.data.description[page.lang] | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet"
         href="{{ "assets/styles/main.css" | relative_url }}">
@@ -40,7 +40,7 @@
   <meta name="twitter:url"
         content="{{ page.url | absolute_url }}" />
   <meta name="twitter:description"
-        content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+        content="{{ site.data.description[page.lang] | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
   <!--
     Facebook Open-Graph-Tags
@@ -55,11 +55,11 @@
   <meta property="og:type"
         content="article" />
   <meta property="og:locale"
-        content="de_DE" />
+        content="{{ page.locale }}" />
   <meta property="og:image"
         content="{{ '/images/' | append: current_spot.slug | append: '.jpg' | absolute_url }}"/>
   <meta property="og:description"
-        content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+        content="{{ site.data.description[page.lang] | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
   <style>
   {% for spot in include.spots %}

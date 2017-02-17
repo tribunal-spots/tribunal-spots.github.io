@@ -52,36 +52,42 @@ defaults:
       type: 'spots_de'
     values:
       lang: 'de'
+      locale: 'de_DE'
       layout: 'default'
   - scope:
       path: '_spots_en'
       type: 'spots_en'
     values:
       lang: 'en'
+      locale: 'en_US'
       layout: 'default'
   - scope:
       path: '_spots_tr'
       type: 'spots_tr'
     values:
       lang: 'tr'
+      locale: 'tr_TR'
       layout: 'default'
   - scope:
       path: '_pages_de'
       type: 'pages_de'
     values:
       lang: 'de'
+      locale: 'de_DE'
       layout: 'default'
   - scope:
       path: '_pages_en'
       type: 'pages_en'
     values:
       lang: 'en'
+      locale: 'en_US'
       layout: 'default'
   - scope:
       path: '_pages_tr'
       type: 'pages_tr'
     values:
       lang: 'tr'
+      locale: 'tr_TR'
       layout: 'default'
 
 # Build settings
