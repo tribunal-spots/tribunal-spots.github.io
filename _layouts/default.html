@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
+{% capture cache %}
 
 {% assign spots_collection = 'spots_' | append: page.lang %}
 {% assign spots = site[spots_collection] %}
@@ -11,7 +12,7 @@
     {% assign current_spot = spots.first %}
 {% endif %}
 
-{% include head.html spots=spots current_spot=current_spot %}
+{% endcapture %}{% assign cache = nil %}{% include head.html spots=spots current_spot=current_spot %}
 {% include svg.html %}
 
 <body>
@@ -68,7 +69,7 @@
                         {% if page.next %}
                             {% assign next_spot = page.next %}
                         {% else %}
-                            {% assign next_spot = spots.first.next %}
+                            {% assign next_spot = spots.first %}
                         {% endif %}
                         <a href="{{ next_spot.url | relative_url }}">
                             <svg class="icon icon__next" xmlns="http://www.w3.org/2000/svg">

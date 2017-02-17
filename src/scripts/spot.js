@@ -26,7 +26,8 @@ export default class Spot {
 
         // TODO: abstract out this.currentTranslation function
         const translation = this.translations.find((translation) => translation.lang === document.documentElement.lang);
-        document.title = `${translation.attributes.title} | NSU Spots`;
+        // TODO: this should live in global context, as getter/setter on app
+        document.title = `SPOTS | ${translation.attributes.title}`;
 
         // TODO: update video player link
         // or just remove completely?

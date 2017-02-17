@@ -1,6 +1,9 @@
 - slug: de
+  locale: de_DE
   title: Deutsch
 - slug: tr
+  locale: tr_TR
   title: Türkçe
 - slug: en
+  locale: en_US
   title: English

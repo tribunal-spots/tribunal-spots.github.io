@@ -32,7 +32,7 @@
   <meta name="twitter:creator"
         content="{{ site.twitter_username }}">
   <meta name="twitter:title"
-        content="{{ site.title }}" />
+        content="{{ site.title | escape }}{% if page.title %} | {{ page.title | escape }}{% endif %}" />
   <meta name="twitter:image"
         content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}" />
   <meta name="twitter:image:alt"
@@ -47,15 +47,21 @@
     See: https://developers.facebook.com/docs/sharing/best-practices#images
   -->
   <meta property="og:title"
-        content="{{ include.current_spot.title | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+        content="{{ site.title | escape }}{% if page.title %} | {{ page.title | escape }}{% endif %}" />
   <meta property="og:site_name"
-        content="{{ site.title }}"/>
+        content="{{ site.title | escape }}"/>
   <meta property="og:url"
-        content="{{ include.current_spot.url | absolute_url }}" />
+        content="{{ page.url | absolute_url }}" />
   <meta property="og:type"
         content="article" />
   <meta property="og:locale"
         content="{{ page.locale }}" />
+  {% for lang in site.data.langs %}
+  {% if lang.locale != page.locale %}
+  <meta property="og:locale:alternate"
+        content="{{ lang.locale }}" />
+  {% endif %}
+  {% endfor %}
   <meta property="og:image"
         content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}"/>
   <meta property="og:description"

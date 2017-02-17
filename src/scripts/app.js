@@ -166,6 +166,7 @@ export default class Application {
 
     translate(lang) {
         this.currentLang = lang;
+        // TODO: change document title on translation
 
         this.spots.forEach((spot) => {
             spot.translate(lang);
