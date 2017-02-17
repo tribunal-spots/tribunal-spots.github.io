@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: NSU Spots
+title: SPOTS
 email: mail@tribunal-spots.net
 description: > 
   Audiovisual Micro-Interventions for TRIBUNAL Unraveling the NSU Complex and beyond
@@ -47,6 +47,27 @@ defaults:
   #     path: ''
   #   values:
   #     layout: 'default'
+  - scope:
+      path: 'de'
+      type: 'page'
+    values:
+      lang: 'de'
+      locale: 'de_DE'
+      layout: 'default'
+  - scope:
+      path: 'en'
+      type: 'page'
+    values:
+      lang: 'en'
+      locale: 'en_US'
+      layout: 'default'
+  - scope:
+      path: 'tr'
+      type: 'page'
+    values:
+      lang: 'tr'
+      locale: 'tr_TR'
+      layout: 'default'
   - scope:
       path: '_spots_de'
       type: 'spots_de'
