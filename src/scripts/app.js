@@ -68,6 +68,8 @@ export default class Application {
             targetSpot = this.findSpot(slug);
         }
 
+        // TODO: changing global stuff should happen here
+
         this.currentSpot.hide(() => {
             targetSpot.show();
             // TODO: update arrow href's
