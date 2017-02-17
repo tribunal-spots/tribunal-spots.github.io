@@ -160,7 +160,7 @@ export default class Application {
         if(!window.history) return;
 
         window.addEventListener('popstate', (e) => {
-            console.log(e);
+            // console.log(e);
         });
     }
 
