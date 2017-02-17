@@ -15,12 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: NSU Spots
-email: your-email@domain.com
+email: mail@tribunal-spots.net
 description: > 
   Audiovisual Micro-Interventions for TRIBUNAL Unraveling the NSU Complex and beyond
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+url: "http://tribunal-spots.net" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: nsu_tribunal
+facebook_username: nsutribunal
 
 permalink: pretty
 

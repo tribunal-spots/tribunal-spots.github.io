@@ -21,6 +21,46 @@
   <link rel="canonical"
         href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+  <!--
+    Twitter Meta-Tags
+    See: https://dev.twitter.com/cards/types/summary-large-image
+  -->
+  <meta name="twitter:card"
+        content="summary_large_image" />
+  <meta name="twitter:site"
+        content="{{ site.twitter_username }}" />
+  <meta name="twitter:creator"
+        content="{{ site.twitter_username }}">
+  <meta name="twitter:title"
+        content="{{ site.title }}" />
+  <meta name="twitter:image"
+        content="{{ '/images/' | append: current_spot.slug | append: '.jpg' | absolute_url }}" />
+  <meta name="twitter:image:alt"
+        content="{{ current_spot.title | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+  <meta name="twitter:url"
+        content="{{ page.url | absolute_url }}" />
+  <meta name="twitter:description"
+        content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+
+  <!--
+    Facebook Open-Graph-Tags
+    See: https://developers.facebook.com/docs/sharing/best-practices#images
+  -->
+  <meta property="og:title"
+        content="{{ current_spot.title | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+  <meta property="og:site_name"
+        content="{{ site.title }}"/>
+  <meta property="og:url"
+        content="{{ page.url | absolute_url }}" />
+  <meta property="og:type"
+        content="article" />
+  <meta property="og:locale"
+        content="de_DE" />
+  <meta property="og:image"
+        content="{{ '/images/' | append: current_spot.slug | append: '.jpg' | absolute_url }}"/>
+  <meta property="og:description"
+        content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+
   <style>
   {% for spot in include.spots %}
   #background__{{ spot.slug }} {
