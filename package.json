@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "core-js": "^2.4.1",
+    "domready": "^1.0.8",
     "he": "^1.1.1",
     "whatwg-fetch": "^2.0.2"
   }

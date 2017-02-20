@@ -4,14 +4,6 @@ export function getRandomInt(min, max) {
     return Math.floor(Math.random() * (_max - _min)) + _min;
 }
 
-export function DOMready(fn) {
-    if (document.readyState != 'loading'){
-        fn();
-    } else {
-        document.addEventListener('DOMContentLoaded', fn);
-    }
-}
-
 export function checkStatus(response) {
   if (response.status >= 200 && response.status < 300) {
     return response

@@ -1,5 +1,6 @@
 import Application from './app';
-import {DOMready, checkStatus, parseJSON} from './util';
+import {checkStatus, parseJSON} from './util';
+import domready from 'domready';
 
 import PromisePolyfill from 'promise-polyfill';
 
@@ -18,7 +19,7 @@ function init() {
       }).catch(error => console.log('request failed', error));
 }
 
-DOMready(() => {
+domready(() => {
     if (!window.fetch) {
         // Polyfill fetch()
         import('whatwg-fetch')
