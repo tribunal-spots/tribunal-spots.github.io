@@ -12,26 +12,6 @@ export function DOMready(fn) {
     }
 }
 
-export function getJSON(url, cb) {
-    let request = new XMLHttpRequest();
-    request.open('GET', url, true);
-
-    request.onload = () => {
-        if (request.status >= 200 && request.status < 400) {
-            cb(JSON.parse(request.responseText));
-        } else {
-            console.log(`Server returned error while trying to get JSON from url: ${url}`);
-
-        }
-    };
-
-    request.onerror = () => {
-        console.log(`Could not get JSON from url: ${url}`);
-    };
-
-    request.send();
-}
-
 export function checkStatus(response) {
   if (response.status >= 200 && response.status < 300) {
     return response
