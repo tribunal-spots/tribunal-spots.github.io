@@ -1,8 +1,13 @@
 import Application from './app';
-import Player from './player';
-import {DOMready, parseJSON, checkStatus} from './util';
+import {DOMready, checkStatus, parseJSON} from './util';
 
-DOMready(() => {
+import PromisePolyfill from 'promise-polyfill';
+
+if (!window.Promise) {
+    window.Promise = PromisePolyfill;
+}
+
+function init() {
     fetch('{{BASE_URL}}/data.json')
       .then(checkStatus)
       .then(parseJSON)
@@ -11,4 +16,14 @@ DOMready(() => {
         let pages = document.getElementsByClassName('content-page');
         let application = new Application(spots, pages, data);
       }).catch(error => console.log('request failed', error));
+}
+
+DOMready(() => {
+    if (!window.fetch) {
+        // Polyfill fetch()
+        import('whatwg-fetch')
+          .then(() => init());
+    } else {
+        init();
+    }
 });

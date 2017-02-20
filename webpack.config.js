@@ -7,7 +7,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'assets/scripts'),
-        publicPath: '/',
+        publicPath: '/assets/scripts/',
     },
     module: {
         rules: [
@@ -20,7 +20,7 @@ module.exports = {
                         'es2015',
                     ],
                     plugins: [
-                        
+                        'syntax-dynamic-import',
                     ],
                 },
             },
