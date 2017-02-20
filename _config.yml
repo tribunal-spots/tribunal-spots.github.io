@@ -49,21 +49,21 @@ defaults:
   #     layout: 'default'
   - scope:
       path: 'de'
-      type: 'page'
+      type: 'pages'
     values:
       lang: 'de'
       locale: 'de_DE'
       layout: 'default'
   - scope:
       path: 'en'
-      type: 'page'
+      type: 'pages'
     values:
       lang: 'en'
       locale: 'en_US'
       layout: 'default'
   - scope:
       path: 'tr'
-      type: 'page'
+      type: 'pages'
     values:
       lang: 'tr'
       locale: 'tr_TR'
