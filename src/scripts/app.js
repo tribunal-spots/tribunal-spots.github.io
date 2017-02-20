@@ -11,7 +11,7 @@ export default class Application {
     constructor(spots, pages, data) {
         this.spots = this._buildCollection(Spot, spots, data.spots);
         this.pages = this._buildCollection(Page, pages, data.pages);
-        this.player = undefined;
+        this.player = null;
 
         this.initBindings();
         this.enableHistorySupport();
@@ -19,8 +19,8 @@ export default class Application {
         if (document.location.pathname === '{{BASE_URL}}/') {
             this.goToRandomSpot();
         }
-        
-        this.loadYouTubeIframeAPI();
+
+        this.YouTubeIframeAPIReady = null;
     }
 
     _buildCollection(Component, elements, data) {
@@ -190,26 +190,35 @@ export default class Application {
     }
 
     loadYouTubeIframeAPI() {
-        let tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        let firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        return new Promise(resolve => {
+            // this callback fires when YT Iframe API is loaded
+            window.onYouTubeIframeAPIReady = () => resolve();
+
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
     }
 
     playVideo() {
-        // TODO: use ID and document.getElementById
-        let videoLayer = document.querySelector('.layer__video');
-        videoLayer.classList.add('layer__video--playing');
-        let playerDiv = document.createElement('div');
-        playerDiv.id = 'player';
-        videoLayer.appendChild(playerDiv);
-        this.player = new Player(this.currentVideoId, 'player');
+        this.YouTubeIframeAPIReady = this.YouTubeIframeAPIReady || this.loadYouTubeIframeAPI();
+
+        this.YouTubeIframeAPIReady.then(() => {
+            // TODO: use ID and document.getElementById
+            let videoLayer = document.querySelector('.layer__video');
+            videoLayer.classList.add('layer__video--playing');
+            let playerDiv = document.createElement('div');
+            playerDiv.id = 'player';
+            videoLayer.appendChild(playerDiv);
+            this.player = new Player(this.currentVideoId, 'player');
+        });
     }
 
     destroyVideo() {
         if (this.player) {
             this.player.destroy();
-            this.player = undefined;
+            this.player = null;
         }
 
         // TODO: use ID
