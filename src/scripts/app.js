@@ -1,7 +1,3 @@
-// Polyfills:
-import 'core-js/fn/array/find'
-import 'core-js/fn/array/find-index'
-
 import Spot from './spot';
 import Page from './page';
 import Player from './player';

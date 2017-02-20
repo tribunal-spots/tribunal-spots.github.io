@@ -4,6 +4,9 @@ import domready from 'domready';
 
 import PromisePolyfill from 'promise-polyfill';
 
+import loadPolyfills from './polyfill';
+import polyfills from './fixtures/polyfills';
+
 if (!window.Promise) {
     window.Promise = PromisePolyfill;
 }
@@ -20,11 +23,5 @@ function init() {
 }
 
 domready(() => {
-    if (!window.fetch) {
-        // Polyfill fetch()
-        import('whatwg-fetch')
-          .then(() => init());
-    } else {
-        init();
-    }
+    loadPolyfills(polyfills).then(() => init());
 });
