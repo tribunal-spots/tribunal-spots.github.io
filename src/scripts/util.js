@@ -23,3 +23,25 @@ export function each(arr, cb) {
         cb(arr[i], i, arr);
     }
 }
+
+export function buildCollection(Component, elements, data) {
+    let collection = [];        
+
+    for (let i = 0; i < elements.length; i++) {
+        let el = elements.item(i);
+        let elData = data.find((item) => item.id === el.dataset.slug);
+        collection.push(new Component(el, elData));
+    }
+
+    return collection;
+}
+
+export function linkCollection(collection) {
+    // TODO: don't mutate input, use Array.map()
+    collection.forEach((item, index, coll) => {
+        item.prev = coll[(((index - 1) % coll.length) + coll.length) % coll.length];
+        item.next = coll[(index + 1) % coll.length];
+    });
+
+    return collection;
+}

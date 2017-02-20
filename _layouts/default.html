@@ -20,9 +20,7 @@
     <div class="root">
 
         <div id="layer__background" class="layer layer__background">
-            {% for spot in spots %}
-            <div id="background__{{ spot.slug }}" class="background{% if spot.slug == current_spot.slug %} background--active{% endif %}" data-slug="{{ spot.slug }}"></div>
-            {% endfor %}
+            <div id="background__{{ current_spot.slug }}" class="background background--active" data-slug="{{ current_spot.slug }}"></div>
         </div>
 
         <div id="layer__background-overlay" class="layer layer__background-overlay">

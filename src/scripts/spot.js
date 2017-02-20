@@ -4,7 +4,11 @@
 export default class Spot {
     constructor(el, data) {
         this.el = el;
+        this.backgroundEl = document.getElementById(`background__${this.el.dataset.slug}`);
         this.translations = data.translations;
+
+        this.prev = null;
+        this.next = null;
     }
 
     translate(lang) {
@@ -13,15 +17,40 @@ export default class Spot {
         this.el.querySelector('h2').textContent = translation.attributes.title;
     }
 
+    loadBackground() {
+        const background = document.createElement('div');
+        background.id = `background__${this.el.dataset.slug}`;
+        background.classList.add('background');
+        const backgroundLayer = document.getElementById('layer__background');
+        backgroundLayer.appendChild(background);
+
+        return background;
+    }
+
+    prepareBackground() {
+        if (!this.backgroundEl) {
+            this.backgroundEl = this.loadBackground();
+        }
+    }
+
+    showBackground() {
+        this.backgroundEl.classList.add('background--active');
+    }
+
+    hideBackground() {
+        this.backgroundEl.classList.remove('background--active');
+    }
+
     show() {
-        let overlay = document.getElementById('layer__background-overlay');
+        this.prepareBackground();
+        this.prev.prepareBackground();
+        this.next.prepareBackground();
 
-        let currentBg = document.getElementsByClassName('background--active')[0];
-        let newBg = document.getElementById(`background__${this.el.dataset.slug}`);
-        currentBg.classList.remove('background--active');
-        newBg.classList.add('background--active');
+        this.showBackground();
 
+        const overlay = document.getElementById('layer__background-overlay');
         overlay.classList.remove('layer__background-overlay--dark');
+
         this.el.classList.add('spot--active');
 
         // TODO: abstract out this.currentTranslation function
@@ -47,25 +76,8 @@ export default class Spot {
     }
 
     hide(cb) {
-
-        /*
-            1. fade background overlay (add dark class)
-            2. fade title (remove active class)
-            3. event listener for background fade completion
-               (needs to have same time as fade title; could use either)
-                a. remove event lister
-                b. call callback (newSpot.show())
-                    A. switch background images
-                       (cycle as often as is necessary and in the right direction)
-                    B. switch titles
-                       (cycle as often as is necessary and in the right direction)
-                    C. unfade background overlay (remove dark class)
-                    D. unfade title (add active class)
-
-        */
-
         // TODO: cache this
-        let overlay = document.getElementById('layer__background-overlay');
+        const overlay = document.getElementById('layer__background-overlay');
 
         // fade background
         overlay.classList.add('layer__background-overlay--dark');
@@ -74,13 +86,15 @@ export default class Spot {
         this.el.classList.add('spot--fadeout');
         this.el.classList.remove('spot--active');
 
-        let self = this;
+        const self = this;
         
         overlay.addEventListener('transitionend', function fadeout(e) {
             overlay.removeEventListener('transitionend', fadeout, false);
+
+            self.hideBackground();
             self.el.classList.remove('spot--fadeout');
 
-            if(typeof(cb) === 'function') cb();
+            if (typeof(cb) === 'function') cb();
         });
         
         

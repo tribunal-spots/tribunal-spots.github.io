@@ -1,34 +1,25 @@
 import Spot from './spot';
 import Page from './page';
 import Player from './player';
-import {getRandomInt, each} from './util';
+import {getRandomInt, each, buildCollection, linkCollection} from './util';
 
 export default class Application {
     constructor(spots, pages, data) {
-        this.spots = this._buildCollection(Spot, spots, data.spots);
-        this.pages = this._buildCollection(Page, pages, data.pages);
+        this.spots = linkCollection(buildCollection(Spot, spots, data.spots));
+        this.pages = buildCollection(Page, pages, data.pages);
         this.player = null;
 
         this.initBindings();
         this.enableHistorySupport();
-        
+
+        // TODO: this should go in the router        
         if (document.location.pathname === '{{BASE_URL}}/') {
             this.goToRandomSpot();
         }
 
+        // TODO: else { goToSpot(current) }
+
         this.YouTubeIframeAPIReady = null;
-    }
-
-    _buildCollection(Component, elements, data) {
-        let collection = [];        
-
-        for (let i = 0; i < elements.length; i++) {
-            let el = elements.item(i);
-            let elData = data.find((item) => item.id === el.dataset.slug);
-            collection.push(new Component(el, elData));
-        }
-
-        return collection;
     }
 
     get currentLang() {
@@ -43,9 +34,10 @@ export default class Application {
         return this.spots.find((spot) => spot.el.classList.contains('spot--active'));
     }
 
-    get currentSpotIndex() {
-        return this.spots.findIndex((spot) => spot.el.classList.contains('spot--active'));
-    }
+    // unused:
+    // get currentSpotIndex() {
+    //     return this.spots.findIndex((spot) => spot.el.classList.contains('spot--active'));
+    // }
 
     get currentVideoId() {
         return this.currentSpot.translations.find((translation) => translation.lang === this.currentLang).attributes.youtube_id;
@@ -54,6 +46,11 @@ export default class Application {
     findSpot(slug) {
         return this.spots.find((spot) => spot.el.dataset.slug === slug);
     }
+
+    // unused:
+    // findSpotIndex(slug) {
+    //     return this.spots.findIndex((spot) => spot.el.dataset.slug === slug);
+    // }
 
     goToSpot(slug) {
         let targetSpot;
@@ -80,19 +77,11 @@ export default class Application {
     }
 
     prevSpot() {
-        const total = this.spots.length;
-        const prevSpotIndex = (((this.currentSpotIndex - 1) % total) + total) % total;
-        const prevSpot = this.spots[prevSpotIndex];
-
-        this.goToSpot(prevSpot.el.dataset.slug || undefined);
+        this.goToSpot(this.currentSpot.prev.el.dataset.slug || undefined);
     }
 
     nextSpot() {
-        const total = this.spots.length;
-        const nextSpotIndex = (this.currentSpotIndex + 1) % total;
-        const nextSpot = this.spots[nextSpotIndex];
-
-        this.goToSpot(nextSpot.el.dataset.slug || undefined);
+        this.goToSpot(this.currentSpot.next.el.dataset.slug || undefined);
     }
 
     initBindings() {
