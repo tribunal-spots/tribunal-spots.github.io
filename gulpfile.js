@@ -63,7 +63,7 @@ gulp.task('styles', () => {
                 'Explorer >= 10',
                 'last 1 Edge versions',
                 'last 3 iOS versions',
-                'last 2 Safari versions',
+                'Safari >= 6.2',
                 'last 2 ChromeAndroid versions',
                 'Android >= 4.1',
             ],
