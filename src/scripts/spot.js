@@ -51,7 +51,9 @@ export default class Spot {
         const overlay = document.getElementById('layer__background-overlay');
         overlay.classList.remove('layer__background-overlay--dark');
 
+        this.el.classList.add('spot--fadeout');
         this.el.classList.add('spot--active');
+        this.el.classList.remove('spot--fadeout');
 
         // TODO: abstract out this.currentTranslation function
         const translation = this.translations.find((translation) => translation.lang === document.documentElement.lang);

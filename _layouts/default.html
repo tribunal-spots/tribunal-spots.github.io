@@ -42,13 +42,6 @@
                 </header>
 
                 <section class="spots__slider">
-                    <div id="spots" class="spots__slides">
-                        {% for spot in spots %}
-                        <div class="spot{% if spot.slug == current_spot.slug %} spot--active{% endif %}" data-slug="{{ spot.slug }}">
-                            <h2 class="spot__title">{{ spot.title }}</h2>
-                        </div>
-                        {% endfor %}
-                    </div>
 
                     <div id="spots__nav--prev" class="spots__nav">
                         {% if page.previous %}
@@ -62,6 +55,27 @@
                             </svg>
                         </a>
                     </div>
+
+                    <div id="spots" class="spots__slides">
+                        {% for spot in spots %}
+                        <div class="spot{% if spot.slug == current_spot.slug %} spot--active{% endif %}" data-slug="{{ spot.slug }}">
+                            <h2 class="spot__title">{{ spot.title }}</h2>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <!--<div id="spots__nav--prev" class="spots__nav">
+                        {% if page.previous %}
+                            {% assign previous_spot = page.previous %}
+                        {% else %}
+                            {% assign previous_spot = spots.last %}
+                        {% endif %}
+                        <a href="{{ previous_spot.url | relative_url }}">
+                            <svg class="icon icon__prev" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#button-prev"></use>
+                            </svg>
+                        </a>
+                    </div>-->
 
                     <div id="spots__nav--next" class="spots__nav">
                         {% if page.next %}
