@@ -135,6 +135,10 @@ prose:
   ignore:
     - '_includes'
     - '_layouts'
+    - '_data'
+    - 'en'
+    - 'de'
+    - 'tr'
     - 'assets'
     - 'src'
     - '.gitignore'
@@ -147,6 +151,7 @@ prose:
     - '_config.yml'
     - 'data.json'
     - 'index.md'
+    - 'CNAME'
 
 exclude:
   - Gemfile

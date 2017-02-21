@@ -17,7 +17,7 @@ function init() {
       .then(parseJSON)
       .then(data => {
         let spots = document.getElementsByClassName('spot');
-        let pages = document.getElementsByClassName('content-page');
+        let pages = document.getElementsByClassName('page');
         let application = new Application(spots, pages, data);
       }).catch(error => console.log('request failed', error));
 }

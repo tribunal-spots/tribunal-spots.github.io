@@ -12,6 +12,18 @@
     {% assign current_spot = spots.first %}
 {% endif %}
 
+{% if page.previous %}
+    {% assign previous_spot = page.previous %}
+{% else %}
+    {% assign previous_spot = spots.last %}
+{% endif %}
+
+{% if page.next %}
+    {% assign next_spot = page.next %}
+{% else %}
+    {% assign next_spot = spots.first %}
+{% endif %}
+
 {% endcapture %}{% assign cache = nil %}{% include head.html spots=spots current_spot=current_spot %}
 {% include svg.html %}
 
@@ -44,11 +56,6 @@
                 <section class="spots__slider">
 
                     <div id="spots__nav--prev" class="spots__nav">
-                        {% if page.previous %}
-                            {% assign previous_spot = page.previous %}
-                        {% else %}
-                            {% assign previous_spot = spots.last %}
-                        {% endif %}
                         <a href="{{ previous_spot.url | relative_url }}">
                             <svg class="icon icon__prev" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#button-prev"></use>
@@ -65,11 +72,6 @@
                     </div>
 
                     <!--<div id="spots__nav--prev" class="spots__nav">
-                        {% if page.previous %}
-                            {% assign previous_spot = page.previous %}
-                        {% else %}
-                            {% assign previous_spot = spots.last %}
-                        {% endif %}
                         <a href="{{ previous_spot.url | relative_url }}">
                             <svg class="icon icon__prev" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#button-prev"></use>
@@ -78,11 +80,6 @@
                     </div>-->
 
                     <div id="spots__nav--next" class="spots__nav">
-                        {% if page.next %}
-                            {% assign next_spot = page.next %}
-                        {% else %}
-                            {% assign next_spot = spots.first %}
-                        {% endif %}
                         <a href="{{ next_spot.url | relative_url }}">
                             <svg class="icon icon__next" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#button-next"></use>
