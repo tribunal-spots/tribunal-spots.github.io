@@ -15,9 +15,9 @@ export default class Application {
         // TODO: this should go in the router        
         if (document.location.pathname === '{{BASE_URL}}/') {
             this.goToRandomSpot();
+        } else {
+            this.currentSpot.show();
         }
-
-        // TODO: else { goToSpot(current) }
 
         this.YouTubeIframeAPIReady = null;
     }
