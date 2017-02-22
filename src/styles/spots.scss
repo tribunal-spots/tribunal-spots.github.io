@@ -19,7 +19,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex: 0 0 33%;
+        flex: 1 1 0;
 
         svg {
             display: block;
@@ -32,7 +32,7 @@
         align-items: center;
         justify-content: space-between;
         
-        flex: 0 0 33%;
+        flex: 1 1 0;
         
         width: 100%;
         padding: 0 5vmin;
@@ -44,7 +44,7 @@
         align-items: center;
         justify-content: space-between;
 
-        flex: 1 1 100%;
+        flex: 1 1 auto;
 
         .spot {
             flex: 1 1 100%;
@@ -85,6 +85,7 @@
 
     &__nav {
         z-index: 150;
+        flex: 0 0 auto;
     }
 }
 
@@ -95,5 +96,5 @@
 #spots__play {
     display: flex;
     align-items: center;
-    flex: 0 0 33%;
+    flex: 1 1 0;
 }
