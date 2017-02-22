@@ -19,7 +19,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex: 1 1 0;
+        flex: 1 1 0%;
 
         svg {
             display: block;
@@ -32,7 +32,7 @@
         align-items: center;
         justify-content: space-between;
         
-        flex: 1 1 0;
+        flex: 1 1 0%;
         
         width: 100%;
         padding: 0 5vmin;
@@ -103,5 +103,5 @@
 #spots__play {
     display: flex;
     align-items: center;
-    flex: 1 1 0;
+    flex: 1 1 0%;
 }
