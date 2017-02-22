@@ -17,7 +17,7 @@ Das Tribunal wird von einem großen Bündnis antirassistischer Netzwerke, Gruppe
 ## Der NSU-Komplex  
 
 Von 1998 bis 2011 beging die neonazistische Terror-Organisation 'Nationalsozialistischer Untergrund’ (NSU) zehn Morde, drei Bombenangriffe und 15 Überfälle. 
-Die ermordeten Opfer sind Enver Şimşek, Abdurrahim Özüdoğru, Süleyman Taşköprü, Habil Kılıç, Mehmet Turgut, İsmail Yaşar, Theodoros Boulgarides, Mehmet Kubaşık, Halit Yozgat und Michèle Kiesewetter.
+Die ermordeten Opfer sind Enver Şimşek, Abdurrahim Özüdoğru, Süleyman Taşköprü, Habil Kılıç, Mehmet Turgut, İsmail Yaşar, Theodoros Boulgarides, Mehmet Kubaşık, Halit Yozgat und Michèle Kiesewetter.
 Bis auf Kiesewetter waren sie alle Kleinunternehmer türkischer, kurdischer und griechischer Herkunft, die in verschiedenen größeren und kleineren Städten in Deutschland gelebt und gearbeitet haben.   
 
 Bevor sich der sogenannte NSU 2011 selbst enttarnte, wiesen Polizei, Politiker und Medien ein rassistisches Tatmotiv kategorisch von der Hand. Mit ihren falschen Behauptungen, geheimen Ermittlungen und wiederholten Befragungen zielten die Ermittler fast ausschließlich auf die Familien und den Bekanntenkreis der Opfer. Die Verbrechen wurden in den Medien als 'Dönermorde’ bezeichnet, eine der Ermittlungskommissionen nannte sich  'Bosporus'. So setzten sich rassistische Stereotypen fort und situierten die Verbrechen semantisch als nah-östlich und damit deutlich als nicht zu Deutschland gehörig.  
