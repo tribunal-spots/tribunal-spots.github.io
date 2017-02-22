@@ -1,3 +1,5 @@
+import {whichTransitionEvent} from './util';
+
 // TODO: maybe access dataset via getAttr? (some old browser don't support el.dataset)
 // TODO: add helper function to add and remove classes (older browsers don't support el.classList.add/remove)
 
@@ -89,9 +91,10 @@ export default class Spot {
         this.el.classList.remove('spot--active');
 
         const self = this;
+        const transitionEvent = whichTransitionEvent();
         
-        overlay.addEventListener('transitionend', function fadeout(e) {
-            overlay.removeEventListener('transitionend', fadeout, false);
+        overlay.addEventListener(transitionEvent, function fadeout(e) {
+            overlay.removeEventListener(transitionEvent, fadeout, false);
 
             self.hideBackground();
             self.el.classList.remove('spot--fadeout');
