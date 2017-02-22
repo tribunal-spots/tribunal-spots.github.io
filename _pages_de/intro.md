@@ -5,7 +5,7 @@ published: true
 
 ## Intro
 
-**Audiovisuelle Mikro-Interventionen zum TRIBUNAL _NSU-Komplex auflösen_   
+**Audiovisuelle Mikro-Interventionen zum TRIBUNAL _NSU-Komplex auflösen_     
 und darüber hinaus**
 
 > Wie können wir das Feld des Sichtbaren so verändern, dass rassistische Strukturen anklagbar und (post-)migrantische Realitäten und Perspektiven unübersehbar und unüberhörbar werden?
