@@ -17,6 +17,8 @@ Despite careful monitoring, we cannot take any responsibility for the context on
 
 Design: bildargumente    
     
-    Funded by:
+    
+Funded by:
 
+    
 ![](/images/SKzl_KA_flach_en.gif)
