@@ -26,7 +26,7 @@ Der Begriff 'NSU-Komplex’ wird benutzt, um dieses Zusammenwirken von Neo-Nazi-
 
 2013 begann vor dem Oberlandesgericht in München der Prozess gegen ein bekanntes NSU-Mitglied und vier mutmaßliche Komplizen. Seit dem ersten Verhandlungstag haben die Nebenklageanwält/innen der Opferfamilien und Überlebenden der Bombenanschläge immer wieder die Reduzierung der Anklage kritisiert, welche von einem Täter-Trio mit wenigen Unterstützer/innen ausgeht und dabei das vermutlich weitläufige Unterstützungs-Netzwerk außer Acht lässt. Auch jeder Versuch, die andauernden strukturell rassistischen Handlungsweisen staatlicher Autoritäten und deren Verflechtung mit dem NSU genauer zu betrachten, wurde vom Generalbundesanwalt torpediert und vom Gericht ignoriert. Nicht einmal die Opferfamilien und Überlebenden konnten ungehindert sprechen. Sie wurden unterbrochen und auf ihre Rolle der unmittelbaren Tatbezeugung reduziert.  
 
-Die Verbrechen des NSU waren nur möglich wegen eines tief in der deutschen Gesellschaft verwurzelten Rassismus. Eine Tatsache, mit der sich bis heute ungern beschäftigt wird und die weitgehend von der Hand gewiesen wird. Und doch ist es genau das, was eine große Zahl der Opferfamilien und Überlebenden der mörderischen und terroristischen Angriffe des NSU seit Jahren lautstark kundtun.  
+Die Verbrechen des NSU waren nur möglich wegen eines tief in der deutschen Gesellschaft verwurzelten Rassismus. Eine Tatsache, mit der sich bis ungern beschäftigt wird und die weitgehend von der Hand gewiesen wird. Und doch ist es genau das, was eine große Zahl der Opferfamilien und Überlebenden der mörderischen und terroristischen Angriffe des NSU seit Jahren lautstark kundtun.  
 
 **TRIBUNAL _NSU-Komplex auflösen_**<br>
 Köln 17.-21.5.2017
