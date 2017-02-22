@@ -16,7 +16,7 @@ The Tribunal is initiated and organised by a large coalition of anti-racist and 
   
 ## The NSU-Complex
 
-From 1998 to 2011 the neo-Nazi terrorist organisation ‘National Socialist Underground’ (NSU) committed ten murders, three bomb attacks and 15 robberies. The murdered victims are Enver Şimşek, Abdurrahim Özüdoğru, Süleyman Taşköprü, Habil Kılıç, Mehmet Turgut, İsmail Yaşar, Theodoros Boulgarides, Mehmet Kubaşık, Halit Yozgat and Michèle Kiesewetter. Except for Kiesewetter they were all small-scale entrepreneurs of Turkish, Kurdish and Greek ancestry living in different smaller and bigger cities in Germany.  
+From 1998 to 2011 the neo-Nazi terrorist organisation ‘National Socialist Underground’ (NSU) committed ten murders, three bomb attacks and 15 robberies. The murdered victims are Enver Şimşek, Abdurrahim Özüdoğru, Süleyman Taşköprü, Habil Kılıç, Mehmet Turgut, İsmail Yaşar, Theodoros Boulgarides, Mehmet Kubaşık, Halit Yozgat and Michèle Kiesewetter. Except for Kiesewetter they were all small-scale entrepreneurs of Turkish, Kurdish and Greek ancestry living in different smaller and bigger cities in Germany.  
   
 Prior to the NSU claiming responsibility in 2011, police, politicians and media all categorically dismissed a racist motive behind the murders. In their fabricated allegations, repeated interrogations and secret investigations prosecutors and police officers focused almost solely on the victims’ families. The crimes were referred to as 'The Doner Kebab Murders' or the 'Bosphorus Murders', perpetuating racist stereotypes, and serving to situate the crimes semantically as Middle Eastern, and therefore distinctly foreign.  
   
