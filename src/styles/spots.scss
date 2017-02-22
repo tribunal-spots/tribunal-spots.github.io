@@ -54,6 +54,10 @@
             justify-content: center;
             display: none;
 
+            // Fix flex bug with IE10-11
+            // see https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container
+            max-width: 100%;
+
             &__title {
                 // TODO: change to rem everywhere
                 padding: 20px;
