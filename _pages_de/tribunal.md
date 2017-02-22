@@ -5,7 +5,7 @@ published: true
 
 ## Das Tribunal
 
-Das Tribunal NSU-Komplex auflösen findet vom 17. - 21. Mai 2017 in Köln auf dem Gelände der ehemaligen Carlswerke statt. Diese Fabrik ist selbst ein Ort der vielfältigen Geschichte von Migration und Arbeit. Sie liegt in direkter Nähe der Keupstrasse, einer belebten Einkaufsstraße und einem Zentrum türkisch-kurdischen sozialen Lebens. Die Straße wurde 2004 Ziel eines Nagelbomben-Anschlags durch den NSU.   
+Das Tribunal _NSU-Komplex auflösen_ findet vom 17. - 21. Mai 2017 in Köln auf dem Gelände der ehemaligen Carlswerke statt. Diese Fabrik ist selbst ein Ort der vielfältigen Geschichte von Migration und Arbeit. Sie liegt in direkter Nähe der Keupstrasse, einer belebten Einkaufsstraße und einem Zentrum türkisch-kurdischen sozialen Lebens. Die Straße wurde 2004 Ziel eines Nagelbomben-Anschlags durch den NSU.   
 
 Das Tribunal geht aus einer Gesellschaft der Vielen hervor und fordert die Auflösung von strukturellen und institutionellen Rassismen. Es steht den Angehörigen und Freunden der Opfer des NSU-Terrors bei und unterstützt deren Anklagen gegen staatliche Organe und Institutionen als Komplizen des NSU-Komplexes. Das Tribunal setzt sich ein gegen das Leise-Drehen der Stimmen derer, die Ziel der Morde und Anschläge des NSU waren und davon weiterhin betroffen sind. Es geht von ihrem Wissen und ihren Erfahrungen aus und verschafft ihren Forderungen Gehör, die Bedingungen und Strukturen aufzulösen, die den NSU ermöglicht haben. 
 Das Tribunal zielt außerdem auch auf einen internationalen Diskurs über den NSU-Komplex und seine Kontextualisierung in der Geschichte von institutionellem Rassismus und Strukturen von 'Tiefem Staat'. 
