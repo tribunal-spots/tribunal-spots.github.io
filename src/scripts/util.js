@@ -29,7 +29,7 @@ export function buildCollection(Component, elements, data) {
 
     for (let i = 0; i < elements.length; i++) {
         let el = elements.item(i);
-        let elData = data.find((item) => item.id === el.dataset.slug);
+        let elData = data.find((item) => item.slug === el.dataset.slug);
         collection.push(new Component(el, elData));
     }
 
