@@ -5,7 +5,7 @@ published: true
 
 ## Intro
 
-**’TRİBÜNAL NSU Kompleksi Çözülsün’ için görsel mikro-intervensiyonlar**
+**’TRİBÜNAL NSU Kompleksi Dağıtılsın’ için görsel mikro-intervensiyonlar**
 
 > Görünürdeki bir alanı nasıl değiştirebiliriz ki, ırkçı yapılar yargılanabilsin ve (post-)göçmen realitesi ve perspektiflerinin fark edilmemesi ve duyulmaması imkânsız hale gelsin?  
     
@@ -18,4 +18,4 @@ Diğer taraftan ortada belirgin olan bir şey var ki, o da Almanya’da ırkçı
   
 SPOTLAR, Tribünalin mobilizasyonu için, NSU kompleksine dair kısa görsel intervensiyonlardır. NSU kompleksi ile yüzleşilmesinde kör noktaları konu edinen spotlar, sağ örgüt/grup ağlarını ve onların eylemlerini her şeyden önce mümkün kılan ırkçılık ve koşulları üzerine ışık tutacaktır. SPOTLAR estetiği de politik bir uğraş olarak anlamaktadır. NSU kompleksine yönelik medyada yer alan başlıklara ve fail odaklı baskın bir medya politikasına karşı koymaktadır. Görünürlüğü tersine çevirecek, direniş örnekleri sunacak, sorular ve şikâyetler/iddialar formüle edecektir. Ve böylesi geniş toplumsal bir tartışmayı harekete geçirmeyi istemektedir.  
   
-SPOTLAR 2017 yılı ilkbahar döneminden itibaren tek başına, gruplar halinde ve kompleks/toplu seri halde Almanya ve dışındaki farklı yerlerde gösterilecektir. Reklam bloklarına yerleştirilecek, akşam sinema programı olarak gösterilecek, internette dolaşıma girecek, sergi salonunda yüklenip bağlanabilecek veya etkinlikler dizisinin bir parçası olacak. 
+SPOTLAR 2017 yılı ilkbahar döneminden itibaren tek başına, gruplar halinde ve kompleks/toplu seri halde Almanya ve dışındaki farklı yerlerde gösterilecektir. Reklam bloklarına yerleştirilecek, akşam sinema programı olarak gösterilecek, internette dolaşıma girecek, sergi salonunda yüklenip bağlanabilecek veya etkinlikler dizisinin bir parçası olacak.
