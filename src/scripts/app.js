@@ -2,6 +2,7 @@ import Spot from './spot';
 import Page from './page';
 import Player from './player';
 import {getRandomInt, each, buildCollection, linkCollection} from './util';
+import addSwipeHandlers from './swipe';
 
 export default class Application {
     constructor(spots, pages, data) {
@@ -131,6 +132,14 @@ export default class Application {
         window.addEventListener('swipeleft', (e) => {
             this.nextSpot();
         });
+
+
+        const spotsLayer = document.getElementById('layer__spots');
+
+        addSwipeHandlers(spotsLayer,
+            () => {this.nextSpot()},
+            () => {this.prevSpot()});
+
 
         document.getElementById('spots__nav--prev').addEventListener('click', (e) => {
             e.preventDefault();
