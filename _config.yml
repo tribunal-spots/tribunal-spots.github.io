@@ -43,6 +43,10 @@ collections:
     output: false
 
 defaults:
+  # - scope:
+  #     path: ''
+  #   values:
+  #     layout: 'default'
   - scope:
       path: 'de'
       type: 'pages'

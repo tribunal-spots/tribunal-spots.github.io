@@ -43,7 +43,7 @@ export default class Spot {
         this.backgroundEl.classList.remove('background--active');
     }
 
-    show() {
+    show(cb) {
         this.prepareBackground();
         this.prev.prepareBackground();
         this.next.prepareBackground();
@@ -66,17 +66,10 @@ export default class Spot {
         // or just remove completely?
 
         // set tabindex?
-        // TODO: build proper urls
-        const url = `{{BASE_URL}}/${document.documentElement.lang}/spots/${this.el.dataset.slug}/`
 
-        if (history) {
-            history.pushState({
-                lang: 'de',
-                spot: this.el.dataset.slug,
-                page: '',
-            }, undefined, url);
-        }
-        
+
+        // this is called to update browser history
+        if(typeof cb === 'function') cb();
     }
 
     hide(cb) {

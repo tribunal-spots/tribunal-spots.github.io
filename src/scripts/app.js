@@ -10,13 +10,13 @@ export default class Application {
         this.player = null;
 
         this.initBindings();
-        this.enableHistorySupport();
-
-        // TODO: this should go in the router        
+    
         if (document.location.pathname === '{{BASE_URL}}/') {
-            this.goToRandomSpot();
+            this.goToRandomSpot(() => {
+                this.enableHistorySupport();
+            });
         } else {
-            this.currentSpot.show();
+            this.enableHistorySupport();
         }
 
         this.YouTubeIframeAPIReady = null;
@@ -52,7 +52,7 @@ export default class Application {
     //     return this.spots.findIndex((spot) => spot.el.dataset.slug === slug);
     // }
 
-    goToSpot(slug) {
+    goToSpot(slug, cb) {
         let targetSpot;
 
         if (!slug) {
@@ -64,24 +64,46 @@ export default class Application {
         // TODO: changing global stuff should happen here
 
         this.currentSpot.hide(() => {
-            targetSpot.show();
+            targetSpot.show(() => {
+                if(typeof cb === 'function') cb(this.currentLang, slug);
+            });
             // TODO: update arrow href's
         });
     }
 
-    goToRandomSpot() {
+    goToRandomSpot(cb) {
         const randomIndex = getRandomInt(0, this.spots.length);
         const targetSpot = this.spots[randomIndex];
 
-        this.goToSpot(targetSpot.el.dataset.slug || undefined);
+        this.goToSpot(targetSpot.el.dataset.slug || undefined, () => {
+            if(typeof cb === 'function') cb(this.currentLang, targetSpot.el.dataset.slug);
+        });
+    }
+
+    updateHistory(lang, spot) {
+        const url = `{{BASE_URL}}/${lang}/spots/${spot}/${window.location.hash}`;
+
+        if (history) {
+            history.pushState({
+                lang: lang,
+                spot: spot,
+                page: window.location.hash,
+            }, undefined, url);
+        }
     }
 
     prevSpot() {
-        this.goToSpot(this.currentSpot.prev.el.dataset.slug || undefined);
+        const slug = this.currentSpot.prev.el.dataset.slug;
+        this.goToSpot(slug || undefined, () => {
+            this.updateHistory(this.currentLang, slug);
+        });
     }
 
     nextSpot() {
-        this.goToSpot(this.currentSpot.next.el.dataset.slug || undefined);
+        const slug = this.currentSpot.next.el.dataset.slug
+        this.goToSpot(slug || undefined, () => {
+            this.updateHistory(this.currentLang, slug);
+        });
     }
 
     initBindings() {
@@ -137,7 +159,9 @@ export default class Application {
         each(document.getElementsByClassName('lang__button'), (node, i) => {
             node.addEventListener('click', (e) => {
                 e.preventDefault()
-                this.translate(node.dataset.lang);
+                this.translate(node.dataset.lang, () => {
+                    this.updateHistory(node.dataset.lang, this.currentSpot.el.dataset.slug);
+                });
             });
         });
 
@@ -146,12 +170,26 @@ export default class Application {
     enableHistorySupport() {
         if(!window.history) return;
 
+        // Set initial history object
+        history.replaceState({
+            lang: this.currentLang,
+            spot: this.currentSpot.el.dataset.slug,
+            page: window.location.hash,
+        }, undefined, `{{BASE_URL}}/${this.currentLang}/spots/${this.currentSpot.el.dataset.slug}/`);
+
         window.addEventListener('popstate', (e) => {
-            // console.log(e);
+            if (e.state !== null) {
+                if (e.state.spot !== this.currentSpot.el.dataset.slug) {
+                    this.goToSpot(e.state.spot);
+                }
+                if (e.state.lang !== this.currentLang) {
+                    this.translate(e.state.lang);
+                }
+            }
         });
     }
 
-    translate(lang) {
+    translate(lang, cb) {
         this.currentLang = lang;
         // TODO: change document title on translation
 
@@ -163,15 +201,7 @@ export default class Application {
             page.translate(lang);
         });
 
-        // TODO: do this with state object everywhere
-        let currentPath = window.location.pathname;
-        let pathParts = currentPath.split('/');
-        pathParts[1] = lang;
-        let newPath = pathParts.join('/');
-
-        if (history) {
-            history.pushState(undefined, undefined, newPath);
-        }      
+        if(typeof cb === 'function') cb();
     }
 
     loadYouTubeIframeAPI() {

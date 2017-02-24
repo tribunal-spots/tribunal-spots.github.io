@@ -5,9 +5,10 @@ module.exports = {
     devtool: process.env.ENV === 'production' ? false : 'inline-source-map',
     entry: './src/scripts/main.js',
     output: {
-        filename: 'main.js',
         path: path.resolve(__dirname, 'assets/scripts'),
         publicPath: '/assets/scripts/',
+        filename: 'main.js',
+        chunkFilename: '[id].main.js',
     },
     module: {
         rules: [
