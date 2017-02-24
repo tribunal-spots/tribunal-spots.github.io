@@ -5,7 +5,7 @@ published: true
 
 ## Tribünal
 
-Tribünal ‘NSU Kompleksi Çözülsün’ 17- 21 Mayıs 2017 tarihleri arasında Köln’de eskiden üretim sahası olarak kullanılan (Carlswerk) bir mekanda düzenlenecek. Bu fabrikanın kendisi başlı başına göç ve çalışma yaşamının çok yönlü, zengin tarihini anlatan bir mekandır. Türkler ve Kürtlerin sosyal yaşamlarının bir merkezi haline gelmiş olan, alışveriş yerleriyle son derece işlek ve canlı Keupstrasse’nin hemen yakınındadır. Bu sokak, Keupstrasse, 2004 yılında NSU’nun çivili bomba saldırısının hedefi olmuştur.   
+Tribünal ‘NSU Kompleksi Dağıtılsın’ 17- 21 Mayıs 2017 tarihleri arasında Köln’de eskiden üretim sahası olarak kullanılan (Carlswerk) bir mekanda düzenlenecek. Bu fabrikanın kendisi başlı başına göç ve çalışma yaşamının çok yönlü, zengin tarihini anlatan bir mekandır. Türkler ve Kürtlerin sosyal yaşamlarının bir merkezi haline gelmiş olan, alışveriş yerleriyle son derece işlek ve canlı Keupstrasse’nin hemen yakınındadır. Bu sokak, Keupstrasse, 2004 yılında NSU’nun çivili bomba saldırısının hedefi olmuştur.   
   
 Çoklu toplum anlayışından ileri gelen Tribünal, yapısal ve kurumsal ırkçılığın ortadan kaldırılmasını talep etmektedir. NSU terörü kurbanlarının yakınlarına ve arkadaşlarına destek olan, onların yanında duran Tribünal, mağdurların NSU kompleksinde suç ortaklığı olan devlet organları ve kurumlarına karşı olan davalarının da destekçisidir. Tribünal, NSU’nun cinayet ve saldırılarının hedefi olmuş ve mağduriyetleri halen sürmekte olan kurban yakınlarının sessizliğe hapsedilmiş sesleri için vardır. Onların bilgi ve deneyimlerinden yola çıkan Tribünal, NSU’yu mümkün kılan yapı ve koşulların yok edilmesi talebiyle kurban yakınlarının isteklerinin, seslerinin duyulmasını sağlayacaktır. Bunun yanı sıra Tribünal, NSU kompleksi ve bunun ‘derin devlet’ yapılanmaları ve kurumsal ırkçılığın tarihi içerisinde bağlamlandırılması üzerine yürütülecek uluslararası bir tartışmayı da amaçlamaktadır.   
   
@@ -29,8 +29,7 @@ Meclis bünyesinde kurulan on bir araştırma komisyonu, bazıları halen çalı
   
 NSU’nun suçları ancak bir şekilde mümkün olmuştur: Alman toplumunun derinliklerinde kök salan ırkçılık. Irkçılık gerçeği bugüne kadar uğraşılmak istenmeyen ve geniş ölçüde reddedilen bir olgudur. NSU’nun ölümcül terör saldırılarına maruz kalmış kurban ailelerinin ve bu saldırılardan kurtulanların büyük çoğunluğunun yüksek sesle duyurmak istediği işte tam da budur.    
   
-**TRIBÜNAL _NSU Kompleksi Çözülsün_**<br>
+**TRIBÜNAL _NSU Kompleksi Dağıtılsın_**<br>
 Köln 17 – 21 Mayıs 2017
   
 [http://nsu-tribunal.de](http://nsu-tribunal.de)
-
