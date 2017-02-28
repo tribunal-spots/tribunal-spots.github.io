@@ -3,7 +3,7 @@ title: Menu
 published: true
 ---
 
-- [Intro](#intro)
+- [Giriş](#intro)
 - [EKİP](#contributors)
 - [Tribünal](#tribunal)
 - [İLETİŞİM](#contact)
