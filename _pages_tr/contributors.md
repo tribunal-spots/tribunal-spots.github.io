@@ -3,7 +3,7 @@ title: EKIP
 published: true
 ---
 
-## SPOTCULAR   
+## SPOT HAZIRLAYANLAR   
   
   
 - Khaled Abdulwahed  
@@ -23,7 +23,7 @@ published: true
 - Joel Vogel
 {: .center}   
 
-## EKIP   
+## EKİP   
   
   
 - bildargumente  
