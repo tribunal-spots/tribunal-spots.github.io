@@ -13,7 +13,7 @@ Körnerstr. 77-79<br>
 Verantwortliche: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Alex Gerbaulet, Betti Hohorst
 
 Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für Inhalte externer Links.
-Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+ Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 
 Design: bildargumente  
   
