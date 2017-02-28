@@ -16,7 +16,6 @@ Sorumlu kişiler: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Ale
   
 Tasarım: bildargumente 
   
-Berlin Senatosu tarafından desteklenmiştir. 
+Destekleyenler: 
 
 ![](/images/SKzl_KA_flach_en.gif)
-
