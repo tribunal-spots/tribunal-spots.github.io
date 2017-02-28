@@ -24,14 +24,14 @@ NSU olarak adlandırılan bu örgüt 2011 yılında ifşa olmadan önce, polis, 
 
 ‘NSU kompleksi’ kavramı, Neonazi terörü ile yapısal ve kurumsal ırkçılığın etkileşimini kapsayan bir kavram olarak kullanılmaktadır. Bu kavram, soruşturmalarda failin kurban, kurbanın fail gibi gösterilmesini, Alman medyasında sıkça yer alan ırkçı söylemli haberleri, Almanya gizli servisleri ve yeraltına inen Neonaziler arasındaki işbirliğini, örtbas etme girişimlerini, bilerek delillerin kaybedilmesini, açıklanamayan şahit ölümlerini ve bu suçların detaylarını ve arka planlarını aydınlatma çabalarınının sürekli engellendiğini açıkça yargılamak içindir.
 
-Meclis bünyesinde kurulan on bir araştırma komisyonu, bazıları halen çalışmalarını sürdürüyor, NSU kompleksinin karakteristiğini bugüne değin hala tümüyle açığa çıkartamadı.  
+Meclis bünyesinde kurulan on bir araştırma komisyonu, bazıları halen çalışmalarını sürdürüyor, NSU kompleksinin karakteristiğini bugüne değin hâlâ tümüyle açığa çıkartamadı.  
 
 2013 yılında Münih Eyalet Yüksek Mahkemesinde NSU üyesi ve suç ortağı ve/ya destekçisi olduğu iddiasıyla beş sanık hakkında açılan ceza davası başladı. İlk duruşmadan itibaren davada kurban ailelerini ve bomba saldırısı mağdurlarını temsil eden avukatlar iddianameyi eleştirdiler; çünkü söz konusu bu iddianame, NSU’nun üç kişiden oluşan bir suç örgütü ve az sayıda destekçisi olduğundan yola çıkmakta ve bununla geniş olduğu tahmin edilen bir destekçi ağını dikkate almamaktadır. Aynı zamanda, devlete ait otoritelerin süregelen yapısal ırkçı muamelelerini ve bu otoritelerin NSU ile bütünleşmesini tam olarak göstermek için verilen her çaba da Federal Savcılık tarafından engellenmeye çalışılmış ve mahkemece göz ardı edilmiştir. Kurban yakınları ve saldırıdan kurtulanlara bir kez olsun engellenmeden konuşma fırsatı verilmemiş, sözleri kesilmiş ve sanki sadece olaya doğrudan tanıklık eden bir görgü tanığı gibi bir role indirgenmişlerdir.
 
 NSU’nun işlediği suçlar ancak bir şekilde mümkün olmuştur: Alman(ya) toplumunun derinliklerinde kök salan ırkçılık. Irkçılık gerçeği bugüne kadar uğraşılmak istenmeyen ve geniş ölçüde reddedilen bir olgudur. NSU’nun ölümcül terör saldırılarına maruz kalmış kurban ailelerinin ve bu saldırılardan kurtulanların büyük çoğunluğunun yüksek sesle duyurmak istediği işte tam da budur.
     
   
-**TRIBÜNAL _NSU Kompleksi Dağıtılsın_**<br>
+**TRİBÜNAL _NSU Kompleksi Dağıtılsın_**<br>
 Köln 17 – 21 Mayıs 2017
   
 [http://nsu-tribunal.de](http://nsu-tribunal.de)
