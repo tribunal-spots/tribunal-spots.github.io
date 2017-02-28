@@ -1,9 +1,10 @@
 ---
 title: Menu
+published: true
 ---
 
 - [Intro](#intro)
-- [EKIP](#contributors)
+- [EKİP](#contributors)
 - [Tribünal](#tribunal)
 - [İLETİŞİM](#contact)
 - [KÜNYE](#impressum)
