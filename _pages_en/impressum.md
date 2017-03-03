@@ -13,7 +13,7 @@ Germany
 
 Those responsible: Mareike Bernien, Madeleine Bernstorff, Sebastian Bodirsky, Alex Gerbaulet, Betti Hohorst
 
-Despite careful monitoring, we cannot take any responsibility for the content of external links. Responsibility for the contexts of the sites linked lies exclusively with those sites.
+Despite careful monitoring, we cannot take any responsibility for the content of external links. Responsibility for the contents of the sites linked lies exclusively with those sites.
 
 Design: bildargumente    
 
