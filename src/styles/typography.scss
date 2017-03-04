@@ -62,8 +62,14 @@ p {
     margin-bottom: 2.8rem;
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        opacity: .5;
+    }
 }
 
 .center {

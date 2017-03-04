@@ -28,6 +28,12 @@
 {% include svg.html %}
 
 <body>
+<script type="text/javascript">
+if (document.location.pathname === '/') {
+    // fade until random spot is loaded for home page
+    document.body.classList.add('fade');
+}
+</script>
 
     <div class="root">
 

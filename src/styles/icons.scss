@@ -25,6 +25,8 @@
     &__close {
         stroke: #fff;
         @include scale-icons(25px, 25px);
+        padding: 10px;
+        box-sizing: content-box;
     }
 
     &__facebook,

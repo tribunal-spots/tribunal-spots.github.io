@@ -152,6 +152,7 @@ prose:
     - 'data.json'
     - 'index.md'
     - 'CNAME'
+    - 'README.md'
 
 exclude:
   - Gemfile
@@ -161,3 +162,5 @@ exclude:
   - gulpfile.js
   - webpack.config.js
   - src
+  - README.md
+  - LICENSE

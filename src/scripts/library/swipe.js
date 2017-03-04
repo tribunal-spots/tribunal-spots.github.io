@@ -1,4 +1,7 @@
-export default function addSwipeHandlers(element, leftHandler, rightHandler) {
+export default function addSwipeEventDispatcher(element) {
+    const swipeLeftEvent = new Event('swipeleft');
+    const swipeRightEvent = new Event('swiperight');
+    
     let startCoords = {
         x: -1,
         y: -1
@@ -9,29 +12,24 @@ export default function addSwipeHandlers(element, leftHandler, rightHandler) {
         y: 0
     };
 
-    let direction = 'undefined';
+    let direction;
 
-    let minX = 30;
-    let maxY = 30;
+    const minX = 30;
+    const maxY = 30;
 
-    let maxTime = 1000;
+    const maxTime = 1000;
     let startTime = 0;
     let timeDelta = 0;
 
-    let startActions = ['mousedown', 'touchstart'];
-    let moveActions = ['mousemove', 'touchmove'];
-    let endActions = ['mouseup', 'touchend'];
+    addEventListeners(element, 'mousedown touchstart', swipeStart);
+    addEventListeners(element, 'mousemove touchmove', swipeMove);
+    addEventListeners(element, 'mouseup touchend', swipeEnd);
 
-    for(let i = 0; i < startActions.length; i++) {
-        element.addEventListener(startActions[i], swipeStart);
-    }
 
-    for(let i = 0; i < moveActions.length; i++) {
-        element.addEventListener(moveActions[i], swipeMove);
-    }
-
-    for(let i = 0; i < endActions.length; i++) {
-        element.addEventListener(endActions[i], swipeEnd);
+    function addEventListeners(element, events, handler) {
+        events.split(' ').forEach((event) => {
+            element.addEventListener(event, handler);
+        });
     }
 
     function swipeStart(event) {
@@ -68,10 +66,10 @@ export default function addSwipeHandlers(element, leftHandler, rightHandler) {
 
                 switch(direction) {
                     case 'left':
-                        leftHandler();
+                        element.dispatchEvent(swipeLeftEvent);
                         break;
                     case 'right':
-                        rightHandler();
+                        element.dispatchEvent(swipeRightEvent);
                         break;
                 }
             }

@@ -1,14 +1,4 @@
-a,
-a:visited {
-    color: #fff;
-
-    &:hover {
-        opacity: .5;
-    }
-}
-
 .menu {
-    // TODO: center
     margin-top: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -28,12 +18,3 @@ a:visited {
         }
     }
 }
-
-// nav {
-//     text-align: center;
-    
-//     a {
-//         font-family: 'Montserrat';
-//         text-decoration: none;
-//     }
-// }

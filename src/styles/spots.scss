@@ -54,48 +54,28 @@
         // see https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container
         max-width: 100%;
 
-        .spot {
+        @at-root .spot {
+            display: none;
             flex: 1 1 auto;
-            // display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            display: none;
-
             width: 100%;
             // Fix flex bug with IE10-11
-            // see https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container
             max-width: 100%;
 
             &__title {
-                // TODO: change to rem everywhere
-                padding: 20px;
-                opacity: 0;
-                transition: opacity .4s cubic-bezier(.215,.61,.355, 1);
-
                 flex: 1 1 auto;
-
                 width: 100%;
                 // Fix flex bug with IE10-11
-                // see https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container
                 max-width: 100%;
+                padding: 2rem;
             }
-
-            &--fadeout {
-                display: flex;
-
-                .spot__title {
-                    opacity: 0;
-                    transition: opacity .4s cubic-bezier(.215,.61,.355, 1);
-                }
-            }
+            
             &--active {
                 display: flex;
-
-                .spot__title {
-                    opacity: 1;
-                    transition: opacity 1s cubic-bezier(.215,.61,.355, 1);
-                }
+                opacity: 1;
+                transition: $transition-in;
             }
         }
     }
@@ -106,12 +86,33 @@
     }
 }
 
-// #spots__nav--prev {
-//     order: -1;
-// }
-
 #spots__play {
     display: flex;
     align-items: center;
     flex: 1 1 0%;
+}
+
+.spots__nav,
+#spots__play {
+    transition: $transition-in;
+    opacity: 1;
+}
+
+body.fade {
+
+    .spots__nav,
+    #spots__play {
+        opacity: 0;
+        transition: $transition-out;
+    }
+
+    .spot--active {
+        opacity: 0;
+        transition: $transition-out;
+    }
+
+    .layer__background-overlay {
+        opacity: 1;
+        transition: $transition-out;
+    }
 }
