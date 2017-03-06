@@ -2,7 +2,7 @@ import domready from 'domready';
 import PromisePolyfill from 'promise-polyfill';
 
 import {checkStatus, parseJSON, loadPolyfills} from './library';
-import {Application} from './views';
+import {Application} from './containers';
 import {polyfills} from './fixtures';
 
 
