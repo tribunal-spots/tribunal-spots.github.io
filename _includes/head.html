@@ -1,23 +1,23 @@
 <head>
   <meta charset="utf-8">
-  
+
   <meta http-equiv="X-UA-Compatible"
         content="IE=edge">
-  
+
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
 
   <title>{{ site.title | escape }}{% if page.title %} | {{ page.title | escape }}{% endif %}</title>
-  
+
   <meta name="description"
         content="{{ site.data.description[page.lang] | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet"
         href="{{ "assets/styles/main.css" | relative_url }}">
-  
+
   <link rel="stylesheet"
         href="{{ "assets/styles/fonts.css" | relative_url }}">
-  
+
   <link rel="canonical"
         href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
@@ -64,6 +64,8 @@
   {% endfor %}
   <meta property="og:image"
         content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}"/>
+  <meta property="og:video"
+        content="{{ 'https://www.youtube.com/v/' | append: include.current_spot.youtube_id }}" />
   <meta property="og:description"
         content="{{ site.data.description[page.lang] | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
@@ -74,25 +76,25 @@
   }
 
   @media screen and (min-width: 768px) {
-      #background__{{ spot.slug }} { 
+      #background__{{ spot.slug }} {
             background: url({{ '/images/' | append: spot.slug | append: '@0,5x.jpg' | relative_url }}) no-repeat center center / cover fixed;
       }
   }
 
   @media screen and (min-width: 1200px) {
-      #background__{{ spot.slug }} { 
+      #background__{{ spot.slug }} {
             background: url({{ '/images/' | append: spot.slug | append: '@0,75x.jpg' | relative_url }}) no-repeat center center / cover fixed;
       }
   }
 
   @media screen and (min-width: 1600px) {
-      #background__{{ spot.slug }} { 
+      #background__{{ spot.slug }} {
             background: url({{ '/images/' | append: spot.slug | append: '.jpg' | relative_url }}) no-repeat center center / cover fixed;
       }
   }
   {% endfor %}
   </style>
-  
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
