@@ -53,7 +53,7 @@
   <meta property="og:url"
         content="{{ page.url | absolute_url }}" />
   <meta property="og:type"
-        content="article" />
+        content="video.other" />
   <meta property="og:locale"
         content="{{ page.locale }}" />
   {% for lang in site.data.langs %}
@@ -62,8 +62,8 @@
         content="{{ lang.locale }}" />
   {% endif %}
   {% endfor %}
-  <meta property="og:image"
-        content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}"/>
+  <!-- <meta property="og:image"
+        content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}"/> -->
   <meta property="og:video"
         content="{{ 'https://www.youtube.com/v/' | append: include.current_spot.youtube_id }}" />
   <meta property="og:description"
