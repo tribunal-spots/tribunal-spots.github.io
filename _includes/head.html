@@ -62,8 +62,8 @@
         content="{{ lang.locale }}" />
   {% endif %}
   {% endfor %}
-  <!-- <meta property="og:image"
-        content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}"/> -->
+  <meta property="og:image"
+        content="{{ 'https://img.youtube.com/vi/' | append: include.current_spot.youtube_id | append: '/maxresdefault.jpg' }}"/>
   <meta property="og:video"
         content="{{ 'https://www.youtube.com/v/' | append: include.current_spot.youtube_id }}" />
   <meta property="og:description"
