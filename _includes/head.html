@@ -34,7 +34,7 @@
   <meta name="twitter:title"
         content="{{ site.title | escape }}{% if page.title %} | {{ page.title | escape }}{% endif %}" />
   <meta name="twitter:image"
-        content="{{ '/images/' | append: include.current_spot.slug | append: '.jpg' | absolute_url }}" />
+        content="{{ 'https://img.youtube.com/vi/' | append: include.current_spot.youtube_id | append: '/maxresdefault.jpg' }}" />
   <meta name="twitter:image:alt"
         content="{{ include.current_spot.title | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
   <meta name="twitter:url"
