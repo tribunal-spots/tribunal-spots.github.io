@@ -22,47 +22,106 @@
   }
 }
 
-@mixin scale-icons($width, $height) {
-    width: $width * 0.6;
-    height: $height * 0.6;
+@mixin font-small {
+  @media screen and (min-height: 375px) and (orientation: landscape) {
+    @content;
+  }
+  
+  @media screen and (min-width: 375px) and (orientation: portrait) {
+    @content;
+  }
+}
 
-    @include small {
+@mixin font-medium {
+  @media screen and (min-height: 500px) and (orientation: landscape) {
+    @content;
+  }
+  
+  @media screen and (min-width: 500px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin font-large {
+  @media screen and (min-height: 760px) and (orientation: landscape) {
+    @content;
+  }
+  
+  @media screen and (min-width: 760px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin font-x-large {
+  @media screen and (min-height: 1024px) and (orientation: landscape) {
+    @content;
+  }
+  
+  @media screen and (min-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin font-xx-large {
+  @media screen and (min-height: 1366px) and (orientation: landscape) {
+    @content;
+  }
+  
+  @media screen and (min-width: 1366px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin scale-icons($width, $height) {
+    width: $width * 0.60;
+    height: $height * 0.60;
+
+    @include font-small {
         width: $width * 0.85;
         height: $height * 0.85;
     }
 
-    @include medium {
+    @include font-medium {
         width: $width;
         height: $height;
     }
 
-    @include large {
+    @include font-large {
         width: $width * 1.2;
         height: $height * 1.2;
     }
 
-    @include x-large {
+    @include font-x-large {
+        width: $width * 1.6;
+        height: $height * 1.6;
+    }
+    
+    @include font-xx-large {
         width: $width * 1.6;
         height: $height * 1.6;
     }
 }
 
 @mixin scale-fonts($base-size-rem) {
-    font-size: $base-size-rem * 0.7 + rem;
+    font-size: $base-size-rem * 0.60 + rem;
 
-    @include small {
+    @include font-small {
       font-size: $base-size-rem * 0.85 + rem;
     }
 
-    @include medium {
+    @include font-medium {
       font-size: $base-size-rem + rem;
     }
 
-    @include large {
+    @include font-large {
       font-size: $base-size-rem * 1.1 + rem;
     }
 
-    // @include x-large {
-    //   font-size: $base-size-rem * 1.6 + rem;
-    // }
+    @include font-x-large {
+      font-size: $base-size-rem * 1.6 + rem;
+    }
+
+    @include font-xx-large {
+      font-size: $base-size-rem * 2.0 + rem;
+    }
 }
