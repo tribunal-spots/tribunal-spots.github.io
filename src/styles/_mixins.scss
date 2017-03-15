@@ -92,18 +92,18 @@
     }
 
     @include font-x-large {
-        width: $width * 1.6;
-        height: $height * 1.6;
+        width: $width * 1.4;
+        height: $height * 1.4;
     }
-    
-    @include font-xx-large {
-        width: $width * 1.6;
-        height: $height * 1.6;
-    }
+
+//    @include font-xx-large {
+//        width: $width * 1.6;
+//        height: $height * 1.6;
+//    }
 }
 
 @mixin scale-fonts($base-size-rem) {
-    font-size: $base-size-rem * 0.60 + rem;
+    font-size: $base-size-rem * 0.7 + rem;
 
     @include small {
       font-size: $base-size-rem * 0.85 + rem;

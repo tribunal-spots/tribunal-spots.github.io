@@ -1,11 +1,16 @@
 .menu {
-    margin-top: 50px;
-    margin-bottom: 20px;
+//    margin-top: 50px;
+    margin-top: 2rem;
+//    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-transform: uppercase;
 
     letter-spacing: 0.5px;
 
     text-align: center;
+    
+//    @include scale-fonts(2.3);
+    font-size: 1.8rem;
     
     a {
         font-family: $sans-serif;

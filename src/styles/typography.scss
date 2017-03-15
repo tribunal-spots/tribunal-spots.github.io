@@ -9,7 +9,11 @@ body {
     font-weight: 400;
     line-height: 1.4;
     
-    @include scale-fonts(1.8);
+    //@include scale-fonts(1.8);
+    font-size: 1.2rem;			
+    font-size: calc(1rem + 1vmin);
+    
+    // TODO: set min and max font size using media queries
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -31,39 +35,58 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
     font-family: $sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 h1 {
-    @include scale-fonts(4);
+//    @include scale-fonts(4);
+    font-size: 3.2rem;
+    margin: 4rem 0 2rem;
+}
+
+h1.spot__title {
+    // TODO: IE8 fallback
+    // Title should always scale with circle:
+    font-size: calc(1rem + 3.5vmin);
+    font-weight: 600;
+    text-transform: inherit;
+    margin: 0;
 }
 
 h2 {
-    @include scale-fonts(3);
-}
-
-h2.spot__title {
-  @include scale-headings(3);
+//    @include scale-fonts(3);
+    font-size: 2.8rem;
+    margin: 4rem 0 3rem;
 }
 
 h3 {
-    @include scale-fonts(2.7);
+//    @include scale-fonts(2.7);
+    font-size: 2.5rem;
+    margin: 3rem 0 2rem;
 }
 
 h4 {
-    @include scale-fonts(2.3);
+//    @include scale-fonts(2.3);
+    font-size: 2.3rem;
+    margin: 3rem 0 2rem;
 }
 
 h5 {
-    @include scale-fonts(2);
+//    @include scale-fonts(2);
+    font-size: 2rem;
+    margin: 3rem 0 2rem;
 }
 
 h6 {
-    @include scale-fonts(1.8);
+//    @include scale-fonts(1.8);
+    font-size: 1.8rem;
+    margin: 3rem 0 2rem;
 }
 
 p {
-    margin-bottom: 28px;
-    margin-bottom: 2.8rem;
+//    margin-bottom: 28px;
+    margin-bottom: 1.8rem;
 }
 
 a,
