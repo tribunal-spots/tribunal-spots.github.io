@@ -41,6 +41,10 @@ h2 {
     @include scale-fonts(3);
 }
 
+h2.spot__title {
+  @include scale-headings(3);
+}
+
 h3 {
     @include scale-fonts(2.7);
 }

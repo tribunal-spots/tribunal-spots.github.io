@@ -105,6 +105,26 @@
 @mixin scale-fonts($base-size-rem) {
     font-size: $base-size-rem * 0.60 + rem;
 
+    @include small {
+      font-size: $base-size-rem * 0.85 + rem;
+    }
+
+    @include medium {
+      font-size: $base-size-rem + rem;
+    }
+
+    @include large {
+      font-size: $base-size-rem * 1.1 + rem;
+    }
+
+//    @include x-large {
+//      font-size: $base-size-rem * 1.6 + rem;
+//    }
+}
+
+@mixin scale-headings($base-size-rem) {
+    font-size: $base-size-rem * 0.60 + rem;
+
     @include font-small {
       font-size: $base-size-rem * 0.85 + rem;
     }
