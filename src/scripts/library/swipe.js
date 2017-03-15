@@ -46,7 +46,7 @@ export default function addSwipeEventDispatcher(element) {
 
     function swipeMove(event) {
         event = event ? event : window.event;
-        event.preventDefault();
+        // event.preventDefault();
     }
 
     function swipeEnd(event) {
