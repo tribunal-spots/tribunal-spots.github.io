@@ -1,7 +1,8 @@
 html {
-    font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+
+    font-size: 62.5%;
 }
 
 body {
@@ -9,11 +10,15 @@ body {
     font-weight: 400;
     line-height: 1.4;
     
-    //@include scale-fonts(1.8);
-    font-size: 1.2rem;			
-    font-size: calc(1rem + 1vmin);
+    font-size: 1.4em;
     
-    // TODO: set min and max font size using media queries
+    @include x-small {
+        font-size: 1.6em;
+    }
+    
+    @include small {
+        font-size: 1.7em;
+    }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -29,7 +34,8 @@ ol, ul {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.4;
+    margin: 1em 0 0.75em;
     font-weight: 600;
 }
 
@@ -40,53 +46,42 @@ h1, h2 {
 }
 
 h1 {
-//    @include scale-fonts(4);
-    font-size: 3rem;
-    margin: 4rem 0 2rem;
+    font-size: 2em;
 }
 
 h1.spot__title {
-    // TODO: IE8 fallback
-    // Title should always scale with circle:
-    font-size: calc(1rem + 3.5vmin);
+    font-size: 2em;
+    // font-size: calc(0.5rem + 4.25vmin);
+    font-size: 5vmin;
+    line-height: 1.2;
     font-weight: 600;
     text-transform: inherit;
     margin: 0;
 }
 
 h2 {
-//    @include scale-fonts(3);
-    font-size: 2.6rem;
-    margin: 4rem 0 3rem;
+    font-size: 1.75em;
 }
 
 h3 {
-//    @include scale-fonts(2.7);
-    font-size: 2.5rem;
-    margin: 3rem 0 2rem;
+    font-size: 1.5em;
 }
 
 h4 {
-//    @include scale-fonts(2.3);
-    font-size: 2.3rem;
-    margin: 3rem 0 2rem;
+    font-size: 1.25em;
 }
 
 h5 {
-//    @include scale-fonts(2);
-    font-size: 2rem;
-    margin: 3rem 0 2rem;
+    font-size: 1em;
 }
 
 h6 {
-//    @include scale-fonts(1.8);
-    font-size: 1.8rem;
-    margin: 3rem 0 2rem;
+    font-size: 0.85em;
+    text-transform: uppercase;
 }
 
 p {
-//    margin-bottom: 28px;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.4em;
 }
 
 a,
