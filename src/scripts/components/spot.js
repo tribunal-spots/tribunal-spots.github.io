@@ -20,8 +20,7 @@ export default class Spot {
 
     translate(lang) {
         const translation = this.translations.find((translation) => translation.lang === lang);
-        // TODO: use class?
-        this.el.querySelector('h2').textContent = translation.attributes.title;
+        this.el.querySelector('.spot__title').textContent = translation.attributes.title;
     }
 
     loadBackground() {
