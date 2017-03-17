@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tribunal-spots.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nsu_tribunal
 facebook_username: nsutribunal
+google_analytics: UA-93482420-1
 
 permalink: pretty
 
