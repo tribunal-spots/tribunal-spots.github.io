@@ -24,15 +24,21 @@ published: true
 - Bani Khoshnoudi
 - Sara Lehn
 - Katinka Maché
+- Vedrana Madžar
 - Jörn Neumann
+- ninotschka
 - Christian Obermüller
+- Ebru Selin Özcan
 - Mayan Printz
 - Daniel Poštrak
 - Daniel Roth
-- belit sağ
+- Belit Sağ
+- Fikri Sahin
+- Ömer Şamlı   
 - Maya Schweizer
 - Minze Tummescheit
 - Joel Vogel
+- Fritz Laszlo Weber
 - Rixxa Wendland
 {: .center}
 
@@ -50,8 +56,10 @@ published: true
 - Melanie Brazzell
 - Sebastian Breitbach
 - Ufuk Cam
+- Sefa Defterli
 - Christian Diaz Orejarena
 - Roumen Dimitrov
+- Ali El-Hussein
 - g-2-e tribunal translation group
 - Michael Geck
 - Lola Göller
@@ -60,6 +68,7 @@ published: true
 - Maya Fischer 
 - Nathalie Gerst
 - Timo Glatz
+- Leona Goldstein
 - Ayşe Güleç
 - Göksen Güntel
 - Thamar Hampe
@@ -71,6 +80,7 @@ published: true
 - Magdalena Maché
 - Ines Meier
 - Henrik Meierkord
+- Abdullah Mohamad
 - Cristina Moreno a.k.a Kalma
 - Bernadette Paassen
 - pong film 
