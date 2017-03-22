@@ -34,7 +34,6 @@ published: true
 - Daniel Poštrak
 - Daniel Roth
 - Belit Sağ
-- Fikri Sahin
 - Ömer Şamlı   
 - Maya Schweizer
 - Minze Tummescheit
@@ -91,6 +90,7 @@ published: true
 - Natascha Sadr Haghighian
 - Özge Pinar Sarp
 - Mirko Reinhard/Torus GmbH
+- Fikri Sahin
 - Melih Sarıgöl
 - Markus Seitz
 - Nikolai Sivertsen
