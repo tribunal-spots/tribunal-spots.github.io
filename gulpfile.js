@@ -75,11 +75,19 @@ gulp.task('styles', () => {
 });
 
 gulp.task('jekyll', () => {
-    const jekyll = child.spawn('jekyll', ['build',
-        '--watch',
-        '--incremental',
-        '--drafts',
-  ]);
+    // const jekyll = child.spawn('jekyll', ['build',
+    //     '--watch',
+    //     '--incremental',
+    //     '--drafts',
+    // ]);
+  
+  const jekyll = child.spawn('bundle', ['exec',
+      'jekyll',
+      'build',
+      '--watch',
+      '--incremental',
+      '--drafts',
+    ]);
 
     const jekyllLogger = (buffer) => {
         buffer.toString()
