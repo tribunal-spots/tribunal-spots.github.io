@@ -96,6 +96,11 @@
 #spots__play {
     transition: $transition-in;
     opacity: 1;
+    
+    &:hover{
+        opacity: .5;
+        transition: none;
+    }
 }
 
 body.fade {
