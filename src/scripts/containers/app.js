@@ -100,7 +100,7 @@ export default class Application {
                 this.title = targetSpot.content.title;
 
                 if(typeof(window.ga) === 'function') {
-                    ga('send', 'event', 'Spots', 'view', slug);
+                    ga('send', 'event', 'Spots', 'view', `${this.lang}:${slug}`);
                 }
 
                 this.fadeIn();
@@ -295,7 +295,7 @@ export default class Application {
             this.player = new Player(this.currentVideoId, 'player');
 
             if(typeof(window.ga) === 'function') {
-                ga('send', 'event', 'Spots', 'play', this.currentSpot.el.dataset.slug);
+                ga('send', 'event', 'Spots', 'play', `${this.lang}:${this.currentSpot.el.dataset.slug}`);
             }
         });
     }
