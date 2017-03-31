@@ -99,6 +99,10 @@ export default class Application {
 
                 this.title = targetSpot.content.title;
 
+                if(typeof(window.ga) === 'function') {
+                    ga('send', 'event', 'Spots', 'view', slug);
+                }
+
                 this.fadeIn();
                 resolve();
             });
@@ -123,7 +127,7 @@ export default class Application {
     }
 
     nextSpot() {
-        const slug = this.currentSpot.next.el.dataset.slug
+        const slug = this.currentSpot.next.el.dataset.slug;
 
         this.goToSpot(slug)
           .then(() => this.updateHistory(this.lang, slug));
@@ -141,6 +145,10 @@ export default class Application {
         this.pages.forEach((page) => {
             page.translate(lang);
         });
+
+        if(typeof(window.ga) === 'function') {
+            ga('send', 'event', 'Language', 'switch', lang);
+        }
     }
 
     updateHistory(lang, spot) {
@@ -285,6 +293,10 @@ export default class Application {
             playerDiv.id = 'player';
             videoLayer.appendChild(playerDiv);
             this.player = new Player(this.currentVideoId, 'player');
+
+            if(typeof(window.ga) === 'function') {
+                ga('send', 'event', 'Spots', 'play', this.currentSpot.el.dataset.slug);
+            }
         });
     }
 
