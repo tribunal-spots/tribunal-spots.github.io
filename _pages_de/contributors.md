@@ -8,6 +8,8 @@ published: true
 - Khaled Abdulwahed
 - Ibrahim Arslan
 - Hatice Ayten
+- Arif Baynaz
+- Aysun Bademsoy
 - Mareike Bernien
 - Madeleine Bernstorff 
 - Cana Bilir-Meier
@@ -73,6 +75,8 @@ published: true
 - Thamar Hampe
 - Nanna Heidenreich
 - Victor Jaschke
+- Jochen Jezussek
+- K2-Film
 - Camilla Kranzusch
 - Frank Lehner/Torus GmbH
 - Rita Macedo 
