@@ -26,6 +26,8 @@ published: true
 - Arne Hector
 - Betti Hohorst
 - Bani Khoshnoudi
+- Michel Klöfkorn
+- Kornelia Kugler
 - Sara Lehn
 - Katinka Maché
 - Vedrana Madžar
@@ -53,6 +55,8 @@ published: true
 - Stefan Auch
 - Tom Ben
 - bildargumente
+- Cihan Bilir-Meier
+- Zühal Bilir-Meier
 - Björn
 - Maximilian Blass
 - Julián Bonequi
@@ -79,6 +83,7 @@ published: true
 - Victor Jaschke
 - Jochen Jezussek
 - K2-Film
+- Liesa Kovacs
 - Camilla Kranzusch
 - Frank Lehner/Torus GmbH
 - Rita Macedo 
