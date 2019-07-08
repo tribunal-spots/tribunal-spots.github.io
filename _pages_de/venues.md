@@ -1,0 +1,58 @@
+---
+title: Spielorte
+published: true
+---
+
+## Spielorte
+
+AUSSTELLUNGEN<br>
+Museum für Moderne Kunst, Frankfurt<br>
+documenta 14, Kassel<br>
+Forum Expanded Ausstellung, Berlinale<br>
+Haus der Kulturen der Welt, Berlin<br>
+Studio for Artistic Research, Düsseldorf<br>
+SAVVY Contemporary Berlin<br>
+Villa Leon Nürnberg<br>
+M1 Hohenlockstedt<br>
+Heimathafen Neukölln<br>
+
+FILMFESTIVALS<br>
+Filmfestspiele Cannes ( via Short Tiger Award für „Whose Hand was it?“)<br>
+Internationale Kurzfilmtage Oberhausen<br>
+dokumentarfilmwoche Hamburg<br>
+L´Alternativa Barcelona<br>
+Dokfilmfest Kassel<br>
+Ethnocineca Wien<br>
+Stuttgarter Filmwinter<br>
+goEast-festival, Wiesbaden<br>
+
+KINOS<br>
+Kino Babylon Kreuzberg, Berlin<br>
+Capitol Dahlem, Berlin<br>
+Cinema Paris, Berlin<br>
+Delphi Filmpalast, Berlin<br>
+Filmtheater Friedrichshain, Berlin<br>
+Kant Kino, Berlin<br>
+Kino International, Berlin<br>
+Neues Off, Berlin<br>
+Odeon, Berlin<br>
+Passage, Berlin<br>
+Rollberg, Berlin<br>
+York Kreuzberg, Berlin<br>
+Kino FSK, Berlin<br>
+Bambikino, Düsseldorf (Vorfilm zu Fatih Akins Film)<br>
+Mal Seh´n, Frankfurt<br>
+B-Movie Hamburg<br>
+Filmladen, Kassel<br>
+Bali, Kassel<br>
+Gloria, Kassel<br>
+Luru Kino, Leipzig<br>
+Werkstattkino München<br>
+Filmhaus Nürnberg<br>
+Cinema & Kurbelkiste Münster<br>
+
+ONLINE <br>
+bislang 50.000 mal auf unserer Webseite gesehen<br>
+bislang 30.000 mal auf youtube gesehen<br>
+
+Stand: Juli 2019
