@@ -17,7 +17,7 @@ M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 
 FESTIVALS<br>
-Filmfestspiele Cannes ( via Short Tiger Award für „Whose Hand was it?“)<br>
+Filmfestspiele Cannes (via Short Tiger Award for "Whose Hand was it?")<br>
 Internationale Kurzfilmtage Oberhausen<br>
 dokumentarfilmwoche Hamburg<br>
 L´Alternativa Barcelona<br>
@@ -40,7 +40,7 @@ Passage, Berlin<br>
 Rollberg, Berlin<br>
 York Kreuzberg, Berlin<br>
 Kino FSK, Berlin<br>
-Bambikino, Düsseldorf (Vorfilm zu Fatih Akins Film)<br>
+Bambikino, Düsseldorf<br>
 Mal Seh´n, Frankfurt<br>
 B-Movie Hamburg<br>
 Filmladen, Kassel<br>
