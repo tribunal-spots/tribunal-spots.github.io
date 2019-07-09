@@ -12,7 +12,6 @@ Forum Expanded Ausstellung, Berlinale<br>
 Haus der Kulturen der Welt, Berlin<br>
 Studio for Artistic Research, Düsseldorf<br>
 SAVVY Contemporary Berlin<br>
-Villa Leon Nürnberg<br>
 M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 
@@ -23,6 +22,7 @@ dokumentarfilmwoche Hamburg<br>
 L´Alternativa Barcelona<br>
 Dokfilmfest Kassel<br>
 Ethnocineca Wien<br>
+Villa Leon, Nürnberg<br>
 Stuttgarter Filmwinter<br>
 goEast-festival, Wiesbaden<br>
 
