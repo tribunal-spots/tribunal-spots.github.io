@@ -15,7 +15,7 @@ SAVVY Contemporary Berlin<br>
 M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 
-FESTIVALS<br>
+FESTIVALS & SCREENINGS<br>
 Cannes Film Festival (via Short Tiger Award for "Whose Hand was it?")<br>
 Internationale Kurzfilmtage Oberhausen<br>
 dokumentarfilmwoche Hamburg<br>
