@@ -17,7 +17,7 @@ M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 
 FİLM FESTİVALLERİ<br>
-Cannes Film Festival (via Short Tiger Award for "Whose Hand was it?")<br>
+Cannes Film Festival<br>
 Internationale Kurzfilmtage Oberhausen<br>
 dokumentarfilmwoche Hamburg<br>
 L´Alternativa Barcelona<br>
