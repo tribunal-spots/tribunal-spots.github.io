@@ -3,9 +3,9 @@ title: Venues
 published: true
 ---
 
-## Venues
+## Gösterim Mekanları
 
-EXHIBITIONS<br>
+SERGİLER<br>
 Museum für Moderne Kunst, Frankfurt<br>
 documenta 14, Kassel<br>
 Forum Expanded Ausstellung, Berlinale<br>
@@ -16,7 +16,7 @@ Villa Leon Nürnberg<br>
 M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 
-FESTIVALS<br>
+FİLM FESTİVALLERİ<br>
 Cannes Film Festival (via Short Tiger Award for "Whose Hand was it?")<br>
 Internationale Kurzfilmtage Oberhausen<br>
 dokumentarfilmwoche Hamburg<br>
@@ -26,7 +26,7 @@ Ethnocineca Wien<br>
 Stuttgarter Filmwinter<br>
 goEast-festival, Wiesbaden<br>
 
-MOVIE THEATRES<br>
+SİNEMALAR<br>
 Kino Babylon Kreuzberg, Berlin<br>
 Capitol Dahlem, Berlin<br>
 Cinema Paris, Berlin<br>
@@ -52,8 +52,8 @@ Filmhaus Nürnberg<br>
 Cinema & Kurbelkiste Münster<br>
 
 ONLINE <br>
-50.000 views on our website<br>
-30.000 views on youtube<br>
+Bugüne kadar web sayfamızda 50.000 kez izlendi<br>
+Bugüna kadar Youtube’da 30.000 kez izlendi<br>
 
 
-<br>*as at July 2019*
+<br>*Son güncelleme Temmuz 2019
