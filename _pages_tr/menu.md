@@ -5,6 +5,7 @@ published: true
 
 - [Giriş](#intro)
 - [EKİP](#contributors)
+- [GÖSTERİM MEKANLARI](#venues)
 - [Tribünal](#tribunal)
 - [İLETİŞİM](#contact)
 - [KÜNYE](#impressum)
