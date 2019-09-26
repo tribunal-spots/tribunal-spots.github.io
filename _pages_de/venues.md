@@ -14,6 +14,7 @@ Studio for Artistic Research, Düsseldorf<br>
 SAVVY Contemporary Berlin<br>
 M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
+The Ludlow 38, New York<br>
 
 FILMFESTIVALS & SCREENINGS<br>
 Filmfestspiele Cannes ( via Short Tiger Award für „Whose Hand was it?“)<br>
