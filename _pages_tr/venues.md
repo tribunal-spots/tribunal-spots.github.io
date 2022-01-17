@@ -16,6 +16,9 @@ Villa Leon Nürnberg<br>
 M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 The Ludlow 38, New York<br>
+Museum Villa Stuck, München<br>
+Heidelberger Kunstverein <br>
+Rautenstrauch-Joest-Museum, Köln<br>
 
 FİLM FESTİVALLERİ<br>
 Cannes Film Festival<br>
@@ -26,6 +29,11 @@ Dokfilmfest Kassel<br>
 Ethnocineca Wien<br>
 Stuttgarter Filmwinter<br>
 goEast-festival, Wiesbaden<br>
+Kollektiv Filmreihe Köln<br>
+Antirassistischer Streiktag 8. Mai, Berlin<br>
+Antirassistisches Sommerkino, Köln<br>
+Filmfest Dresden<br>
+Kein Schlussstrich, Zwickau<br>
 
 SİNEMALAR<br>
 Kino Babylon Kreuzberg, Berlin<br>
