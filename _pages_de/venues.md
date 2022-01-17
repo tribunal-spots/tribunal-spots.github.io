@@ -15,6 +15,9 @@ SAVVY Contemporary Berlin<br>
 M1 Hohenlockstedt<br>
 Heimathafen Neukölln<br>
 The Ludlow 38, New York<br>
+Museum Villa Stuck, München<br>
+Heidelberger Kunstverein <br>
+Rautenstrauch-Joest-Museum, Köln<br>
 
 FILMFESTIVALS & SCREENINGS<br>
 Filmfestspiele Cannes ( via Short Tiger Award für „Whose Hand was it?“)<br>
@@ -26,6 +29,11 @@ Ethnocineca Wien<br>
 Villa Leon, Nürnberg<br>
 Stuttgarter Filmwinter<br>
 goEast-festival, Wiesbaden<br>
+Kollektiv Filmreihe Köln<br>
+Antirassistischer Streiktag 8. Mai, Berlin<br>
+Antirassistisches Sommerkino, Köln<br>
+Filmfest Dresden<br>
+Kein Schlussstrich, Zwickau<br>
 
 KINOS<br>
 Kino Babylon Kreuzberg, Berlin<br>
