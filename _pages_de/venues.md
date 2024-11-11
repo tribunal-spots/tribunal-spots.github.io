@@ -18,6 +18,7 @@ The Ludlow 38, New York<br>
 Museum Villa Stuck, München<br>
 Heidelberger Kunstverein <br>
 Rautenstrauch-Joest-Museum, Köln<br>
+Kunsthaus Dresden <br>
 
 FILMFESTIVALS & SCREENINGS<br>
 Filmfestspiele Cannes ( via Short Tiger Award für „Whose Hand was it?“)<br>
@@ -34,6 +35,7 @@ Antirassistischer Streiktag 8. Mai, Berlin<br>
 Antirassistisches Sommerkino, Köln<br>
 Filmfest Dresden<br>
 Kein Schlussstrich, Zwickau<br>
+dfi-Symposium PROZESSIEREN, Köln <br>
 
 KINOS<br>
 Kino Babylon Kreuzberg, Berlin<br>
@@ -60,8 +62,6 @@ Werkstattkino München<br>
 Filmhaus Nürnberg<br>
 Cinema & Kurbelkiste Münster<br>
 
-ONLINE <br>
-bislang 50.000 mal auf unserer Webseite gesehen<br>
-bislang 30.000 mal auf youtube gesehen<br>
+Alle Vorführgebühren gehen an den Trägerverein des Tribunals (lückenlos e.V.) oder finanzieren die anfallenden Serverkosten. 
 
-Stand: Juli 2019
+Stand: November 2024
