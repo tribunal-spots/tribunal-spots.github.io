@@ -18,6 +18,8 @@ The Ludlow 38, New York<br>
 Museum Villa Stuck, München<br>
 Heidelberger Kunstverein <br>
 Rautenstrauch-Joest-Museum, Köln<br>
+Kunsthaus Dresden <br>
+
 
 FESTIVALS & SCREENINGS<br>
 Cannes Film Festival (via Short Tiger Award for "Whose Hand was it?")<br>
@@ -34,6 +36,7 @@ Antirassistischer Streiktag 8. Mai, Berlin<br>
 Antirassistisches Sommerkino, Köln<br>
 Filmfest Dresden<br>
 Kein Schlussstrich, Zwickau<br>
+dfi-Symposium PROZESSIEREN, Köln <br>
 
 MOVIE THEATRES<br>
 Kino Babylon Kreuzberg, Berlin<br>
@@ -60,9 +63,6 @@ Werkstattkino München<br>
 Filmhaus Nürnberg<br>
 Cinema & Kurbelkiste Münster<br>
 
-ONLINE <br>
-50.000 views on our website<br>
-30.000 views on youtube<br>
 
 
-<br>*as at July 2019*
+<br>*as at November 2024*
