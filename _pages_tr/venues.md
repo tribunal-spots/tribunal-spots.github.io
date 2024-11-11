@@ -19,6 +19,7 @@ The Ludlow 38, New York<br>
 Museum Villa Stuck, München<br>
 Heidelberger Kunstverein <br>
 Rautenstrauch-Joest-Museum, Köln<br>
+Kunsthaus Dresden <br>
 
 FİLM FESTİVALLERİ<br>
 Cannes Film Festival<br>
@@ -34,6 +35,7 @@ Antirassistischer Streiktag 8. Mai, Berlin<br>
 Antirassistisches Sommerkino, Köln<br>
 Filmfest Dresden<br>
 Kein Schlussstrich, Zwickau<br>
+dfi-Symposium PROZESSIEREN, Köln <br>
 
 SİNEMALAR<br>
 Kino Babylon Kreuzberg, Berlin<br>
@@ -60,9 +62,4 @@ Werkstattkino München<br>
 Filmhaus Nürnberg<br>
 Cinema & Kurbelkiste Münster<br>
 
-ONLINE <br>
-Bugüne kadar web sayfamızda 50.000 kez izlendi<br>
-Bugüna kadar Youtube’da 30.000 kez izlendi<br>
-
-
-<br>*Son güncelleme Temmuz 2019
+<br>*Son güncelleme 11/2024
